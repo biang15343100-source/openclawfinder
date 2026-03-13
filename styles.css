@@ -677,6 +677,16 @@ h2 {
   box-shadow: none;
 }
 
+.info-box-template p {
+  margin: 0 0 10px;
+  font-family: "SFMono-Regular", "Menlo", "Consolas", monospace;
+  color: #dce6ff;
+}
+
+.info-box-template p:last-child {
+  margin-bottom: 0;
+}
+
 .project-hero {
   display: block;
 }
@@ -750,6 +760,7 @@ h2 {
 .project-facts {
   display: grid;
   gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .project-facts div {

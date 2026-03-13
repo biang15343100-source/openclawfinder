@@ -2,6 +2,7 @@ const translations = {
   en: {
     common: {
       brand: "OpenClaw Finder",
+      navStart: "Start here",
       navAbout: "About",
       navSubmit: "Submit",
       navContact: "Contact",
@@ -10,6 +11,10 @@ const translations = {
     project: {
       common: {
         quickFacts: "Quick facts",
+        reviewed: "Last reviewed",
+        stack: "Primary stack",
+        license: "License",
+        official: "Official status",
         status: "Positioning",
         type: "Different from OpenClaw",
         bestFor: "Good fit for",
@@ -252,6 +257,7 @@ const translations = {
       directoryTitle: "Start here",
       directoryLead:
         "A handpicked set of OpenClaw projects and tools worth knowing first, based on public official links and active pages.",
+      startGuideButton: "Start guide",
       category1Title: "OpenClaw and variants",
       category1Lead: "The main OpenClaw project, notable variants, and different takes on the same idea.",
       category1Button: "Jump to variants",
@@ -362,6 +368,58 @@ const translations = {
         "Submissions are reviewed manually before they appear on the site. That helps keep the directory useful and reduces low-quality entries.",
       section2Lead: "A smaller, cleaner directory is more valuable than a noisy one. Manual review is how the site keeps that bar.",
     },
+    start: {
+      title: "Which OpenClaw Project Should You Start With? | OpenClaw Finder",
+      description:
+        "Compare OpenClaw, PicoClaw, NanoClaw, Nanobot, CoPaw, and other projects to decide which OpenClaw path fits your needs.",
+      eyebrow: "Start here",
+      lead:
+        "If you are new to the ecosystem, the right answer depends less on hype and more on what you actually need: the official stack, smaller hardware, safer isolation, easier setup, or a better learning path.",
+      bodyTitle: "Which OpenClaw project should you start with?",
+      section1Title: "Fast picks",
+      pick1Label: "Start with OpenClaw",
+      pick1Body:
+        "if you want the main project, the broadest docs, and the clearest official reference point.",
+      pick2Label: "Start with PicoClaw",
+      pick2Body:
+        "if your first constraint is tiny hardware, low memory use, or lightweight deployment.",
+      pick3Label: "Start with NanoClaw",
+      pick3Body:
+        "if container boundaries, isolation, and safer self-hosting matter more than raw simplicity.",
+      pick4Label: "Start with Nanobot",
+      pick4Body:
+        "if you want the easiest codebase to read, learn from, and modify quickly.",
+      pick5Label: "Start with CoPaw",
+      pick5Body:
+        "if you want a more practical personal-agent workstation with easier setup and local-model support.",
+      pickLink: "View profile",
+      section2Title: "Decision guide",
+      section2Lead:
+        "A useful way to choose is to start from your constraint, not from the loudest project name.",
+      decision1: "Choose OpenClaw if you want the official baseline before comparing variants.",
+      decision2:
+        "Choose PicoClaw if you care most about small devices, static binaries, and low operating cost.",
+      decision3:
+        "Choose NanoClaw if you care most about container-first isolation and cleaner self-hosted boundaries.",
+      decision4:
+        "Choose ZeroClaw or IronClaw if your team is more infrastructure-minded, Rust-friendly, and less concerned with easiest onboarding.",
+      decision5:
+        "Choose Nanobot if your real goal is to understand the architecture fast and fork it for experiments.",
+      decision6:
+        "Choose ClawHub or OpenProse only if you already understand they are ecosystem layers, not direct runtime replacements.",
+      section3Title: "Good first routes",
+      routeLead:
+        "If you are still unsure, these are the three safest starting routes for most people.",
+      route1:
+        "New to the ecosystem: start with OpenClaw, then compare PicoClaw and NanoClaw.",
+      route2:
+        "Developer learning path: start with Nanobot, then read OpenClaw for the broader surface area.",
+      route3:
+        "Practical self-hosting path: compare CoPaw, NanoClaw, and OpenClaw side by side.",
+      section4Title: "Next steps",
+      section4Body:
+        "After you pick a direction, open two or three project pages and compare the quick facts, sources, and 'why it matters' sections. The best choice usually becomes obvious once you compare by constraints instead of by hype.",
+    },
     submit: {
       title: "Submit a Project | OpenClaw Finder",
       description: "Submit an OpenClaw project for review and listing on OpenClaw Finder.",
@@ -375,10 +433,42 @@ const translations = {
       includeLabel: "Include:",
       includeBody: "project name, URL, one-line summary, and what makes it different.",
       card2Title: "What helps approval",
-      card2Body: "A live homepage, repository, docs page, launch note, or anything that proves the project is real and publicly reachable.",
-      card3Title: "What happens next",
+      card2Lead:
+        "OpenClaw Finder is a curated directory, so the goal is not to list everything. The goal is to list projects that help people understand the real ecosystem.",
+      card2Point1:
+        "A working homepage, repository, docs page, launch note, or other primary source proving the project is public.",
+      card2Point2:
+        "A short explanation of what the project actually does and who it is for.",
+      card2Point3:
+        "A clear reason it belongs in the OpenClaw ecosystem rather than being a generic AI tool.",
+      card2Point4:
+        "Enough detail to compare it with other listed projects without guessing.",
+      card3Title: "Suggested email template",
+      templateLine1: "Project name:",
+      templateLine2: "Primary URL:",
+      templateLine3: "GitHub / docs / launch links:",
+      templateLine4: "One-line summary:",
+      templateLine5: "How it is different from other OpenClaw projects:",
+      templateLine6: "Why it should be listed:",
+      templateLine7: "Contact name:",
+      card4Title: "What gets rejected",
+      card4Point1:
+        "Broken links, placeholder pages, or projects with no public proof of existence.",
+      card4Point2:
+        "Generic AI tools that do not clearly connect to the OpenClaw ecosystem.",
+      card4Point3:
+        "Thin submissions that force manual guessing about what the project is.",
+      card4Point4:
+        "Obvious clones, spam, or misleading branding.",
+      card5Title: "What happens next",
       body2:
         "After you set up email forwarding or an inbox provider, replace this page with a form or link it to a form tool such as Tally, Typeform, or Formspree.",
+      card5Point1:
+        "Each submission is reviewed manually before it appears on the site.",
+      card5Point2:
+        "Entries may be edited for clarity, consistency, and category fit.",
+      card5Point3:
+        "If the submission is missing core evidence, it may be ignored until better sources are available.",
       railTitle: "Review checklist",
       railBody: "Submissions move faster when the essentials are obvious at a glance.",
       checklist1: "Clear project name and primary URL",
@@ -433,6 +523,7 @@ const translations = {
   zh: {
     common: {
       brand: "OpenClaw Finder",
+      navStart: "从这里开始",
       navAbout: "关于",
       navSubmit: "提交项目",
       navContact: "联系",
@@ -441,6 +532,10 @@ const translations = {
     project: {
       common: {
         quickFacts: "快速信息",
+        reviewed: "最近审核",
+        stack: "主要技术栈",
+        license: "许可证",
+        official: "官方属性",
         status: "定位",
         type: "和原版的区别",
         bestFor: "更适合谁",
@@ -682,6 +777,7 @@ const translations = {
       directoryEyebrow: "精选项目",
       directoryTitle: "先看这些",
       directoryLead: "这里先收你大概率会想看的 OpenClaw 项目和生态工具，信息尽量都指向公开页面和官方链接。",
+      startGuideButton: "新手入口",
       category1Title: "OpenClaw 及其变种",
       category1Lead: "主项目、不同变种、不同风格的实现，先从这组看最容易建立整体印象。",
       category1Button: "跳到变种项目",
@@ -780,6 +876,58 @@ const translations = {
       section2Body: "所有提交内容都会先人工审核，再决定是否展示在站点中，以减少低质量条目。",
       section2Lead: "目录宁愿少一点，也不想变成一堆低质量链接。人工审核就是为了守住这个标准。",
     },
+    start: {
+      title: "应该从哪个 OpenClaw 项目开始？ | OpenClaw Finder",
+      description:
+        "对比 OpenClaw、PicoClaw、NanoClaw、Nanobot、CoPaw 等项目，判断哪条 OpenClaw 路线更适合你。",
+      eyebrow: "从这里开始",
+      lead:
+        "如果你刚进入这个生态，关键不是追最热的名字，而是先搞清楚你的真实需求是什么：官方主栈、小设备部署、更强隔离、更容易安装，还是更适合学习源码。",
+      bodyTitle: "你应该从哪个 OpenClaw 项目开始？",
+      section1Title: "快速建议",
+      pick1Label: "先看 OpenClaw",
+      pick1Body:
+        "如果你想先看主项目本体、最完整文档和最清晰的官方参考点。",
+      pick2Label: "先看 PicoClaw",
+      pick2Body:
+        "如果你最在意的是小硬件、低内存占用和轻量部署。",
+      pick3Label: "先看 NanoClaw",
+      pick3Body:
+        "如果你更在意容器边界、隔离能力和更稳的自托管控制。",
+      pick4Label: "先看 Nanobot",
+      pick4Body:
+        "如果你最想要的是一个容易读懂、容易学习、容易改的代码库。",
+      pick5Label: "先看 CoPaw",
+      pick5Body:
+        "如果你想要一个更实用的个人 agent 工作台，安装更省事，本地模型支持更好。",
+      pickLink: "查看详情",
+      section2Title: "怎么做选择",
+      section2Lead:
+        "更有效的方式不是从最大声的名字开始，而是从你的限制条件开始。",
+      decision1: "如果你想先建立官方基线，再去比较变种，先看 OpenClaw。",
+      decision2:
+        "如果你最在意小设备、静态二进制和更低运行成本，优先看 PicoClaw。",
+      decision3:
+        "如果你最在意容器优先隔离和更清晰的自托管边界，优先看 NanoClaw。",
+      decision4:
+        "如果你的团队更偏基础设施、能接受 Rust 路线，也不把“最容易上手”放第一位，就看 ZeroClaw 或 IronClaw。",
+      decision5:
+        "如果你的真实目标是快速看懂架构、再自己 fork 做实验，就优先看 Nanobot。",
+      decision6:
+        "如果你已经知道 ClawHub 和 OpenProse 是生态层，而不是运行时替代品，再去看它们会更高效。",
+      section3Title: "三条安全起步路线",
+      routeLead:
+        "如果你还不确定，下面三条路线对大多数人都比较稳。",
+      route1:
+        "生态新手：先看 OpenClaw，再对比 PicoClaw 和 NanoClaw。",
+      route2:
+        "开发者学习路线：先看 Nanobot，再回看 OpenClaw 理解更大的能力面。",
+      route3:
+        "务实自托管路线：把 CoPaw、NanoClaw 和 OpenClaw 放在一起比。",
+      section4Title: "接下来做什么",
+      section4Body:
+        "选定方向后，打开 2 到 3 个项目页，对照 quick facts、sources 和 why it matters 一起看。很多时候，只要按约束条件比较，而不是按热度比较，最合适的选择会很快变得明显。",
+    },
     submit: {
       title: "提交项目 | OpenClaw Finder",
       description: "提交 OpenClaw 项目，申请在 OpenClaw Finder 上收录。",
@@ -792,9 +940,41 @@ const translations = {
       includeLabel: "请包含：",
       includeBody: "项目名称、URL、一句话简介，以及它和其他项目的区别。",
       card2Title: "什么信息最有帮助",
-      card2Body: "官网、仓库、文档、发布说明，或者任何能证明这个项目已经公开存在的链接。",
-      card3Title: "提交后会怎样",
+      card2Lead:
+        "OpenClaw Finder 是精选目录，不是越多越好。更重要的是，提交内容能帮助用户看清真实生态，而不是增加噪音。",
+      card2Point1:
+        "有可访问的官网、仓库、文档、发布说明，或其他能证明项目真实公开存在的一手来源。",
+      card2Point2:
+        "能说清楚这个项目到底做什么，适合谁，不只是一个模糊名字。",
+      card2Point3:
+        "能解释为什么它属于 OpenClaw 生态，而不是一个泛 AI 工具。",
+      card2Point4:
+        "信息足够完整，让目录页可以直接和其他项目做比较，而不是靠猜。",
+      card3Title: "推荐邮件模板",
+      templateLine1: "项目名称：",
+      templateLine2: "主链接：",
+      templateLine3: "GitHub / 文档 / 发布链接：",
+      templateLine4: "一句话简介：",
+      templateLine5: "和其他 OpenClaw 项目的区别：",
+      templateLine6: "为什么值得收录：",
+      templateLine7: "联系人：",
+      card4Title: "哪些情况会被拒绝",
+      card4Point1:
+        "链接失效、页面占位、或者没有任何公开证据证明项目真实存在。",
+      card4Point2:
+        "和 OpenClaw 生态没有明确关系的泛 AI 工具。",
+      card4Point3:
+        "信息过薄，导致必须靠人工猜这个项目到底是什么。",
+      card4Point4:
+        "明显抄袭、垃圾提交，或有误导性命名。",
+      card5Title: "提交后会怎样",
       body2: "等你配置好邮箱转发或表单工具后，可以把这个页面替换成真实表单。",
+      card5Point1:
+        "每一条提交都会先人工审核，再决定是否上线。",
+      card5Point2:
+        "为了清晰、一致和分类准确，条目内容可能会被编辑。",
+      card5Point3:
+        "如果缺少核心证据或一手来源，提交可能会先被搁置。",
       railTitle: "审核清单",
       railBody: "把关键信息一次发齐，收录会更快。",
       checklist1: "清晰的项目名和主链接",
@@ -846,6 +1026,7 @@ const translations = {
 
 const pageTextKeys = {
   about: { title: "about.title", description: "about.description" },
+  start: { title: "start.title", description: "start.description" },
   submit: { title: "submit.title", description: "submit.description" },
   contact: { title: "contact.title", description: "contact.description" },
   privacy: { title: "privacy.title", description: "privacy.description" },
