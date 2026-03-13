@@ -114,8 +114,12 @@ a {
 }
 
 .hero-grid {
-  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.75fr);
-  align-items: center;
+  grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.55fr);
+  align-items: end;
+}
+
+.hero-copy {
+  max-width: 780px;
 }
 
 .eyebrow {
@@ -136,10 +140,10 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(3.4rem, 8vw, 6.8rem);
+  font-size: clamp(2.3rem, 5.5vw, 4.4rem);
   font-weight: 700;
   letter-spacing: -0.06em;
-  max-width: 9ch;
+  max-width: 12ch;
 }
 
 h2 {
@@ -156,8 +160,8 @@ h2 {
 }
 
 .lead {
-  max-width: 44rem;
-  font-size: 1.16rem;
+  max-width: 40rem;
+  font-size: 1.05rem;
 }
 
 .hero-actions {
@@ -202,12 +206,6 @@ h2 {
   padding: 30px;
 }
 
-.hero-card {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)),
-    var(--surface);
-}
-
 .hero-card ul,
 .meta {
   margin: 16px 0 0;
@@ -220,16 +218,24 @@ h2 {
   margin-top: 8px;
 }
 
-.stat-label {
-  margin: 0;
-  color: var(--muted);
+.hero-note {
+  padding: 22px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-.stat-value {
-  margin: 6px 0 16px;
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: -0.06em;
+.hero-note-label {
+  margin: 0 0 10px;
+  color: var(--text);
+  font-size: 0.86rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.hero-note-body {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
 }
 
 .signal-section {
@@ -285,6 +291,27 @@ h2 {
   align-items: center;
 }
 
+.card-top h3 a {
+  position: relative;
+  display: inline-block;
+  padding-right: 18px;
+  color: var(--text);
+}
+
+.card-top h3 a::after {
+  content: "->";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--muted);
+  transition: transform 140ms ease, color 140ms ease;
+}
+
+.card-top h3 a:hover::after {
+  transform: translateX(3px);
+  color: var(--text);
+}
+
 .tag {
   padding: 6px 10px;
   border-radius: 999px;
@@ -312,14 +339,32 @@ h2 {
 }
 
 .project-links a {
-  color: var(--text);
+  color: #d8d8d2;
   font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.28);
+  text-underline-offset: 0.22em;
 }
 
 .project-links a:hover,
 .main-nav a:hover,
 .footer-links a:hover {
   color: var(--accent-dark);
+}
+
+.main-nav a,
+.footer-links a {
+  transition: color 140ms ease;
+}
+
+.project-card {
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.16);
+  background: #151515;
 }
 
 .section-accent {
@@ -525,7 +570,7 @@ h2 {
   }
 
   h1 {
-    max-width: 12ch;
+    max-width: 14ch;
   }
 }
 
