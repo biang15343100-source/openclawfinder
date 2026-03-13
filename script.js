@@ -141,7 +141,7 @@ const translations = {
         "OpenClaw Finder is a curated directory for discovering OpenClaw projects, tools, and experiments such as qclaw and picoclaw.",
       eyebrow: "Curated directory",
       heroTitle:
-        "<span class=\"hero-title-line\">OpenClaw</span><span class=\"hero-title-line\"><span class=\"hero-title-accent\">Lobster</span><span class=\"hero-title-emoji\">🦞</span><span class=\"hero-title-accent\">Hub</span></span>",
+        "<span class=\"hero-title-accent\">OpenClaw</span><span class=\"hero-title-emoji\">🦞</span><span class=\"hero-title-accent\">Finder</span>",
       heroLead:
         "A live catch of Claw projects across the web, with new launches, updates, and forks synced here within 24 hours.",
       browse: "Browse directory",
@@ -438,7 +438,7 @@ const translations = {
         "OpenClaw Finder 是一个精选导航站，用来发现 qclaw、picoclaw 等 OpenClaw 项目、工具和实验。",
       eyebrow: "精选导航",
       heroTitle:
-        "<span class=\"hero-title-line\">OpenClaw</span><span class=\"hero-title-line\"><span class=\"hero-title-accent\">龙虾</span><span class=\"hero-title-emoji\">🦞</span><span class=\"hero-title-accent\">聚集地</span></span>",
+        "<span class=\"hero-title-accent\">OpenClaw</span><span class=\"hero-title-emoji\">🦞</span><span class=\"hero-title-accent\">Finder</span>",
       heroLead:
         "把市面上已经冒头的 Claw 项目都捞上来，新发布、刚更新、值得看的变体，尽量 24 小时内同步到这里。",
       browse: "浏览目录",
