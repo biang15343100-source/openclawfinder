@@ -210,51 +210,90 @@ const translations = {
       title: "About | OpenClaw Finder",
       description: "Learn what OpenClaw Finder is, who it is for, and how projects are selected.",
       eyebrow: "About",
+      lead: "A calmer way to follow the Claw ecosystem: one place to scan what exists, what just launched, and what is actually worth opening.",
       bodyTitle: "Why this site exists",
       body1:
         "OpenClaw Finder is a curated navigation site for people trying to understand the growing OpenClaw ecosystem. The goal is simple: make it easier to discover projects, compare them quickly, and follow new launches without digging across scattered links.",
+      railTitle: "How this stays useful",
+      railBody: "The directory is intentionally opinionated: fewer links, more context, faster scanning.",
+      railPoint1: "Projects are grouped so official entries, ecosystem tools, and watched variants do not blur together.",
+      railPoint2: "Each profile tries to anchor itself in public primary sources instead of recycled summaries.",
+      railPoint3: "New additions and notable shifts are meant to be reflected here quickly, not buried in old screenshots or threads.",
       section1Title: "What gets listed",
       section1Body:
         "Projects should be directly relevant to the OpenClaw ecosystem and should point to a working homepage, repository, or product page. Entries may be edited for clarity and consistency.",
+      section1Lead: "The goal is not to list everything with a claw-shaped name. The goal is to surface the entries that help someone understand the real shape of the ecosystem.",
       section2Title: "How listings are reviewed",
       section2Body:
         "Submissions are reviewed manually before they appear on the site. That helps keep the directory useful and reduces low-quality entries.",
+      section2Lead: "A smaller, cleaner directory is more valuable than a noisy one. Manual review is how the site keeps that bar.",
     },
     submit: {
       title: "Submit a Project | OpenClaw Finder",
       description: "Submit an OpenClaw project for review and listing on OpenClaw Finder.",
       eyebrow: "Submit",
+      lead: "Have a Claw project, tool, fork, or ecosystem page worth tracking? Send it in and it can be reviewed for the directory.",
       bodyTitle: "Submit your OpenClaw project",
       body1:
         "For now, submissions are handled manually. Send the following details by email and the project can be reviewed for inclusion.",
+      card1Title: "What to send",
       emailLabel: "Email:",
       includeLabel: "Include:",
       includeBody: "project name, URL, one-line summary, and what makes it different.",
+      card2Title: "What helps approval",
+      card2Body: "A live homepage, repository, docs page, launch note, or anything that proves the project is real and publicly reachable.",
+      card3Title: "What happens next",
       body2:
         "After you set up email forwarding or an inbox provider, replace this page with a form or link it to a form tool such as Tally, Typeform, or Formspree.",
+      railTitle: "Review checklist",
+      railBody: "Submissions move faster when the essentials are obvious at a glance.",
+      checklist1: "Clear project name and primary URL",
+      checklist2: "One-line summary of what it does",
+      checklist3: "Why it is different from other Claw projects",
+      checklist4: "Any launch post, docs, or repo proving public availability",
     },
     contact: {
       title: "Contact | OpenClaw Finder",
       description: "Contact OpenClaw Finder for project submissions, feedback, and future sponsorships.",
       eyebrow: "Contact",
+      lead: "Use this page for corrections, suggestions, partnerships, and anything that would make the directory sharper.",
       bodyTitle: "Get in touch",
       body1:
         "Reach out for directory feedback, corrections, partnerships, or future advertising and sponsorship enquiries.",
+      card1Title: "Corrections and updates",
+      card1Body: "If a project changed status, moved repos, launched publicly, or should no longer be listed the same way, send the source and it can be adjusted.",
+      card2Title: "Partnerships",
+      card2Body: "This is also the place to discuss collaborations, sponsorship ideas, or ways to surface high-signal ecosystem updates.",
+      card3Title: "Direct contact",
       emailLabel: "Email:",
       responseLabel: "Response time:",
       responseBody: "usually within a few business days.",
+      railTitle: "Best messages to send",
+      railBody: "Short, source-backed notes are easiest to review and act on.",
+      railPoint1: "A broken or outdated link",
+      railPoint2: "A new project page that deserves inclusion",
+      railPoint3: "A correction backed by a primary source",
     },
     privacy: {
       title: "Privacy Policy | OpenClaw Finder",
       description: "Privacy policy for OpenClaw Finder.",
       eyebrow: "Privacy",
+      lead: "This site is simple by design. The privacy policy is meant to stay readable and proportional to what the site actually does.",
       bodyTitle: "Privacy policy",
+      card1Title: "Basic analytics",
       body1:
         "OpenClaw Finder may collect basic analytics information such as page views, referring pages, and browser information to understand site usage.",
+      card2Title: "Email and submissions",
       body2:
         "If you email a submission or contact request, your message and contact details are used only to review your project or reply to your enquiry.",
+      card3Title: "Future services",
       body3:
         "This site may use third-party services such as analytics or advertising providers in the future. This page should be updated before those services are enabled.",
+      railTitle: "In plain language",
+      railBody: "The intent is straightforward: keep only what is needed to run the directory and respond to emails.",
+      railPoint1: "No promise is made here about invasive tracking because that is not the intent of the site.",
+      railPoint2: "If the tooling changes in a meaningful way, this page should change too.",
+      railPoint3: "When in doubt, the simpler privacy posture is the better one.",
     },
   },
   zh: {
@@ -459,44 +498,83 @@ const translations = {
       title: "关于 | OpenClaw Finder",
       description: "了解 OpenClaw Finder 是什么、适合谁，以及项目收录标准。",
       eyebrow: "关于",
+      lead: "把 Claw 生态里真正值得看的项目收在一起，少翻链接，少踩空，更快看清现在到底有什么。",
       bodyTitle: "为什么做这个站",
       body1:
         "OpenClaw Finder 是一个面向 OpenClaw 生态的精选导航站，目的是让用户更容易发现项目、快速比较，并持续跟踪新的发布内容，而不是在零散链接之间来回搜索。",
+      railTitle: "这个站怎么保持有用",
+      railBody: "它不是越多越好，而是尽量少噪音、强信息密度、能快速扫完。",
+      railPoint1: "官方项目、生态工具、观察中变体会分开展示，不把不同可信度的内容混在一起。",
+      railPoint2: "每个条目尽量锚定到公开一手来源，而不是二次转述。",
+      railPoint3: "有新项目冒头或信息变化时，会尽量尽快同步到目录里。",
       section1Title: "什么项目会被收录",
       section1Body:
         "收录对象应与 OpenClaw 生态直接相关，并且需要提供可访问的官网、代码仓库或产品页面。站点会为了清晰和一致性对条目进行适度编辑。",
+      section1Lead: "这个目录不是把所有带 claw 名字的页面都塞进来，而是优先收那些真的能帮助人理解生态全貌的项目。",
       section2Title: "如何审核",
       section2Body: "所有提交内容都会先人工审核，再决定是否展示在站点中，以减少低质量条目。",
+      section2Lead: "目录宁愿少一点，也不想变成一堆低质量链接。人工审核就是为了守住这个标准。",
     },
     submit: {
       title: "提交项目 | OpenClaw Finder",
       description: "提交 OpenClaw 项目，申请在 OpenClaw Finder 上收录。",
       eyebrow: "提交",
+      lead: "如果你做了 Claw 项目、工具、分支或相关生态页面，可以直接投递进来，审核后会加入目录。",
       bodyTitle: "提交你的 OpenClaw 项目",
       body1: "当前阶段采用人工收录。你可以通过邮件发送以下信息，提交后会进入审核。",
+      card1Title: "需要发什么",
       emailLabel: "邮箱：",
       includeLabel: "请包含：",
       includeBody: "项目名称、URL、一句话简介，以及它和其他项目的区别。",
+      card2Title: "什么信息最有帮助",
+      card2Body: "官网、仓库、文档、发布说明，或者任何能证明这个项目已经公开存在的链接。",
+      card3Title: "提交后会怎样",
       body2: "等你配置好邮箱转发或表单工具后，可以把这个页面替换成真实表单。",
+      railTitle: "审核清单",
+      railBody: "把关键信息一次发齐，收录会更快。",
+      checklist1: "清晰的项目名和主链接",
+      checklist2: "一句话说明它做什么",
+      checklist3: "它和其他 Claw 项目有什么不同",
+      checklist4: "仓库、文档或发布页等公开可验证信息",
     },
     contact: {
       title: "联系 | OpenClaw Finder",
       description: "联系 OpenClaw Finder，提交项目、反馈问题或咨询赞助合作。",
       eyebrow: "联系",
+      lead: "目录有错、链接失效、项目该更新状态，或者你想聊合作，都可以从这里联系。",
       bodyTitle: "联系我",
       body1: "你可以通过邮件反馈目录问题、提交修正、咨询合作，或沟通后续广告与赞助。",
+      card1Title: "纠错与更新",
+      card1Body: "如果某个项目已经公开发布、仓库变更、链接失效，或者状态该调整，带上一手来源发来就可以。",
+      card2Title: "合作与赞助",
+      card2Body: "也可以讨论合作、赞助，或者怎样把更有价值的生态动态放进目录里。",
+      card3Title: "直接联系",
       emailLabel: "邮箱：",
       responseLabel: "回复时间：",
       responseBody: "通常会在几个工作日内回复。",
+      railTitle: "最适合发送的内容",
+      railBody: "简短、明确、带来源的消息最容易处理。",
+      railPoint1: "某个链接坏了或已经过期",
+      railPoint2: "有值得收录的新项目页面",
+      railPoint3: "有一手来源支撑的修正信息",
     },
     privacy: {
       title: "隐私政策 | OpenClaw Finder",
       description: "OpenClaw Finder 的隐私政策说明。",
       eyebrow: "隐私",
+      lead: "这个站点本身很轻，所以隐私说明也尽量写得直接，不绕圈。",
       bodyTitle: "隐私政策",
+      card1Title: "基础分析数据",
       body1: "OpenClaw Finder 可能会收集基础分析信息，例如页面访问量、来源页面和浏览器信息，用于了解网站使用情况。",
+      card2Title: "邮件与提交内容",
       body2: "如果你通过邮件提交项目或发送联系请求，你的消息和联系方式只会用于审核项目或回复咨询。",
+      card3Title: "未来可能接入的服务",
       body3: "未来站点可能会接入第三方分析或广告服务。在启用这些服务之前，应更新本页面内容。",
+      railTitle: "用大白话说",
+      railBody: "原则很简单：只保留运行目录和回复邮件真正需要的信息。",
+      railPoint1: "这里不打算做重度追踪式的数据收集。",
+      railPoint2: "如果未来接了新的工具，这一页也应该同步更新。",
+      railPoint3: "能更简单处理的地方，就尽量不用更复杂的方式。",
     },
   },
 };
@@ -560,12 +638,73 @@ function applyLanguage(language) {
 document.addEventListener("DOMContentLoaded", () => {
   const initialLanguage = detectLanguage();
   applyLanguage(initialLanguage);
+  document.body.classList.add("page-ready");
+
+  const nav = document.querySelector(".nav");
+  const mainNav = document.querySelector(".main-nav");
+  const langSwitch = document.querySelector(".lang-switch");
+  let mobileMenuToggle = null;
+
+  if (nav && mainNav && langSwitch) {
+    mobileMenuToggle = document.createElement("button");
+    mobileMenuToggle.type = "button";
+    mobileMenuToggle.className = "mobile-menu-toggle";
+    mobileMenuToggle.setAttribute("aria-expanded", "false");
+    mobileMenuToggle.setAttribute("aria-label", "Toggle navigation");
+    mobileMenuToggle.innerHTML =
+      "<span></span><span></span><span></span>";
+    nav.insertBefore(mobileMenuToggle, langSwitch.nextSibling);
+
+    mobileMenuToggle.addEventListener("click", () => {
+      const isOpen = document.body.classList.toggle("mobile-menu-open");
+      mobileMenuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    for (const navLink of mainNav.querySelectorAll("a")) {
+      navLink.addEventListener("click", () => {
+        document.body.classList.remove("mobile-menu-open");
+        mobileMenuToggle.setAttribute("aria-expanded", "false");
+      });
+    }
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 880) {
+        document.body.classList.remove("mobile-menu-open");
+        mobileMenuToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 
   for (const button of document.querySelectorAll("[data-lang-button]")) {
     button.addEventListener("click", () => {
       const language = button.dataset.langButton;
       window.localStorage.setItem("preferred-language", language);
       applyLanguage(language);
+    });
+  }
+
+  for (const link of document.querySelectorAll("a[href]")) {
+    link.addEventListener("click", (event) => {
+      const href = link.getAttribute("href");
+      if (!href || href.startsWith("#")) return;
+      if (link.target === "_blank" || link.hasAttribute("download")) return;
+
+      const url = new URL(href, window.location.href);
+      const isSameOrigin = url.origin === window.location.origin;
+      if (!isSameOrigin) return;
+      if (url.pathname === window.location.pathname && url.hash === window.location.hash) return;
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+      event.preventDefault();
+      if (mobileMenuToggle) {
+        document.body.classList.remove("mobile-menu-open");
+        mobileMenuToggle.setAttribute("aria-expanded", "false");
+      }
+      document.body.classList.remove("page-ready");
+      document.body.classList.add("page-exit");
+      window.setTimeout(() => {
+        window.location.href = url.href;
+      }, 180);
     });
   }
 });
