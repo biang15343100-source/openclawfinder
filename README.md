@@ -28,7 +28,7 @@ Minimal static site for `openclawfinder.com`.
 ## Build-time star sync
 
 - `npm run build` runs `scripts/sync-stars.mjs`
-- The script fetches GitHub star counts for variant cards in `index.html`
+- The script fetches GitHub star counts for cards in `index.html` that declare a GitHub repo
 - Variant cards are then re-sorted by current star count, with entries that have no public GitHub repo left at the end
 - This means star counts refresh on each deploy, not on each page view
 
