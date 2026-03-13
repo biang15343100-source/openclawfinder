@@ -1,0 +1,10 @@
+{
+  "name": "openclawfinder",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static site for openclawfinder.com",
+  "scripts": {
+    "build": "node scripts/sync-stars.mjs",
+    "sync:stars": "node scripts/sync-stars.mjs"
+  }
+}

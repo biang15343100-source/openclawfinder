@@ -20,9 +20,17 @@ Minimal static site for `openclawfinder.com`.
 3. Create a new Pages project and connect the GitHub repository.
 4. Build settings:
    - Framework preset: `None`
-   - Build command: leave empty
+   - Build command: `npm run build`
    - Build output directory: `/`
+   - Environment variable (optional): `GITHUB_TOKEN` for higher GitHub API limits
 5. After the first deploy, add the custom domain `openclawfinder.com`.
+
+## Build-time star sync
+
+- `npm run build` runs `scripts/sync-stars.mjs`
+- The script fetches GitHub star counts for variant cards in `index.html`
+- Variant cards are then re-sorted by current star count, with entries that have no public GitHub repo left at the end
+- This means star counts refresh on each deploy, not on each page view
 
 ## Next content updates
 
