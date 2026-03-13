@@ -142,13 +142,10 @@ const translations = {
       eyebrow: "Curated directory",
       heroTitle: "Find the best OpenClaw projects in one place.",
       heroLead:
-        "A fast, searchable index of OpenClaw runtimes, ecosystem tools, and experiments. Compare what exists, follow new launches, and submit projects to be featured.",
+        "A curated directory of OpenClaw runtimes, ecosystem tools, and notable variants.",
       browse: "Browse directory",
       submit: "Submit a project",
       profileLink: "Profile",
-      noteLabel: "What this site does",
-      noteBody:
-        "Track official OpenClaw projects, lightweight variants, and ecosystem tools, while clearly separating confirmed entries from names that are still being verified.",
       signal1Value: "Primary sources",
       signal1Label: "Repos, docs, and official launch pages only",
       signal2Value: "Global-first",
@@ -402,12 +399,10 @@ const translations = {
       eyebrow: "精选导航",
       heroTitle: "在一个地方找到值得关注的 OpenClaw 项目。",
       heroLead:
-        "这是一个快速、可浏览的 OpenClaw 运行时、生态工具和实验项目索引。你可以查看现有项目、跟踪新发布内容，并提交项目申请收录。",
+        "一个收录 OpenClaw 运行时、生态工具和关键变体的精选目录。",
       browse: "浏览目录",
       submit: "提交项目",
       profileLink: "详情",
-      noteLabel: "这个站是做什么的",
-      noteBody: "追踪官方 OpenClaw 项目、轻量变体和生态工具，并明确区分已确认条目和仍在核实中的名称。",
       signal1Value: "一手来源",
       signal1Label: "只收录仓库、文档和官方发布页",
       signal2Value: "全球优先",
