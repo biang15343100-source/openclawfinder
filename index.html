@@ -39,9 +39,9 @@
             <p class="eyebrow" data-i18n="home.eyebrow">Curated directory</p>
             <h1 data-i18n="home.heroTitle">Find the best OpenClaw projects in one place.</h1>
             <p class="lead" data-i18n="home.heroLead">
-              A fast, searchable index of OpenClaw projects, experiments, and
-              tools. Compare what exists, follow new launches, and submit
-              projects to be featured.
+              A fast, searchable index of OpenClaw runtimes, ecosystem tools,
+              and experiments. Compare what exists, follow new launches, and
+              submit projects to be featured.
             </p>
             <div class="hero-actions">
               <a class="button primary" href="#directory" data-i18n="home.browse">Browse directory</a>
@@ -83,8 +83,8 @@
             <p class="eyebrow" data-i18n="home.directoryEyebrow">Featured projects</p>
             <h2 data-i18n="home.directoryTitle">Starting directory</h2>
             <p data-i18n="home.directoryLead">
-              Replace or expand these entries as you verify more projects. This
-              launch version is intentionally small and clear.
+              A first-pass directory of verified OpenClaw runtimes and official
+              ecosystem projects, based on public primary sources.
             </p>
           </div>
 
@@ -92,46 +92,128 @@
             <article class="project-card">
               <div class="card-top">
                 <h3>qclaw</h3>
-                <span class="tag" data-i18n="home.card1Tag">Featured</span>
+                <span class="tag pending" data-i18n="home.card1Tag">Watching</span>
               </div>
               <p data-i18n="home.card1Body">
-                A notable OpenClaw entry. Add a short explanation of what it
-                does, who it is for, and where it stands out.
+                Reported as a Tencent-flavored OpenClaw variant in media and
+                community posts, but not yet confirmed by a strong public
+                primary source.
               </p>
               <ul class="meta">
-                <li data-i18n="home.card1Meta1">Status: Add verified status</li>
-                <li data-i18n="home.card1Meta2">Best for: Add ideal use case</li>
+                <li data-i18n="home.card1Meta1">Status: Unverified public availability</li>
+                <li data-i18n="home.card1Meta2">Category: Watching</li>
               </ul>
             </article>
 
             <article class="project-card">
               <div class="card-top">
-                <h3>picoclaw</h3>
-                <span class="tag" data-i18n="home.card2Tag">New</span>
+                <h3>OpenClaw</h3>
+                <span class="tag" data-i18n="home.card2Tag">Official</span>
               </div>
               <p data-i18n="home.card2Body">
-                Another OpenClaw project placeholder. Use this card format to
-                keep descriptions concise and comparable.
+                The main project and personal AI assistant runtime, with an
+                official site, docs, and open GitHub repository.
               </p>
               <ul class="meta">
-                <li data-i18n="home.card2Meta1">Status: Add verified status</li>
-                <li data-i18n="home.card2Meta2">Best for: Add ideal use case</li>
+                <li data-i18n="home.card2Meta1">Status: Confirmed official project</li>
+                <li data-i18n="home.card2Meta2">Best for: Starting with the main ecosystem</li>
               </ul>
+              <p class="project-links">
+                <a href="https://openclaw.ai/" target="_blank" rel="noreferrer">Site</a>
+                <a href="https://github.com/openclaw/openclaw" target="_blank" rel="noreferrer">GitHub</a>
+              </p>
             </article>
 
             <article class="project-card">
               <div class="card-top">
-                <h3 data-i18n="home.card3Title">Your next listing</h3>
-                <span class="tag muted" data-i18n="home.card3Tag">Submit</span>
+                <h3 data-i18n="home.card3Title">PicoClaw</h3>
+                <span class="tag" data-i18n="home.card3Tag">Lightweight</span>
               </div>
               <p data-i18n="home.card3Body">
-                Invite builders to submit their project with a link, short
-                summary, and differentiators.
+                A Go-based low-resource OpenClaw-style assistant designed for
+                extremely small hardware and memory budgets.
               </p>
               <ul class="meta">
-                <li data-i18n="home.card3Meta1">Source: GitHub or official site</li>
-                <li data-i18n="home.card3Meta2">Review: Manual before publishing</li>
+                <li data-i18n="home.card3Meta1">Status: Confirmed public repo</li>
+                <li data-i18n="home.card3Meta2">Best for: Edge devices and low-cost hardware</li>
               </ul>
+              <p class="project-links">
+                <a href="https://github.com/sipeed/picoclaw" target="_blank" rel="noreferrer">GitHub</a>
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="card-top">
+                <h3>NanoClaw</h3>
+                <span class="tag" data-i18n="home.card4Tag">Container-first</span>
+              </div>
+              <p data-i18n="home.card4Body">
+                A lightweight alternative focused on containerized execution and
+                safer isolation.
+              </p>
+              <ul class="meta">
+                <li data-i18n="home.card4Meta1">Status: Confirmed public repo</li>
+                <li data-i18n="home.card4Meta2">Best for: Secure, containerized deployments</li>
+              </ul>
+              <p class="project-links">
+                <a href="https://nanoclaw.dev/" target="_blank" rel="noreferrer">Site</a>
+                <a href="https://github.com/qwibitai/nanoclaw" target="_blank" rel="noreferrer">GitHub</a>
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="card-top">
+                <h3>ZeroClaw</h3>
+                <span class="tag" data-i18n="home.card5Tag">Rust</span>
+              </div>
+              <p data-i18n="home.card5Body">
+                A Rust-based runtime and infrastructure approach with migration
+                tooling for existing OpenClaw users.
+              </p>
+              <ul class="meta">
+                <li data-i18n="home.card5Meta1">Status: Confirmed public repo</li>
+                <li data-i18n="home.card5Meta2">Best for: Infra-minded users and migrations</li>
+              </ul>
+              <p class="project-links">
+                <a href="https://github.com/zeroclaw-labs/zeroclaw" target="_blank" rel="noreferrer">GitHub</a>
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="card-top">
+                <h3>ClawHub</h3>
+                <span class="tag" data-i18n="home.card6Tag">Ecosystem</span>
+              </div>
+              <p data-i18n="home.card6Body">
+                The official skill marketplace and registry for installing and
+                publishing OpenClaw skills.
+              </p>
+              <ul class="meta">
+                <li data-i18n="home.card6Meta1">Status: Confirmed official project</li>
+                <li data-i18n="home.card6Meta2">Best for: Discovering and distributing skills</li>
+              </ul>
+              <p class="project-links">
+                <a href="https://docs.openclaw.ai/tools/clawhub" target="_blank" rel="noreferrer">Docs</a>
+                <a href="https://github.com/openclaw/clawhub" target="_blank" rel="noreferrer">GitHub</a>
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="card-top">
+                <h3>OpenProse</h3>
+                <span class="tag" data-i18n="home.card7Tag">Workflow</span>
+              </div>
+              <p data-i18n="home.card7Body">
+                The official workflow and orchestration format for multi-agent
+                OpenClaw setups.
+              </p>
+              <ul class="meta">
+                <li data-i18n="home.card7Meta1">Status: Confirmed official ecosystem</li>
+                <li data-i18n="home.card7Meta2">Best for: Structured multi-agent workflows</li>
+              </ul>
+              <p class="project-links">
+                <a href="https://docs.openclaw.ai/prose" target="_blank" rel="noreferrer">Docs</a>
+              </p>
             </article>
           </div>
         </div>

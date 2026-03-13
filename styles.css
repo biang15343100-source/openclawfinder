@@ -251,9 +251,26 @@ h2 {
   background: var(--accent-soft);
 }
 
+.tag.pending {
+  color: #8a4b12;
+  background: #f8e3cb;
+}
+
 .tag.muted {
   color: var(--muted);
   background: #efe8db;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0 0;
+}
+
+.project-links a {
+  color: var(--accent-dark);
+  font-weight: 700;
 }
 
 .section-accent {
