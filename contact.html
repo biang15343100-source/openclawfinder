@@ -5,46 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | OpenClaw Finder</title>
     <meta
+      id="meta-description"
       name="description"
       content="Contact OpenClaw Finder for project submissions, feedback, and future sponsorships."
     />
     <link rel="canonical" href="https://openclawfinder.com/contact.html" />
     <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/script.js"></script>
   </head>
-  <body>
+  <body data-page="contact">
     <header class="site-header">
-      <div class="wrap nav">
-        <a class="brand" href="/">OpenClaw Finder</a>
-        <nav>
-          <a href="/about.html">About</a>
-          <a href="/submit.html">Submit</a>
-          <a href="/contact.html">Contact</a>
-          <a href="/privacy.html">Privacy</a>
-        </nav>
+      <div class="wrap nav-shell">
+        <div class="nav">
+          <a class="brand" href="/" data-i18n="common.brand">OpenClaw Finder</a>
+          <nav class="main-nav">
+            <a href="/about.html" data-i18n="common.navAbout">About</a>
+            <a href="/submit.html" data-i18n="common.navSubmit">Submit</a>
+            <a href="/contact.html" data-i18n="common.navContact">Contact</a>
+            <a href="/privacy.html" data-i18n="common.navPrivacy">Privacy</a>
+          </nav>
+          <div class="lang-switch" aria-label="Language switcher">
+            <button class="lang-button" type="button" data-lang-button="en">EN</button>
+            <button class="lang-button" type="button" data-lang-button="zh">中文</button>
+          </div>
+        </div>
       </div>
     </header>
     <main class="page-main wrap prose">
-      <p class="eyebrow">Contact</p>
-      <h1>Get in touch</h1>
-      <p>
+      <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+      <h1 data-i18n="contact.bodyTitle">Get in touch</h1>
+      <p data-i18n="contact.body1">
         Reach out for directory feedback, corrections, partnerships, or future
         advertising and sponsorship enquiries.
       </p>
       <div class="info-box">
-        <p><strong>Email:</strong> hello@openclawfinder.com</p>
-        <p><strong>Response time:</strong> usually within a few business days.</p>
+        <p><strong data-i18n="contact.emailLabel">Email:</strong> hello@openclawfinder.com</p>
+        <p><strong data-i18n="contact.responseLabel">Response time:</strong> <span data-i18n="contact.responseBody">usually within a few business days.</span></p>
       </div>
     </main>
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div>
-          <a class="brand footer-brand" href="/">OpenClaw Finder</a>
+          <a class="brand footer-brand" href="/" data-i18n="common.brand">OpenClaw Finder</a>
         </div>
         <div class="footer-links">
-          <a href="/about.html">About</a>
-          <a href="/submit.html">Submit</a>
-          <a href="/contact.html">Contact</a>
-          <a href="/privacy.html">Privacy</a>
+          <a href="/about.html" data-i18n="common.navAbout">About</a>
+          <a href="/submit.html" data-i18n="common.navSubmit">Submit</a>
+          <a href="/contact.html" data-i18n="common.navContact">Contact</a>
+          <a href="/privacy.html" data-i18n="common.navPrivacy">Privacy</a>
         </div>
       </div>
     </footer>

@@ -5,37 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy | OpenClaw Finder</title>
     <meta
+      id="meta-description"
       name="description"
       content="Privacy policy for OpenClaw Finder."
     />
     <link rel="canonical" href="https://openclawfinder.com/privacy.html" />
     <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/script.js"></script>
   </head>
-  <body>
+  <body data-page="privacy">
     <header class="site-header">
-      <div class="wrap nav">
-        <a class="brand" href="/">OpenClaw Finder</a>
-        <nav>
-          <a href="/about.html">About</a>
-          <a href="/submit.html">Submit</a>
-          <a href="/contact.html">Contact</a>
-          <a href="/privacy.html">Privacy</a>
-        </nav>
+      <div class="wrap nav-shell">
+        <div class="nav">
+          <a class="brand" href="/" data-i18n="common.brand">OpenClaw Finder</a>
+          <nav class="main-nav">
+            <a href="/about.html" data-i18n="common.navAbout">About</a>
+            <a href="/submit.html" data-i18n="common.navSubmit">Submit</a>
+            <a href="/contact.html" data-i18n="common.navContact">Contact</a>
+            <a href="/privacy.html" data-i18n="common.navPrivacy">Privacy</a>
+          </nav>
+          <div class="lang-switch" aria-label="Language switcher">
+            <button class="lang-button" type="button" data-lang-button="en">EN</button>
+            <button class="lang-button" type="button" data-lang-button="zh">中文</button>
+          </div>
+        </div>
       </div>
     </header>
     <main class="page-main wrap prose">
-      <p class="eyebrow">Privacy</p>
-      <h1>Privacy policy</h1>
-      <p>
+      <p class="eyebrow" data-i18n="privacy.eyebrow">Privacy</p>
+      <h1 data-i18n="privacy.bodyTitle">Privacy policy</h1>
+      <p data-i18n="privacy.body1">
         OpenClaw Finder may collect basic analytics information such as page
         views, referring pages, and browser information to understand site
         usage.
       </p>
-      <p>
+      <p data-i18n="privacy.body2">
         If you email a submission or contact request, your message and contact
         details are used only to review your project or reply to your enquiry.
       </p>
-      <p>
+      <p data-i18n="privacy.body3">
         This site may use third-party services such as analytics or advertising
         providers in the future. This page should be updated before those
         services are enabled.
@@ -44,13 +52,13 @@
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div>
-          <a class="brand footer-brand" href="/">OpenClaw Finder</a>
+          <a class="brand footer-brand" href="/" data-i18n="common.brand">OpenClaw Finder</a>
         </div>
         <div class="footer-links">
-          <a href="/about.html">About</a>
-          <a href="/submit.html">Submit</a>
-          <a href="/contact.html">Contact</a>
-          <a href="/privacy.html">Privacy</a>
+          <a href="/about.html" data-i18n="common.navAbout">About</a>
+          <a href="/submit.html" data-i18n="common.navSubmit">Submit</a>
+          <a href="/contact.html" data-i18n="common.navContact">Contact</a>
+          <a href="/privacy.html" data-i18n="common.navPrivacy">Privacy</a>
         </div>
       </div>
     </footer>

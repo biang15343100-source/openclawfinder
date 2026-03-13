@@ -5,22 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OpenClaw Finder | Discover OpenClaw Projects</title>
     <meta
+      id="meta-description"
       name="description"
       content="OpenClaw Finder is a curated directory for discovering OpenClaw projects, tools, and experiments such as qclaw and picoclaw."
     />
     <link rel="canonical" href="https://openclawfinder.com/" />
     <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/script.js"></script>
   </head>
-  <body>
+  <body data-page="home">
     <header class="site-header">
-      <div class="wrap nav">
-        <a class="brand" href="/">OpenClaw Finder</a>
-        <nav>
-          <a href="/about.html">About</a>
-          <a href="/submit.html">Submit</a>
-          <a href="/contact.html">Contact</a>
-          <a href="/privacy.html">Privacy</a>
-        </nav>
+      <div class="wrap nav-shell">
+        <div class="nav">
+          <a class="brand" href="/" data-i18n="common.brand">OpenClaw Finder</a>
+          <nav class="main-nav">
+            <a href="/about.html" data-i18n="common.navAbout">About</a>
+            <a href="/submit.html" data-i18n="common.navSubmit">Submit</a>
+            <a href="/contact.html" data-i18n="common.navContact">Contact</a>
+            <a href="/privacy.html" data-i18n="common.navPrivacy">Privacy</a>
+          </nav>
+          <div class="lang-switch" aria-label="Language switcher">
+            <button class="lang-button" type="button" data-lang-button="en">EN</button>
+            <button class="lang-button" type="button" data-lang-button="zh">中文</button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -28,25 +36,25 @@
       <section class="hero">
         <div class="wrap hero-grid">
           <div>
-            <p class="eyebrow">Curated directory</p>
-            <h1>Find the best OpenClaw projects in one place.</h1>
-            <p class="lead">
+            <p class="eyebrow" data-i18n="home.eyebrow">Curated directory</p>
+            <h1 data-i18n="home.heroTitle">Find the best OpenClaw projects in one place.</h1>
+            <p class="lead" data-i18n="home.heroLead">
               A fast, searchable index of OpenClaw projects, experiments, and
               tools. Compare what exists, follow new launches, and submit
               projects to be featured.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#directory">Browse directory</a>
-              <a class="button secondary" href="/submit.html">Submit a project</a>
+              <a class="button primary" href="#directory" data-i18n="home.browse">Browse directory</a>
+              <a class="button secondary" href="/submit.html" data-i18n="home.submit">Submit a project</a>
             </div>
           </div>
           <aside class="hero-card">
-            <p class="stat-label">Launch status</p>
-            <p class="stat-value">Public beta</p>
+            <p class="stat-label" data-i18n="home.statusLabel">Launch status</p>
+            <p class="stat-value" data-i18n="home.statusValue">Public beta</p>
             <ul>
-              <li>Curated manually</li>
-              <li>Built for global access</li>
-              <li>Open to sponsorships later</li>
+              <li data-i18n="home.statusItem1">Curated manually</li>
+              <li data-i18n="home.statusItem2">Built for global access</li>
+              <li data-i18n="home.statusItem3">Open to sponsorships later</li>
             </ul>
           </aside>
         </div>
@@ -55,16 +63,16 @@
       <section class="section">
         <div class="wrap feature-strip">
           <article>
-            <h2>Discover</h2>
-            <p>Browse active OpenClaw projects without digging through scattered links.</p>
+            <h2 data-i18n="home.feature1Title">Discover</h2>
+            <p data-i18n="home.feature1Body">Browse active OpenClaw projects without digging through scattered links.</p>
           </article>
           <article>
-            <h2>Compare</h2>
-            <p>Use tags and summaries to quickly judge what is worth trying.</p>
+            <h2 data-i18n="home.feature2Title">Compare</h2>
+            <p data-i18n="home.feature2Body">Use tags and summaries to quickly judge what is worth trying.</p>
           </article>
           <article>
-            <h2>Track</h2>
-            <p>Follow updates as new OpenClaw tools and variants launch.</p>
+            <h2 data-i18n="home.feature3Title">Track</h2>
+            <p data-i18n="home.feature3Body">Follow updates as new OpenClaw tools and variants launch.</p>
           </article>
         </div>
       </section>
@@ -72,9 +80,9 @@
       <section class="section" id="directory">
         <div class="wrap">
           <div class="section-heading">
-            <p class="eyebrow">Featured projects</p>
-            <h2>Starting directory</h2>
-            <p>
+            <p class="eyebrow" data-i18n="home.directoryEyebrow">Featured projects</p>
+            <h2 data-i18n="home.directoryTitle">Starting directory</h2>
+            <p data-i18n="home.directoryLead">
               Replace or expand these entries as you verify more projects. This
               launch version is intentionally small and clear.
             </p>
@@ -84,45 +92,45 @@
             <article class="project-card">
               <div class="card-top">
                 <h3>qclaw</h3>
-                <span class="tag">Featured</span>
+                <span class="tag" data-i18n="home.card1Tag">Featured</span>
               </div>
-              <p>
+              <p data-i18n="home.card1Body">
                 A notable OpenClaw entry. Add a short explanation of what it
                 does, who it is for, and where it stands out.
               </p>
               <ul class="meta">
-                <li>Status: Add verified status</li>
-                <li>Best for: Add ideal use case</li>
+                <li data-i18n="home.card1Meta1">Status: Add verified status</li>
+                <li data-i18n="home.card1Meta2">Best for: Add ideal use case</li>
               </ul>
             </article>
 
             <article class="project-card">
               <div class="card-top">
                 <h3>picoclaw</h3>
-                <span class="tag">New</span>
+                <span class="tag" data-i18n="home.card2Tag">New</span>
               </div>
-              <p>
+              <p data-i18n="home.card2Body">
                 Another OpenClaw project placeholder. Use this card format to
                 keep descriptions concise and comparable.
               </p>
               <ul class="meta">
-                <li>Status: Add verified status</li>
-                <li>Best for: Add ideal use case</li>
+                <li data-i18n="home.card2Meta1">Status: Add verified status</li>
+                <li data-i18n="home.card2Meta2">Best for: Add ideal use case</li>
               </ul>
             </article>
 
             <article class="project-card">
               <div class="card-top">
-                <h3>Your next listing</h3>
-                <span class="tag muted">Submit</span>
+                <h3 data-i18n="home.card3Title">Your next listing</h3>
+                <span class="tag muted" data-i18n="home.card3Tag">Submit</span>
               </div>
-              <p>
+              <p data-i18n="home.card3Body">
                 Invite builders to submit their project with a link, short
                 summary, and differentiators.
               </p>
               <ul class="meta">
-                <li>Source: GitHub or official site</li>
-                <li>Review: Manual before publishing</li>
+                <li data-i18n="home.card3Meta1">Source: GitHub or official site</li>
+                <li data-i18n="home.card3Meta2">Review: Manual before publishing</li>
               </ul>
             </article>
           </div>
@@ -132,14 +140,14 @@
       <section class="section section-accent">
         <div class="wrap cta">
           <div>
-            <p class="eyebrow">Grow the directory</p>
-            <h2>Want your OpenClaw project listed?</h2>
-            <p>
+            <p class="eyebrow" data-i18n="home.ctaEyebrow">Grow the directory</p>
+            <h2 data-i18n="home.ctaTitle">Want your OpenClaw project listed?</h2>
+            <p data-i18n="home.ctaBody">
               Use the submission page to send your project name, URL, short
               description, and launch notes.
             </p>
           </div>
-          <a class="button primary" href="/submit.html">Submit now</a>
+          <a class="button primary" href="/submit.html" data-i18n="home.ctaButton">Submit now</a>
         </div>
       </section>
     </main>
@@ -147,14 +155,14 @@
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div>
-          <a class="brand footer-brand" href="/">OpenClaw Finder</a>
-          <p>The public directory for discovering OpenClaw projects.</p>
+          <a class="brand footer-brand" href="/" data-i18n="common.brand">OpenClaw Finder</a>
+          <p data-i18n="home.footerText">The public directory for discovering OpenClaw projects.</p>
         </div>
         <div class="footer-links">
-          <a href="/about.html">About</a>
-          <a href="/submit.html">Submit</a>
-          <a href="/contact.html">Contact</a>
-          <a href="/privacy.html">Privacy</a>
+          <a href="/about.html" data-i18n="common.navAbout">About</a>
+          <a href="/submit.html" data-i18n="common.navSubmit">Submit</a>
+          <a href="/contact.html" data-i18n="common.navContact">Contact</a>
+          <a href="/privacy.html" data-i18n="common.navPrivacy">Privacy</a>
         </div>
       </div>
     </footer>

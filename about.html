@@ -5,41 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | OpenClaw Finder</title>
     <meta
+      id="meta-description"
       name="description"
       content="Learn what OpenClaw Finder is, who it is for, and how projects are selected."
     />
     <link rel="canonical" href="https://openclawfinder.com/about.html" />
     <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/script.js"></script>
   </head>
-  <body>
+  <body data-page="about">
     <header class="site-header">
-      <div class="wrap nav">
-        <a class="brand" href="/">OpenClaw Finder</a>
-        <nav>
-          <a href="/about.html">About</a>
-          <a href="/submit.html">Submit</a>
-          <a href="/contact.html">Contact</a>
-          <a href="/privacy.html">Privacy</a>
-        </nav>
+      <div class="wrap nav-shell">
+        <div class="nav">
+          <a class="brand" href="/" data-i18n="common.brand">OpenClaw Finder</a>
+          <nav class="main-nav">
+            <a href="/about.html" data-i18n="common.navAbout">About</a>
+            <a href="/submit.html" data-i18n="common.navSubmit">Submit</a>
+            <a href="/contact.html" data-i18n="common.navContact">Contact</a>
+            <a href="/privacy.html" data-i18n="common.navPrivacy">Privacy</a>
+          </nav>
+          <div class="lang-switch" aria-label="Language switcher">
+            <button class="lang-button" type="button" data-lang-button="en">EN</button>
+            <button class="lang-button" type="button" data-lang-button="zh">中文</button>
+          </div>
+        </div>
       </div>
     </header>
     <main class="page-main wrap prose">
-      <p class="eyebrow">About</p>
-      <h1>Why this site exists</h1>
-      <p>
+      <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+      <h1 data-i18n="about.bodyTitle">Why this site exists</h1>
+      <p data-i18n="about.body1">
         OpenClaw Finder is a curated navigation site for people trying to
         understand the growing OpenClaw ecosystem. The goal is simple: make it
         easier to discover projects, compare them quickly, and follow new
         launches without digging across scattered links.
       </p>
-      <h2>What gets listed</h2>
-      <p>
+      <h2 data-i18n="about.section1Title">What gets listed</h2>
+      <p data-i18n="about.section1Body">
         Projects should be directly relevant to the OpenClaw ecosystem and
         should point to a working homepage, repository, or product page. Entries
         may be edited for clarity and consistency.
       </p>
-      <h2>How listings are reviewed</h2>
-      <p>
+      <h2 data-i18n="about.section2Title">How listings are reviewed</h2>
+      <p data-i18n="about.section2Body">
         Submissions are reviewed manually before they appear on the site. That
         helps keep the directory useful and reduces low-quality entries.
       </p>
@@ -47,13 +55,13 @@
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div>
-          <a class="brand footer-brand" href="/">OpenClaw Finder</a>
+          <a class="brand footer-brand" href="/" data-i18n="common.brand">OpenClaw Finder</a>
         </div>
         <div class="footer-links">
-          <a href="/about.html">About</a>
-          <a href="/submit.html">Submit</a>
-          <a href="/contact.html">Contact</a>
-          <a href="/privacy.html">Privacy</a>
+          <a href="/about.html" data-i18n="common.navAbout">About</a>
+          <a href="/submit.html" data-i18n="common.navSubmit">Submit</a>
+          <a href="/contact.html" data-i18n="common.navContact">Contact</a>
+          <a href="/privacy.html" data-i18n="common.navPrivacy">Privacy</a>
         </div>
       </div>
     </footer>
