@@ -4,36 +4,45 @@
     <loc>https://openclawfinder.com/</loc>
   </url>
   <url>
-    <loc>https://openclawfinder.com/about.html</loc>
+    <loc>https://openclawfinder.com/about</loc>
   </url>
   <url>
-    <loc>https://openclawfinder.com/submit.html</loc>
+    <loc>https://openclawfinder.com/submit</loc>
   </url>
   <url>
-    <loc>https://openclawfinder.com/contact.html</loc>
+    <loc>https://openclawfinder.com/contact</loc>
   </url>
   <url>
-    <loc>https://openclawfinder.com/privacy.html</loc>
+    <loc>https://openclawfinder.com/privacy</loc>
   </url>
   <url>
-    <loc>https://openclawfinder.com/projects/qclaw.html</loc>
+    <loc>https://openclawfinder.com/projects/qclaw</loc>
   </url>
   <url>
-    <loc>https://openclawfinder.com/projects/openclaw.html</loc>
+    <loc>https://openclawfinder.com/projects/openclaw</loc>
   </url>
   <url>
-    <loc>https://openclawfinder.com/projects/picoclaw.html</loc>
+    <loc>https://openclawfinder.com/projects/picoclaw</loc>
   </url>
   <url>
-    <loc>https://openclawfinder.com/projects/nanoclaw.html</loc>
+    <loc>https://openclawfinder.com/projects/nanoclaw</loc>
   </url>
   <url>
-    <loc>https://openclawfinder.com/projects/zeroclaw.html</loc>
+    <loc>https://openclawfinder.com/projects/zeroclaw</loc>
   </url>
   <url>
-    <loc>https://openclawfinder.com/projects/clawhub.html</loc>
+    <loc>https://openclawfinder.com/projects/clawhub</loc>
   </url>
   <url>
-    <loc>https://openclawfinder.com/projects/openprose.html</loc>
+    <loc>https://openclawfinder.com/projects/openprose</loc>
+  </url>
+  <url>
+    <loc>https://openclawfinder.com/projects/copaw</loc>
+  </url>
+  <url>
+    <loc>https://openclawfinder.com/projects/ironclaw</loc>
+  </url>
+  <url>
+    <loc>https://openclawfinder.com/projects/nanobot</loc>
   </url>
 </urlset>

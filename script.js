@@ -890,10 +890,20 @@ function applyLanguage(language) {
   }
 
   const metaDescription = document.getElementById("meta-description");
+  const metaOgTitle = document.getElementById("meta-og-title");
+  const metaOgDescription = document.getElementById("meta-og-description");
+  const metaTwitterTitle = document.getElementById("meta-twitter-title");
+  const metaTwitterDescription = document.getElementById("meta-twitter-description");
   const pageKeys = pageTextKeys[page];
   if (pageKeys) {
-    document.title = getValue(language, pageKeys.title);
-    if (metaDescription) metaDescription.setAttribute("content", getValue(language, pageKeys.description));
+    const title = getValue(language, pageKeys.title);
+    const description = getValue(language, pageKeys.description);
+    document.title = title;
+    if (metaDescription) metaDescription.setAttribute("content", description);
+    if (metaOgTitle) metaOgTitle.setAttribute("content", title);
+    if (metaOgDescription) metaOgDescription.setAttribute("content", description);
+    if (metaTwitterTitle) metaTwitterTitle.setAttribute("content", title);
+    if (metaTwitterDescription) metaTwitterDescription.setAttribute("content", description);
   }
 
   for (const button of document.querySelectorAll("[data-lang-button]")) {
