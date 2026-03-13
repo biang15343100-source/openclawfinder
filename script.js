@@ -140,9 +140,10 @@ const translations = {
       description:
         "OpenClaw Finder is a curated directory for discovering OpenClaw projects, tools, and experiments such as qclaw and picoclaw.",
       eyebrow: "Curated directory",
-      heroTitle: "Find the best OpenClaw projects in one place.",
+      heroTitle:
+        "OpenClaw<br /><span class=\"hero-title-accent\">Lobster</span><span class=\"hero-title-emoji\">🦞</span><span class=\"hero-title-accent\">Hub</span>",
       heroLead:
-        "A curated directory of OpenClaw runtimes, ecosystem tools, and notable variants.",
+        "A live catch of Claw projects across the web, with new launches, updates, and forks synced here within 24 hours.",
       browse: "Browse directory",
       submit: "Submit a project",
       profileLink: "Profile",
@@ -397,9 +398,10 @@ const translations = {
       description:
         "OpenClaw Finder 是一个精选导航站，用来发现 qclaw、picoclaw 等 OpenClaw 项目、工具和实验。",
       eyebrow: "精选导航",
-      heroTitle: "在一个地方找到值得关注的 OpenClaw 项目。",
+      heroTitle:
+        "OpenClaw<br /><span class=\"hero-title-accent\">龙虾</span><span class=\"hero-title-emoji\">🦞</span><span class=\"hero-title-accent\">聚集地</span>",
       heroLead:
-        "一个收录 OpenClaw 运行时、生态工具和关键变体的精选目录。",
+        "把市面上已经冒头的 Claw 项目都捞上来，新发布、刚更新、值得看的变体，尽量 24 小时内同步到这里。",
       browse: "浏览目录",
       submit: "提交项目",
       profileLink: "详情",
@@ -533,6 +535,12 @@ function applyLanguage(language) {
     const key = element.dataset.i18n;
     const value = getValue(language, key);
     if (typeof value === "string") element.textContent = value;
+  }
+
+  for (const element of document.querySelectorAll("[data-i18n-html]")) {
+    const key = element.dataset.i18nHtml;
+    const value = getValue(language, key);
+    if (typeof value === "string") element.innerHTML = value;
   }
 
   const metaDescription = document.getElementById("meta-description");
