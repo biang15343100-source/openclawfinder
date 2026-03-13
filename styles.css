@@ -160,6 +160,13 @@ a {
   text-align: center;
 }
 
+.hero-art {
+  display: block;
+  width: min(100%, 380px);
+  margin: 0 auto 20px;
+  border-radius: 32px;
+}
+
 .eyebrow {
   margin: 0 0 10px;
   color: var(--text);
@@ -821,6 +828,11 @@ h2 {
 @media (max-width: 560px) {
   .wrap {
     width: min(100% - 24px, 1120px);
+  }
+
+  .hero-art {
+    margin-bottom: 20px;
+    border-radius: 24px;
   }
 
   .brand {
