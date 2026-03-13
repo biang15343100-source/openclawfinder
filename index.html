@@ -100,141 +100,239 @@
               A first-pass directory of verified OpenClaw runtimes and official
               ecosystem projects, based on public primary sources.
             </p>
+            <div class="directory-jumps">
+              <a class="button secondary" href="#variants" data-i18n="home.category1Button">Jump to variants</a>
+              <a class="button secondary" href="#tools" data-i18n="home.category2Button">Jump to tools</a>
+            </div>
           </div>
 
-          <div class="card-grid">
-            <article class="project-card">
-              <div class="card-top">
-                <h3><a href="/projects/qclaw.html">QClaw</a></h3>
-                <span class="tag pending" data-i18n="home.card1Tag">Watching</span>
-              </div>
-              <p data-i18n="home.card1Body">
-                Reported as a Tencent-flavored OpenClaw variant in media and
-                community posts, but not yet confirmed by a strong public
-                primary source.
+          <div class="directory-group" id="variants">
+            <div class="directory-group-heading">
+              <h3><span class="group-icon" aria-hidden="true">🦞</span><span data-i18n="home.category1Title">OpenClaw and variants</span></h3>
+              <p data-i18n="home.category1Lead">
+                Core runtimes, forks, and notable implementation paths around the main OpenClaw stack.
               </p>
-              <ul class="meta">
-                <li data-i18n="home.card1Meta1">Status: Unverified public availability</li>
-                <li data-i18n="home.card1Meta2">Category: Watching</li>
-              </ul>
-            </article>
+            </div>
 
-            <article class="project-card">
-              <div class="card-top">
-                <h3><a href="/projects/openclaw.html">OpenClaw</a></h3>
-                <span class="tag" data-i18n="home.card2Tag">Official</span>
-              </div>
-              <p data-i18n="home.card2Body">
-                The main project and personal AI assistant runtime, with an
-                official site, docs, and open GitHub repository.
-              </p>
-              <ul class="meta">
-                <li data-i18n="home.card2Meta1">Status: Confirmed official project</li>
-                <li data-i18n="home.card2Meta2">Best for: Starting with the main ecosystem</li>
-              </ul>
-              <p class="project-links">
-                <a href="/projects/openclaw.html" data-i18n="home.profileLink">Profile</a>
-                <a href="https://openclaw.ai/" target="_blank" rel="noreferrer">Site</a>
-                <a href="https://github.com/openclaw/openclaw" target="_blank" rel="noreferrer">GitHub</a>
-              </p>
-            </article>
+            <div class="card-grid">
+              <article class="project-card">
+                <div class="card-top">
+                  <h3><a href="/projects/openclaw.html">OpenClaw</a></h3>
+                  <span class="tag" data-i18n="home.card2Tag">Official</span>
+                </div>
+                <p data-i18n="home.card2Body">
+                  The main project and personal AI assistant runtime, with an
+                  official site, docs, and open GitHub repository.
+                </p>
+                <div class="card-ratings">
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEase">Getting started</span><span class="rating-stars" data-i18n="home.card2RateEase">🌟🌟🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEcosystem">User ecosystem</span><span class="rating-stars" data-i18n="home.card2RateEcosystem">🌟🌟🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricExtensibility">Extension room</span><span class="rating-stars" data-i18n="home.card2RateExtensibility">🌟🌟🌟🌟🌟</span></div>
+                </div>
+                <p class="project-links">
+                  <a href="/projects/openclaw.html" data-i18n="home.profileLink">Profile</a>
+                  <a href="https://openclaw.ai/" target="_blank" rel="noreferrer">Site</a>
+                  <a class="repo-link" href="https://github.com/openclaw/openclaw" target="_blank" rel="noreferrer"><span>GitHub</span><span class="repo-stars">308k stars</span></a>
+                </p>
+              </article>
 
-            <article class="project-card">
-              <div class="card-top">
-                <h3><a href="/projects/picoclaw.html" data-i18n="home.card3Title">PicoClaw</a></h3>
-                <span class="tag" data-i18n="home.card3Tag">Lightweight</span>
-              </div>
-              <p data-i18n="home.card3Body">
-                A Go-based low-resource OpenClaw-style assistant designed for
-                extremely small hardware and memory budgets.
-              </p>
-              <ul class="meta">
-                <li data-i18n="home.card3Meta1">Status: Confirmed public repo</li>
-                <li data-i18n="home.card3Meta2">Best for: Edge devices and low-cost hardware</li>
-              </ul>
-              <p class="project-links">
-                <a href="/projects/picoclaw.html" data-i18n="home.profileLink">Profile</a>
-                <a href="https://github.com/sipeed/picoclaw" target="_blank" rel="noreferrer">GitHub</a>
-              </p>
-            </article>
+              <article class="project-card">
+                <div class="card-top">
+                  <h3><a href="/projects/zeroclaw.html">ZeroClaw</a></h3>
+                  <span class="tag" data-i18n="home.card5Tag">Rust</span>
+                </div>
+                <p data-i18n="home.card5Body">
+                  A Rust-based runtime and infrastructure approach with migration
+                  tooling for existing OpenClaw users.
+                </p>
+                <div class="card-ratings">
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEase">Getting started</span><span class="rating-stars" data-i18n="home.card5RateEase">🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEcosystem">User ecosystem</span><span class="rating-stars" data-i18n="home.card5RateEcosystem">🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricExtensibility">Extension room</span><span class="rating-stars" data-i18n="home.card5RateExtensibility">🌟🌟🌟🌟🌟</span></div>
+                </div>
+                <p class="project-links">
+                  <a href="/projects/zeroclaw.html" data-i18n="home.profileLink">Profile</a>
+                  <a class="repo-link" href="https://github.com/zeroclaw-labs/zeroclaw" target="_blank" rel="noreferrer"><span>GitHub</span><span class="repo-stars">26.5k stars</span></a>
+                </p>
+              </article>
 
-            <article class="project-card">
-              <div class="card-top">
-                <h3><a href="/projects/nanoclaw.html">NanoClaw</a></h3>
-                <span class="tag" data-i18n="home.card4Tag">Container-first</span>
-              </div>
-              <p data-i18n="home.card4Body">
-                A lightweight alternative focused on containerized execution and
-                safer isolation.
-              </p>
-              <ul class="meta">
-                <li data-i18n="home.card4Meta1">Status: Confirmed public repo</li>
-                <li data-i18n="home.card4Meta2">Best for: Secure, containerized deployments</li>
-              </ul>
-              <p class="project-links">
-                <a href="/projects/nanoclaw.html" data-i18n="home.profileLink">Profile</a>
-                <a href="https://nanoclaw.dev/" target="_blank" rel="noreferrer">Site</a>
-                <a href="https://github.com/qwibitai/nanoclaw" target="_blank" rel="noreferrer">GitHub</a>
-              </p>
-            </article>
+              <article class="project-card">
+                <div class="card-top">
+                  <h3><a href="/projects/picoclaw.html" data-i18n="home.card3Title">PicoClaw</a></h3>
+                  <span class="tag" data-i18n="home.card3Tag">Lightweight</span>
+                </div>
+                <p data-i18n="home.card3Body">
+                  A Go-based low-resource OpenClaw-style assistant designed for
+                  extremely small hardware and memory budgets.
+                </p>
+                <div class="card-ratings">
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEase">Getting started</span><span class="rating-stars" data-i18n="home.card3RateEase">🌟🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEcosystem">User ecosystem</span><span class="rating-stars" data-i18n="home.card3RateEcosystem">🌟🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricExtensibility">Extension room</span><span class="rating-stars" data-i18n="home.card3RateExtensibility">🌟🌟🌟</span></div>
+                </div>
+                <p class="project-links">
+                  <a href="/projects/picoclaw.html" data-i18n="home.profileLink">Profile</a>
+                  <a class="repo-link" href="https://github.com/sipeed/picoclaw" target="_blank" rel="noreferrer"><span>GitHub</span><span class="repo-stars">24.4k stars</span></a>
+                </p>
+              </article>
 
-            <article class="project-card">
-              <div class="card-top">
-                <h3><a href="/projects/zeroclaw.html">ZeroClaw</a></h3>
-                <span class="tag" data-i18n="home.card5Tag">Rust</span>
-              </div>
-              <p data-i18n="home.card5Body">
-                A Rust-based runtime and infrastructure approach with migration
-                tooling for existing OpenClaw users.
-              </p>
-              <ul class="meta">
-                <li data-i18n="home.card5Meta1">Status: Confirmed public repo</li>
-                <li data-i18n="home.card5Meta2">Best for: Infra-minded users and migrations</li>
-              </ul>
-              <p class="project-links">
-                <a href="/projects/zeroclaw.html" data-i18n="home.profileLink">Profile</a>
-                <a href="https://github.com/zeroclaw-labs/zeroclaw" target="_blank" rel="noreferrer">GitHub</a>
-              </p>
-            </article>
+              <article class="project-card">
+                <div class="card-top">
+                  <h3><a href="/projects/nanoclaw.html">NanoClaw</a></h3>
+                  <span class="tag" data-i18n="home.card4Tag">Container-first</span>
+                </div>
+                <p data-i18n="home.card4Body">
+                  A lightweight alternative focused on containerized execution and
+                  safer isolation.
+                </p>
+                <div class="card-ratings">
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEase">Getting started</span><span class="rating-stars" data-i18n="home.card4RateEase">🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEcosystem">User ecosystem</span><span class="rating-stars" data-i18n="home.card4RateEcosystem">🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricExtensibility">Extension room</span><span class="rating-stars" data-i18n="home.card4RateExtensibility">🌟🌟🌟🌟</span></div>
+                </div>
+                <p class="project-links">
+                  <a href="/projects/nanoclaw.html" data-i18n="home.profileLink">Profile</a>
+                  <a href="https://nanoclaw.dev/" target="_blank" rel="noreferrer">Site</a>
+                  <a class="repo-link" href="https://github.com/qwibitai/nanoclaw" target="_blank" rel="noreferrer"><span>GitHub</span><span class="repo-stars">22.1k stars</span></a>
+                </p>
+              </article>
 
-            <article class="project-card">
-              <div class="card-top">
-                <h3><a href="/projects/clawhub.html">ClawHub</a></h3>
-                <span class="tag" data-i18n="home.card6Tag">Ecosystem</span>
-              </div>
-              <p data-i18n="home.card6Body">
-                The official skill marketplace and registry for installing and
-                publishing OpenClaw skills.
-              </p>
-              <ul class="meta">
-                <li data-i18n="home.card6Meta1">Status: Confirmed official project</li>
-                <li data-i18n="home.card6Meta2">Best for: Discovering and distributing skills</li>
-              </ul>
-              <p class="project-links">
-                <a href="/projects/clawhub.html" data-i18n="home.profileLink">Profile</a>
-                <a href="https://docs.openclaw.ai/tools/clawhub" target="_blank" rel="noreferrer">Docs</a>
-                <a href="https://github.com/openclaw/clawhub" target="_blank" rel="noreferrer">GitHub</a>
-              </p>
-            </article>
+              <article class="project-card">
+                <div class="card-top">
+                  <h3><a href="/projects/nanobot.html">Nanobot</a></h3>
+                  <span class="tag" data-i18n="home.card8Tag">Python</span>
+                </div>
+                <p data-i18n="home.card8Body">
+                  A tiny Python take on OpenClaw that keeps the core loop readable,
+                  hackable, and much easier to study than the full stack.
+                </p>
+                <div class="card-ratings">
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEase">Getting started</span><span class="rating-stars" data-i18n="home.card8RateEase">🌟🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEcosystem">User ecosystem</span><span class="rating-stars" data-i18n="home.card8RateEcosystem">🌟🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricExtensibility">Extension room</span><span class="rating-stars" data-i18n="home.card8RateExtensibility">🌟🌟🌟🌟🌟</span></div>
+                </div>
+                <p class="project-links">
+                  <a href="/projects/nanobot.html" data-i18n="home.profileLink">Profile</a>
+                  <a href="https://nanobot.club/" target="_blank" rel="noreferrer">Site</a>
+                  <a class="repo-link" href="https://github.com/HKUDS/nanobot" target="_blank" rel="noreferrer"><span>GitHub</span><span class="repo-stars">17.8k stars</span></a>
+                </p>
+              </article>
 
-            <article class="project-card">
-              <div class="card-top">
-                <h3><a href="/projects/openprose.html">OpenProse</a></h3>
-                <span class="tag" data-i18n="home.card7Tag">Workflow</span>
-              </div>
-              <p data-i18n="home.card7Body">
-                The official workflow and orchestration format for multi-agent
-                OpenClaw setups.
+              <article class="project-card">
+                <div class="card-top">
+                  <h3><a href="/projects/copaw.html">CoPaw</a></h3>
+                  <span class="tag" data-i18n="home.card9Tag">Local-first</span>
+                </div>
+                <p data-i18n="home.card9Body">
+                  An easier, more modular personal agent workstation with strong
+                  local-model support and chat app integrations out of the box.
+                </p>
+                <div class="card-ratings">
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEase">Getting started</span><span class="rating-stars" data-i18n="home.card9RateEase">🌟🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEcosystem">User ecosystem</span><span class="rating-stars" data-i18n="home.card9RateEcosystem">🌟🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricExtensibility">Extension room</span><span class="rating-stars" data-i18n="home.card9RateExtensibility">🌟🌟🌟🌟</span></div>
+                </div>
+                <p class="project-links">
+                  <a href="/projects/copaw.html" data-i18n="home.profileLink">Profile</a>
+                  <a href="https://copaw.bot/" target="_blank" rel="noreferrer">Site</a>
+                  <a class="repo-link" href="https://github.com/agentscope-ai/CoPaw" target="_blank" rel="noreferrer"><span>GitHub</span><span class="repo-stars">9k stars</span></a>
+                </p>
+              </article>
+
+              <article class="project-card">
+                <div class="card-top">
+                  <h3><a href="/projects/ironclaw.html">IronClaw</a></h3>
+                  <span class="tag" data-i18n="home.card10Tag">Secure</span>
+                </div>
+                <p data-i18n="home.card10Body">
+                  A Rust security-focused branch that leans into privacy, secret
+                  handling, and safer execution instead of consumer polish.
+                </p>
+                <div class="card-ratings">
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEase">Getting started</span><span class="rating-stars" data-i18n="home.card10RateEase">🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEcosystem">User ecosystem</span><span class="rating-stars" data-i18n="home.card10RateEcosystem">🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricExtensibility">Extension room</span><span class="rating-stars" data-i18n="home.card10RateExtensibility">🌟🌟🌟🌟</span></div>
+                </div>
+                <p class="project-links">
+                  <a href="/projects/ironclaw.html" data-i18n="home.profileLink">Profile</a>
+                  <a href="https://www.ironclaw.com/" target="_blank" rel="noreferrer">Site</a>
+                  <a class="repo-link" href="https://github.com/nearai/ironclaw" target="_blank" rel="noreferrer"><span>GitHub</span><span class="repo-stars">4k stars</span></a>
+                </p>
+              </article>
+
+              <article class="project-card">
+                <div class="card-top">
+                  <h3><a href="/projects/qclaw.html">QClaw</a></h3>
+                  <span class="tag pending" data-i18n="home.card1Tag">Tencent</span>
+                </div>
+                <p data-i18n="home.card1Body">
+                  A more localized, one-click OpenClaw route for WeChat and QQ
+                  scenarios. Right now it still needs a beta activation code, so
+                  the appeal is convenience more than open self-hosting.
+                </p>
+                <div class="card-ratings">
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEase">Getting started</span><span class="rating-stars" data-i18n="home.card1RateEase">🌟🌟🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEcosystem">User ecosystem</span><span class="rating-stars" data-i18n="home.card1RateEcosystem">🌟🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricExtensibility">Extension room</span><span class="rating-stars" data-i18n="home.card1RateExtensibility">🌟🌟🌟</span></div>
+                </div>
+                <p class="project-links">
+                  <a href="/projects/qclaw.html" data-i18n="home.profileLink">Profile</a>
+                  <a href="https://qclawhub.com/" target="_blank" rel="noreferrer">Site</a>
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="directory-group" id="tools">
+            <div class="directory-group-heading">
+              <h3><span class="group-icon" aria-hidden="true">🧰</span><span data-i18n="home.category2Title">Tools and ecosystem utilities</span></h3>
+              <p data-i18n="home.category2Lead">
+                Practical tools around the ecosystem, including skills, workflows, and related utility layers.
               </p>
-              <ul class="meta">
-                <li data-i18n="home.card7Meta1">Status: Confirmed official ecosystem</li>
-                <li data-i18n="home.card7Meta2">Best for: Structured multi-agent workflows</li>
-              </ul>
-              <p class="project-links">
-                <a href="/projects/openprose.html" data-i18n="home.profileLink">Profile</a>
-                <a href="https://docs.openclaw.ai/prose" target="_blank" rel="noreferrer">Docs</a>
-              </p>
-            </article>
+            </div>
+
+            <div class="card-grid">
+              <article class="project-card">
+                <div class="card-top">
+                  <h3><a href="/projects/clawhub.html">ClawHub</a></h3>
+                  <span class="tag" data-i18n="home.card6Tag">Ecosystem</span>
+                </div>
+                <p data-i18n="home.card6Body">
+                  The official skill marketplace and registry for installing and
+                  publishing OpenClaw skills.
+                </p>
+                <div class="card-ratings">
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEase">Getting started</span><span class="rating-stars" data-i18n="home.card6RateEase">🌟🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEcosystem">User ecosystem</span><span class="rating-stars" data-i18n="home.card6RateEcosystem">🌟🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricExtensibility">Extension room</span><span class="rating-stars" data-i18n="home.card6RateExtensibility">🌟🌟🌟🌟</span></div>
+                </div>
+                <p class="project-links">
+                  <a href="/projects/clawhub.html" data-i18n="home.profileLink">Profile</a>
+                  <a href="https://docs.openclaw.ai/tools/clawhub" target="_blank" rel="noreferrer">Docs</a>
+                  <a class="repo-link" href="https://github.com/openclaw/clawhub" target="_blank" rel="noreferrer"><span>GitHub</span><span class="repo-stars">5.7k stars</span></a>
+                </p>
+              </article>
+
+              <article class="project-card">
+                <div class="card-top">
+                  <h3><a href="/projects/openprose.html">OpenProse</a></h3>
+                  <span class="tag" data-i18n="home.card7Tag">Workflow</span>
+                </div>
+                <p data-i18n="home.card7Body">
+                  The official workflow and orchestration format for multi-agent
+                  OpenClaw setups.
+                </p>
+                <div class="card-ratings">
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEase">Getting started</span><span class="rating-stars" data-i18n="home.card7RateEase">🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricEcosystem">User ecosystem</span><span class="rating-stars" data-i18n="home.card7RateEcosystem">🌟🌟🌟🌟</span></div>
+                  <div class="rating-item"><span class="rating-label" data-i18n="home.metricExtensibility">Extension room</span><span class="rating-stars" data-i18n="home.card7RateExtensibility">🌟🌟🌟🌟🌟</span></div>
+                </div>
+                <p class="project-links">
+                  <a href="/projects/openprose.html" data-i18n="home.profileLink">Profile</a>
+                  <a href="https://docs.openclaw.ai/prose" target="_blank" rel="noreferrer">Docs</a>
+                </p>
+              </article>
+            </div>
           </div>
         </div>
       </section>

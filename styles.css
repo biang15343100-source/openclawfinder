@@ -311,8 +311,9 @@ h2 {
 
 .signal-value {
   margin: 0 0 8px;
-  font-size: 1.15rem;
+  font-size: 1.22rem;
   font-weight: 700;
+  line-height: 1.25;
 }
 
 .signal-label {
@@ -329,15 +330,96 @@ h2 {
   border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
+.feature-strip h2 {
+  margin-bottom: 8px;
+  font-size: 1.22rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.feature-strip p {
+  margin: 0;
+}
+
 .section-heading {
   max-width: 860px;
   margin-bottom: 44px;
+}
+
+.directory-jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.directory-jumps .button {
+  min-height: 44px;
+  border-radius: 999px;
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: #ddd9d2;
+}
+
+.directory-jumps .button:hover {
+  border-color: rgba(255, 179, 71, 0.4);
+  background: rgba(255, 179, 71, 0.08);
+  color: #fff3e2;
+}
+
+.directory-group + .directory-group {
+  margin-top: 56px;
+}
+
+.directory-group-heading {
+  max-width: 860px;
+  margin-bottom: 24px;
+  padding-left: 18px;
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(180deg, #ff7a18 0%, #ffb347 45%, #ff5f6d 100%) 1;
+}
+
+.directory-group-heading h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+  letter-spacing: -0.03em;
+}
+
+.directory-group-heading p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.group-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7em;
+  height: 1.7em;
+  border-radius: 999px;
+  background: rgba(255, 179, 71, 0.1);
+  font-size: 0.76em;
+  line-height: 1;
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card > p {
+  margin: 0;
 }
 
 .card-top {
@@ -348,24 +430,12 @@ h2 {
 }
 
 .card-top h3 a {
-  position: relative;
   display: inline-block;
-  padding-right: 18px;
-  color: var(--text);
-}
-
-.card-top h3 a::after {
-  content: "->";
-  position: absolute;
-  right: 0;
-  top: 0;
-  color: var(--muted);
-  transition: transform 140ms ease, color 140ms ease;
-}
-
-.card-top h3 a:hover::after {
-  transform: translateX(3px);
-  color: var(--text);
+  background: linear-gradient(135deg, #ff7a18 0%, #ffb347 45%, #ff5f6d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .tag {
@@ -392,6 +462,7 @@ h2 {
   flex-wrap: wrap;
   gap: 12px;
   margin: 18px 0 0;
+  align-items: center;
 }
 
 .project-links a {
@@ -400,6 +471,58 @@ h2 {
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.28);
   text-underline-offset: 0.22em;
+}
+
+.card-ratings {
+  display: grid;
+  gap: 10px;
+  margin: auto 0 0;
+}
+
+.rating-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.rating-label {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.rating-stars {
+  font-size: 0.98rem;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  color: #ffd076;
+}
+
+.repo-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.repo-link span:first-child {
+  opacity: 0.92;
+}
+
+.repo-stars {
+  display: inline-flex;
+  align-items: center;
+  color: #f2d9b6;
+  font-size: 0.76rem;
+  font-weight: 600;
+  opacity: 0.84;
+}
+
+.repo-stars::before {
+  content: "·";
+  margin: 0 0.38em;
+  color: rgba(242, 217, 182, 0.58);
 }
 
 .project-links a:hover,
@@ -411,10 +534,6 @@ h2 {
 .main-nav a,
 .footer-links a {
   transition: color 140ms ease;
-}
-
-.project-card {
-  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
 }
 
 .project-card:hover {
@@ -910,6 +1029,11 @@ h2 {
     padding: 10px 12px;
     border-radius: 14px;
     background: rgba(255, 255, 255, 0.04);
+  }
+
+  .directory-jumps {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .hero-actions,
