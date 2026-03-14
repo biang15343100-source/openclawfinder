@@ -1,0 +1,56 @@
+{
+  "type": "tool",
+  "slug": "voice-call",
+  "order": 7,
+  "name": {
+    "en": "Voice Call",
+    "zh": "Voice Call"
+  },
+  "kicker": {
+    "en": "OpenClaw voice plugin",
+    "zh": "OpenClaw 语音插件"
+  },
+  "icon": "https://www.google.com/s2/favicons?sz=128&domain_url=https://docs.openclaw.ai/plugins/voice-call",
+  "summary": {
+    "en": "An OpenClaw plugin that gives agents phone-calling abilities through providers such as Twilio, Telnyx, and Plivo.",
+    "zh": "一个给 OpenClaw agent 增加电话能力的插件，可通过 Twilio、Telnyx、Plivo 等服务商发起和接听语音通话。"
+  },
+  "access": {
+    "en": "Free",
+    "zh": "免费"
+  },
+  "links": {
+    "docs": "https://docs.openclaw.ai/plugins/voice-call"
+  },
+  "description": {
+    "en": [
+      "Voice Call is the part of the ecosystem that turns an OpenClaw agent into something that can actually place or receive phone calls. Public docs describe support for multiple providers, outbound and inbound modes, webhook security controls, streaming, and tool actions for continuing, speaking, ending, and checking the status of a call.",
+      "Its practical value is obvious: once agents can call people, use cases shift from chat-only assistants into reminders, customer support, verification flows, and hybrid workflows. It becomes especially powerful when combined with tools like Lobster, where a phone call can be one audited step inside a larger human-in-the-loop process."
+    ],
+    "zh": [
+      "Voice Call 是生态里把 OpenClaw agent 变成“真的能打电话、接电话”的那一层。公开文档说明它支持多家语音服务商、出站和入站模式、Webhook 安全控制、流式处理，以及继续通话、播报、结束和查看状态等工具动作。",
+      "它的实际价值很直接：一旦 agent 能打电话，使用场景就会从纯聊天扩展到提醒、客服、核验和混合式工作流。尤其和 Lobster 这种工作流工具配合时，电话可以成为更大流程里一个可审计、可审批的步骤。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Supports telephony providers such as Twilio, Telnyx, Plivo, and mock mode.",
+      "Covers both outbound calls and inbound-call handling policies.",
+      "Extends OpenClaw into real-world voice and phone workflows."
+    ],
+    "zh": [
+      "支持 Twilio、Telnyx、Plivo 以及 mock 模式。",
+      "同时覆盖外呼和来电接入策略。",
+      "让 OpenClaw 能进入真实语音和电话工作流场景。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "Official docs",
+        "zh": "官方文档"
+      },
+      "url": "https://docs.openclaw.ai/plugins/voice-call"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "type": "tool",
+  "slug": "memu",
+  "order": 5,
+  "name": {
+    "en": "memU",
+    "zh": "memU"
+  },
+  "kicker": {
+    "en": "Long-term memory layer",
+    "zh": "长期记忆层"
+  },
+  "icon": "https://www.google.com/s2/favicons?sz=128&domain_url=https://memu.pro",
+  "summary": {
+    "en": "A memory framework for always-on agents, with persistent storage, structured retrieval, and a memory-as-filesystem model.",
+    "zh": "一个面向长期运行 agent 的记忆框架，强调持久记忆、结构化检索，以及“记忆即文件系统”的组织方式。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "site": "https://memu.pro/",
+    "github": "https://github.com/NevaMind-AI/memU",
+    "githubRepo": "NevaMind-AI/memU"
+  },
+  "description": {
+    "en": [
+      "memU is aimed at a different pain point from workflow engines or deployment platforms: it focuses on memory. The project positions itself as a long-term memory layer for 24/7 agents, helping them store facts, preferences, and context in a form that can be retrieved efficiently across long conversations and recurring tasks.",
+      "Its most distinctive idea is to treat memory like a filesystem. Public materials describe folders, files, symbolic links, and mount points as mental models for organizing knowledge. That makes memU especially relevant for builders who want more debuggable, persistent memory behavior instead of relying only on short-context prompts or a thin RAG layer."
+    ],
+    "zh": [
+      "memU 解决的不是工作流编排，也不是部署问题，而是记忆问题。它把自己定位成 24/7 agent 的长期记忆层，帮助代理在长对话和长期任务中持续保存事实、偏好和上下文，并在需要时高效取回。",
+      "它最有辨识度的地方，是把“记忆”做成类似文件系统的结构。公开资料里用文件夹、文件、符号链接和挂载点来组织知识。对那些希望记忆层更可调试、更持久，而不是只依赖短上下文 prompt 或薄薄一层 RAG 的开发者来说，memU 很值得看。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Targets persistent memory for long-running and proactive agents.",
+      "Uses a memory-as-filesystem model for organization and debugging.",
+      "Offers both hosted and self-hosted paths in public materials."
+    ],
+    "zh": [
+      "面向长期运行和主动型 agent 的持久记忆需求。",
+      "用“记忆即文件系统”的方式组织和调试记忆。",
+      "公开资料里同时提供托管版和自托管路径。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "Official site",
+        "zh": "官网"
+      },
+      "url": "https://memu.pro/"
+    },
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/NevaMind-AI/memU"
+    },
+    {
+      "label": {
+        "en": "Quick start",
+        "zh": "快速体验"
+      },
+      "url": "https://app.memu.so/quick-start"
+    }
+  ]
+}

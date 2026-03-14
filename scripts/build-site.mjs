@@ -333,28 +333,11 @@ ${itemList}
           <div class="hero-copy">
             <img class="hero-art" src="/hero-art.png" alt="OpenClaw Finder hero art" />
             <h1 class="hero-title" data-i18n-html="home.heroTitle"><span class="hero-title-accent">OpenClaw</span><span class="hero-title-emoji">🦞</span><span class="hero-title-accent">Finder</span></h1>
-            <p class="lead" data-i18n="home.heroLead">A fast, searchable index of OpenClaw runtimes, ecosystem tools, and experiments. Compare what exists, follow new launches, and submit projects to be featured.</p>
+            <p class="lead" data-i18n="home.heroLead">A curated directory of OpenClaw variants, tools, and ecosystem projects, so you can quickly see what exists and where each one fits.</p>
             <div class="hero-actions">
               <a class="button primary" href="#directory" data-i18n="home.browse">Browse directory</a>
               <a class="button secondary" href="/submit" data-i18n="home.submit">Submit a project</a>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="section browse-section">
-        <div class="wrap browse-panel">
-          <div class="browse-copy">
-            <p class="eyebrow" data-i18n="home.browseEyebrow">Browse by angle</p>
-            <h2 data-i18n="home.browseTitle">A directory layout that helps people pick faster</h2>
-            <p data-i18n="home.browseLead">Each card now leads with what the tool is, who it fits, and where to open it, instead of pushing abstract scores first.</p>
-          </div>
-          <div class="browse-chip-cloud" aria-label="Directory filters">
-            <a class="browse-chip" href="/projects/openclaw" data-i18n="home.browseChip1">Official runtime</a>
-            <a class="browse-chip" href="/projects/picoclaw" data-i18n="home.browseChip2">Lightweight builds</a>
-            <a class="browse-chip" href="/projects/nanobot" data-i18n="home.browseChip3">Easy to learn</a>
-            <a class="browse-chip" href="/projects/copaw" data-i18n="home.browseChip4">Local model friendly</a>
-            <a class="browse-chip" href="/projects/nanoclaw" data-i18n="home.browseChip5">Safer self-hosting</a>
-            <a class="browse-chip" href="/projects/clawhub" data-i18n="home.browseChip6">Ecosystem tools</a>
           </div>
         </div>
       </section>
@@ -363,7 +346,7 @@ ${itemList}
           <div class="section-heading">
             <p class="eyebrow" data-i18n="home.directoryEyebrow">Featured projects</p>
             <h2 data-i18n="home.directoryTitle">Start here</h2>
-            <p data-i18n="home.directoryLead">A handpicked set of OpenClaw projects and tools worth knowing first, based on public official links and active pages.</p>
+            <p data-i18n="home.directoryLead">Start with the main projects and tools people most often compare first, with links pointing to official sites, docs, or repositories whenever possible.</p>
             <div class="directory-jumps">
               <a class="button secondary" href="/start" data-i18n="home.startGuideButton">Start guide</a>
               <a class="button secondary" href="#variants" data-i18n="home.category1Button">Jump to variants</a>
@@ -395,7 +378,7 @@ ${tools.map((entry) => renderCard(entry)).join("\n")}
           <div>
             <p class="eyebrow" data-i18n="home.ctaEyebrow">Grow the directory</p>
             <h2 data-i18n="home.ctaTitle">Want your OpenClaw project listed?</h2>
-            <p data-i18n="home.ctaBody">Use the submission page to send your project name, URL, short description, and launch notes.</p>
+            <p data-i18n="home.ctaBody">Send your project name, link, and a short summary through the submission page, and we can review it for inclusion.</p>
           </div>
           <a class="button primary" href="/submit" data-i18n="home.ctaButton">Submit now</a>
         </div>
@@ -405,7 +388,7 @@ ${tools.map((entry) => renderCard(entry)).join("\n")}
       <div class="wrap footer-grid">
         <div>
           <a class="brand footer-brand" href="/" data-i18n="common.brand">OpenClaw Finder</a>
-          <p data-i18n="home.footerText">The public directory for discovering OpenClaw projects.</p>
+          <p data-i18n="home.footerText">A directory for discovering OpenClaw projects and ecosystem tools.</p>
         </div>
         <div class="footer-links">
           <a href="/start" data-i18n="common.navStart">Start here</a>

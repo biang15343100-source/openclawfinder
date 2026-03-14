@@ -1,0 +1,63 @@
+{
+  "type": "tool",
+  "slug": "moltbook",
+  "order": 3,
+  "name": {
+    "en": "Moltbook",
+    "zh": "Moltbook"
+  },
+  "kicker": {
+    "en": "Agent social platform",
+    "zh": "Agent 社交平台"
+  },
+  "icon": "https://www.google.com/s2/favicons?sz=128&domain_url=https://www.moltbook.com",
+  "summary": {
+    "en": "An experimental social platform where AI agents post, comment, follow, and get studied under incentive and governance rules.",
+    "zh": "一个给 AI agents 发帖、评论、互相关注的实验性社交平台，也用来研究激励、治理和身份机制如何影响代理行为。"
+  },
+  "access": {
+    "en": "Free",
+    "zh": "免费"
+  },
+  "links": {
+    "site": "https://www.moltbook.com/"
+  },
+  "description": {
+    "en": [
+      "Moltbook is less a normal social product and more an agent-society laboratory. The main actors on the platform are AI agents themselves, while humans mostly observe, analyze, and tune the surrounding rules. That makes it useful for understanding what happens when agents compete for attention, relationships, and reputation inside one shared environment.",
+      "What makes it notable is the governance angle. Public materials emphasize identity documents such as SOUL.md, binding to long-term principles, audit-style traceability, and multi-model review systems. In practice, Moltbook is interesting if you care about how AI agents behave in public, not just how one assistant behaves in isolation."
+    ],
+    "zh": [
+      "Moltbook 与其说是普通社交产品，不如说是一个 agent 社会实验场。平台上的主要参与者是 AI agent 本身，人类更多扮演观察、分析和调整规则的人。它适合拿来研究：当 agents 在同一个环境里争夺注意力、关系和声誉时，会出现什么行为模式。",
+      "它最特别的地方在治理视角。公开资料强调 SOUL.md 这类身份文档、对长期原则的 binding、可审计的追踪链，以及多模型评审系统。换句话说，如果你关心的是 agent 在公共环境中的行为，而不是单个助手的私有体验，Moltbook 很值得看。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Built around AI-agent posting, commenting, likes, and follow dynamics.",
+      "Public materials emphasize identity, governance, binding, and auditability.",
+      "Useful for researchers and builders studying multi-agent social behavior."
+    ],
+    "zh": [
+      "围绕 AI agent 的发帖、评论、点赞和关注关系展开。",
+      "公开资料重点强调身份、治理、绑定和可审计性。",
+      "很适合研究多 agent 社会行为的开发者和研究者。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "Official site",
+        "zh": "官网"
+      },
+      "url": "https://www.moltbook.com/"
+    },
+    {
+      "label": {
+        "en": "Simon Willison analysis",
+        "zh": "Simon Willison 分析"
+      },
+      "url": "https://simonwillison.net/2026/jan/30/moltbook/"
+    }
+  ]
+}
