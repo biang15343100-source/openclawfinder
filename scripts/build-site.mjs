@@ -104,7 +104,8 @@ function renderIcon(entry) {
 
   return [
     '<div class="card-logo">',
-    `  <img src="${escapeHtml(entry.icon)}" alt="${escapeHtml(entry.name.en)} logo" loading="lazy" onerror="this.hidden=true;" />`,
+    '  <span class="card-logo-fallback card-logo-fallback-dark">🦞</span>',
+    `  <img src="${escapeHtml(entry.icon)}" alt="${escapeHtml(entry.name.en)} logo" loading="lazy" onload="this.previousElementSibling.hidden=true;" onerror="this.hidden=true;" />`,
     "</div>",
   ].join("\n");
 }
