@@ -6,4 +6,10 @@ node_modules
 scripts
 README.md
 package.json
+package-lock.json
 wrangler.jsonc
+.wrangler
+data
+migrations
+worker
+worker-configuration.d.ts

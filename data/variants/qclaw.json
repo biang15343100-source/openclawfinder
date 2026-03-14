@@ -1,0 +1,70 @@
+{
+  "type": "variant",
+  "slug": "qclaw",
+  "order": 8,
+  "name": {
+    "en": "QClaw",
+    "zh": "QClaw"
+  },
+  "kicker": {
+    "en": "Tencent-oriented",
+    "zh": "腾讯系"
+  },
+  "icon": "https://www.google.com/s2/favicons?sz=128&domain_url=https://qclaw.qq.com",
+  "summary": {
+    "en": "A packaged route for WeChat and QQ usage that is easier to try, but still gated behind a beta activation code.",
+    "zh": "更像一条面向微信和 QQ 场景的一键式 OpenClaw 路线，目前还需要内测激活码，重点不是自己搭，而是更快用起来。"
+  },
+  "access": {
+    "en": "Activation code",
+    "zh": "需激活码"
+  },
+  "links": {
+    "site": "https://qclaw.qq.com/"
+  },
+  "description": {
+    "en": [
+      "QClaw matters because it changes the entry experience more than the underlying idea. Packaging around WeChat, QQ, and a localized user journey turns OpenClaw from a self-built stack into something closer to a one-click service path.",
+      "Compared with the original project, the value here is less about maximum openness and more about convenience: easier deployment, tighter platform integration, and a route that makes more sense for Chinese teams already living inside those messaging products. At the moment, access still appears to depend on a beta activation code."
+    ],
+    "zh": [
+      "QClaw 值得看，不是因为它发明了全新的运行时，而是因为它把入口体验改了。围绕微信、QQ 和中文使用场景的包装，让 OpenClaw 更像一条一键式路线，而不是自己从头搭整套。",
+      "和原版相比，它吸引人的点不是最大程度开放，而是更省事的部署、更贴近本地沟通工具的集成，以及一条更符合国内团队工作流的使用路径。当前阶段，使用它仍然需要内测激活码。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Its main difference is packaging and local integration, not a brand-new runtime philosophy.",
+      "Especially relevant if your user journey starts in WeChat or QQ rather than in a terminal.",
+      "The public website exists, but current access is still gated for beta users."
+    ],
+    "zh": [
+      "它和原版最大的区别，是包装方式和本地化入口，而不是重新发明一套运行时哲学。",
+      "如果你的用户旅程本来就从微信或 QQ 开始，它会比终端驱动的路线更值得看。",
+      "官网已经公开，但当前访问仍然带有内测门槛。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "Official site",
+        "zh": "官网"
+      },
+      "url": "https://qclaw.qq.com/"
+    },
+    {
+      "label": {
+        "en": "TechNode report",
+        "zh": "TechNode 报道"
+      },
+      "url": "https://technode.com/2026/03/09/tencent-reportedly-tests-qclaw-ai-agent-with-one-click-openclaw-deployment/"
+    },
+    {
+      "label": {
+        "en": "Economic Times report",
+        "zh": "Economic Times 报道"
+      },
+      "url": "https://m.economictimes.com/news/international/us/qclaw-ai-what-is-tencents-little-lobster-tool-and-will-you-be-able-to-access-it-with-wechat-and-qq/articleshow/129328397.cms"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "type": "variant",
+  "slug": "ironclaw",
+  "order": 7,
+  "name": {
+    "en": "IronClaw",
+    "zh": "IronClaw"
+  },
+  "kicker": {
+    "en": "Security-first Rust branch",
+    "zh": "安全优先的 Rust 路线"
+  },
+  "icon": "https://www.google.com/s2/favicons?sz=128&domain_url=https://www.ironclaw.com",
+  "summary": {
+    "en": "A Rust branch centered on privacy, validation, and safer execution for teams that care about trust boundaries.",
+    "zh": "更强调隐私、校验和安全执行的 Rust 分支，适合更在意边界和可信度的团队。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "site": "https://www.ironclaw.com/",
+    "github": "https://github.com/nearai/ironclaw",
+    "githubRepo": "nearai/ironclaw"
+  },
+  "description": {
+    "en": [
+      "IronClaw is the branch to watch if your first concern is not convenience but trust boundaries. Public materials frame it as a Rust implementation with dedicated safety layers, stronger validation, and a clearer privacy-oriented execution model.",
+      "Compared with the original project, it is less about giving you the broadest ecosystem entry and more about making the runtime feel safer, more auditable, and easier to reason about in sensitive environments."
+    ],
+    "zh": [
+      "IronClaw 更适合那种第一反应不是“好不好用”，而是“安不安全、可不可审计”的人。公开资料把它定位成一条 Rust 实现路线，并把安全层、输入校验、隐私和执行风险控制放在核心位置。",
+      "和原版相比，它不是为了给你最广的生态入口，而是为了让 runtime 在敏感环境里更可信、更容易审计，也更容易说清楚边界在哪里。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Rust and safety-focused architecture are central to its public positioning.",
+      "A better fit for security-minded teams than for first-time casual users.",
+      "Best understood as a hardened branch, not the easiest front door into the ecosystem."
+    ],
+    "zh": [
+      "Rust 和安全导向架构是它对外表达的核心。",
+      "它更适合安全敏感团队，不太适合作为第一次接触生态的入口。",
+      "可以把它理解成一条强化版分支，而不是最顺手的前门。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "Official site",
+        "zh": "官网"
+      },
+      "url": "https://www.ironclaw.com/"
+    },
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/nearai/ironclaw"
+    }
+  ]
+}

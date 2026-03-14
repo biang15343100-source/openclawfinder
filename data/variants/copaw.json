@@ -1,0 +1,65 @@
+{
+  "type": "variant",
+  "slug": "copaw",
+  "order": 6,
+  "name": {
+    "en": "CoPaw",
+    "zh": "CoPaw"
+  },
+  "kicker": {
+    "en": "Local-model-friendly branch",
+    "zh": "本地模型友好路线"
+  },
+  "icon": "/logo/copaw.png",
+  "summary": {
+    "en": "A more practical agent workstation with easier setup, local-model support, and built-in chat app integrations.",
+    "zh": "更实用的个人 agent 工作台路线，上手更轻，支持本地模型，也带常见聊天集成。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "site": "https://copaw.bot/",
+    "github": "https://github.com/agentscope-ai/CoPaw",
+    "githubRepo": "agentscope-ai/CoPaw"
+  },
+  "description": {
+    "en": [
+      "CoPaw takes aim at a practical pain point: OpenClaw can feel like a lot of moving parts if you mainly want a usable personal agent across common chat surfaces. Public materials lean into easier installation, local-model support, and multiple deployment paths.",
+      "Compared with the original project, CoPaw feels more like a user-ready workstation than a pure runtime playground. It is especially relevant for people who want flexibility without turning every setup step into infrastructure work."
+    ],
+    "zh": [
+      "CoPaw 瞄准的是一个很现实的问题：如果你只是想要一个好用的个人 agent，OpenClaw 往往会显得有点太多组件。公开资料强调更容易安装、本地模型支持，以及多种部署方式。",
+      "和原版相比，CoPaw 更像一个拿来就能工作的个人 agent 工作台，而不是单纯的 runtime playground。它对那些想要灵活能力，但又不想把每一步都当成基础设施工程的人更有吸引力。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Official materials emphasize local models, simpler setup paths, and a more practical workstation feel.",
+      "Supports common chat channels and providers without pushing users immediately into a heavy self-hosted stack.",
+      "Sits between runtime experimentation and polished end-user usability."
+    ],
+    "zh": [
+      "官方资料强调本地模型、更简单的安装路径，以及更接近工作台的使用体验。",
+      "它支持多种聊天通道和 provider，但不会一上来就把用户推进重型自托管路径。",
+      "它位于 runtime 实验和终端用户可用性之间的中间地带。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "Official site",
+        "zh": "官网"
+      },
+      "url": "https://copaw.bot/"
+    },
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/agentscope-ai/CoPaw"
+    }
+  ]
+}

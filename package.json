@@ -4,7 +4,14 @@
   "version": "1.0.0",
   "description": "Static site for openclawfinder.com",
   "scripts": {
-    "build": "node scripts/sync-stars.mjs",
-    "sync:stars": "node scripts/sync-stars.mjs"
+    "build": "node scripts/build-site.mjs",
+    "sync:stars": "node scripts/build-site.mjs",
+    "cf:dev": "wrangler dev",
+    "cf:deploy": "wrangler deploy",
+    "cf:d1:local": "wrangler d1 migrations apply openclawfinder-prod --local",
+    "cf:d1:remote": "wrangler d1 migrations apply openclawfinder-prod --remote"
+  },
+  "devDependencies": {
+    "wrangler": "^4.73.0"
   }
 }

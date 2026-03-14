@@ -1,0 +1,72 @@
+{
+  "type": "variant",
+  "slug": "openclaw",
+  "order": 1,
+  "name": {
+    "en": "OpenClaw",
+    "zh": "OpenClaw"
+  },
+  "kicker": {
+    "en": "Official runtime",
+    "zh": "官方运行时"
+  },
+  "icon": "https://www.google.com/s2/favicons?sz=128&domain_url=https://openclaw.ai",
+  "summary": {
+    "en": "The official full-stack runtime with the clearest docs, broadest integrations, and the best baseline for understanding the ecosystem.",
+    "zh": "官方完整路线，文档最全、集成最广，也是理解整个 OpenClaw 生态最稳的基线。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "site": "https://openclaw.ai/",
+    "github": "https://github.com/openclaw/openclaw",
+    "githubRepo": "openclaw/openclaw"
+  },
+  "description": {
+    "en": [
+      "OpenClaw is still the clearest baseline for understanding this ecosystem because it is the official project with the broadest public documentation, the most complete onboarding path, and the widest surrounding tool surface.",
+      "Compared with lighter, more deployment-focused, or more engineering-heavy branches, its advantage is not one isolated feature. It is the most complete picture of how the official stack is supposed to work across channels, skills, workflows, and assistant runtime behavior."
+    ],
+    "zh": [
+      "OpenClaw 仍然是理解这个生态最稳的基线，因为它就是官方主项目，公开资料最完整，onboarding 路径最清楚，周边文档、skills 和 workflow 工具也都围绕它展开。",
+      "和那些更轻、更偏部署、或更偏工程取向的变种比起来，它最大的优势不是某一个单点能力，而是整体最完整、最容易看清全貌，也最适合作为比较其他路线的起点。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Official site, docs, and GitHub repository are all public and active.",
+      "Public materials describe broad messaging integrations and a command-led onboarding flow.",
+      "It is also the heaviest option in the group, which is why many variants focus on slimming it down or simplifying deployment."
+    ],
+    "zh": [
+      "官网、文档和 GitHub 仓库均公开可访问。",
+      "公开资料明确提到多种消息平台集成能力，以及基于命令的 onboarding 流程。",
+      "它也是这一组里最重、最完整的一条，所以后面很多变体都在试图把它做得更轻或更好部署。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "Official site",
+        "zh": "官网"
+      },
+      "url": "https://openclaw.ai/"
+    },
+    {
+      "label": {
+        "en": "Official docs",
+        "zh": "官方文档"
+      },
+      "url": "https://docs.openclaw.ai/"
+    },
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/openclaw/openclaw"
+    }
+  ]
+}

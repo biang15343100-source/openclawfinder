@@ -1,0 +1,57 @@
+{
+  "type": "variant",
+  "slug": "picoclaw",
+  "order": 4,
+  "name": {
+    "en": "PicoClaw",
+    "zh": "PicoClaw"
+  },
+  "kicker": {
+    "en": "Low-resource runtime",
+    "zh": "低资源运行时"
+  },
+  "icon": "/logo/picoclaw.png",
+  "summary": {
+    "en": "A Go-based lightweight branch aimed at tiny hardware, low memory, and always-on deployments that need a smaller footprint.",
+    "zh": "Go 写的轻量路线，适合小设备、低内存和长期在线的低资源部署场景。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "github": "https://github.com/sipeed/picoclaw",
+    "githubRepo": "sipeed/picoclaw"
+  },
+  "description": {
+    "en": [
+      "PicoClaw is the strongest contrast to the official project if your first question is whether this can run on much smaller hardware. Public materials focus on low resource use, a Go implementation, and deployment targets that make more sense for cheap boards or always-on devices.",
+      "Compared with OpenClaw, it gives up some of the heavier platform surface so the core assistant experience can fit into leaner environments. It is best understood as a compact engine for constrained deployments, not as a full replacement for the broadest ecosystem entry point."
+    ],
+    "zh": [
+      "PicoClaw 是和官方版形成最直接对比的一条路线，如果你第一反应是“能不能跑在更小的硬件上”，那它就很值得看。公开资料强调低资源占用、Go 实现和更适合便宜板子或常驻设备的部署场景。",
+      "和 OpenClaw 相比，它放弃了一些更重的平台层，好让核心助手体验可以塞进更轻的环境里。更适合把它理解成一台小型引擎，而不是一个最完整的生态入口替代品。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Repository materials emphasize low RAM use and low-cost hardware targets.",
+      "Implemented in Go rather than following the main project stack exactly.",
+      "Useful for edge devices and low-cost always-on setups."
+    ],
+    "zh": [
+      "仓库资料强调低内存占用和低成本硬件目标。",
+      "它走的是 Go 路线，而不是完全跟随主项目的技术栈。",
+      "很适合边缘设备和低成本常驻场景。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/sipeed/picoclaw"
+    }
+  ]
+}

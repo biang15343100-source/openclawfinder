@@ -1,0 +1,57 @@
+{
+  "type": "variant",
+  "slug": "zeroclaw",
+  "order": 3,
+  "name": {
+    "en": "ZeroClaw",
+    "zh": "ZeroClaw"
+  },
+  "kicker": {
+    "en": "Rust runtime",
+    "zh": "Rust 运行时"
+  },
+  "icon": "/logo/zeroclaw.png",
+  "summary": {
+    "en": "A Rust runtime built for migration, performance, and lower-level control rather than the easiest first-time onboarding.",
+    "zh": "Rust runtime，重点在迁移、性能和更底层的控制力，不是最轻松的第一次上手路线。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "github": "https://github.com/zeroclaw-labs/zeroclaw",
+    "githubRepo": "zeroclaw-labs/zeroclaw"
+  },
+  "description": {
+    "en": [
+      "ZeroClaw takes a more systems-oriented path through Rust and presents itself as runtime infrastructure rather than just another wrapper around the same surface. It is more appealing to people who care about performance, migration, and lower-level control than to people looking for the easiest setup.",
+      "That makes it one of the strongest engineering-first branches in the current lineup. The tradeoff is clear: more room to shape the stack and think in systems terms, but a steeper path in than the official project or lighter learning-oriented branches."
+    ],
+    "zh": [
+      "ZeroClaw 明显不是走“先让更多人轻松上手”这条路，它更偏向 Rust、基础设施和底层控制，是这个列表里工程气质最强的一支。",
+      "所以它吸引人的地方，不是更省事，而是更强的控制力、更明确的性能取向，以及对想深入改造栈的人更友好的空间。代价也很直接，就是上手门槛会更高。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Repository materials describe migration commands from OpenClaw.",
+      "Rust positioning clearly separates it from the main project and lighter Go implementations.",
+      "Best fit for infrastructure-minded builders rather than casual first-time users."
+    ],
+    "zh": [
+      "仓库资料描述了从 OpenClaw 迁移的命令。",
+      "Rust 路线让它和 Go 轻量实现、以及主项目都形成差异。",
+      "如果你的受众更看重基础设施而不是消费级体验，这是值得关注的项目。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/zeroclaw-labs/zeroclaw"
+    }
+  ]
+}

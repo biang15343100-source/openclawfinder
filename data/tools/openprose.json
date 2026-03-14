@@ -1,0 +1,56 @@
+{
+  "type": "tool",
+  "slug": "openprose",
+  "order": 2,
+  "name": {
+    "en": "OpenProse",
+    "zh": "OpenProse"
+  },
+  "kicker": {
+    "en": "Official workflow format",
+    "zh": "官方工作流格式"
+  },
+  "icon": "https://www.google.com/s2/favicons?sz=128&domain_url=https://docs.openclaw.ai/prose",
+  "summary": {
+    "en": "The official workflow format for chaining agents, tools, and steps into more structured OpenClaw flows.",
+    "zh": "不是另一个 runtime，而是把多个 agent、工具和步骤串起来的官方工作流格式。"
+  },
+  "access": {
+    "en": "Free",
+    "zh": "免费"
+  },
+  "links": {
+    "docs": "https://docs.openclaw.ai/prose"
+  },
+  "description": {
+    "en": [
+      "OpenProse is the official workflow layer documented around OpenClaw. It is positioned as the way to express more structured orchestration instead of running everything through one flat assistant loop.",
+      "Its importance is strategic more than flashy. Mature ecosystems need workflow abstraction, not just tools and agents. OpenProse signals that OpenClaw is already thinking about programmable composition and repeatable multi-agent flows."
+    ],
+    "zh": [
+      "OpenProse 是围绕 OpenClaw 的官方工作流层。它被定位为表达更结构化 orchestration 的方式，而不是把所有逻辑都塞进一个平面助手流程。",
+      "它的重要性在于成熟生态需要 workflow 抽象，而不只是工具和 agent。OpenProse 说明 OpenClaw 已经在考虑可编程组合和可重复的多 agent 流程。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Officially documented under the OpenClaw docs site.",
+      "Useful as a separate ecosystem entry rather than as a runtime replacement.",
+      "A strong base for future examples around comparisons and workflow templates."
+    ],
+    "zh": [
+      "在 OpenClaw 官方文档中有明确页面。",
+      "它更适合作为生态条目，而不是运行时替代品。",
+      "后面很适合扩展成 comparison 和 workflow example 内容。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "Official docs",
+        "zh": "官方文档"
+      },
+      "url": "https://docs.openclaw.ai/prose"
+    }
+  ]
+}

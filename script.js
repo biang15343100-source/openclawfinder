@@ -7,10 +7,14 @@ const translations = {
       navSubmit: "Submit",
       navContact: "Contact",
       navPrivacy: "Privacy",
+      linkSite: "Site",
+      linkDocs: "Docs",
+      linkGitHub: "GitHub",
     },
     project: {
       common: {
         quickFacts: "Quick facts",
+        description: "Description",
         reviewed: "Last reviewed",
         stack: "Primary stack",
         license: "License",
@@ -238,6 +242,18 @@ const translations = {
       browse: "Browse directory",
       submit: "Submit a project",
       profileLink: "Profile",
+      browseEyebrow: "Browse by angle",
+      browseTitle: "A directory layout that helps people pick faster",
+      browseLead:
+        "Inspired by the cleaner scan-friendly feel of Future Tools, the cards now surface what each project is for, its angle, and the best next click.",
+      browseChip1: "Official runtime",
+      browseChip2: "Lightweight builds",
+      browseChip3: "Easy to learn",
+      browseChip4: "Local model friendly",
+      browseChip5: "Safer self-hosting",
+      browseChip6: "Ecosystem tools",
+      cardMetaAngle: "Angle",
+      cardMetaBestFor: "Best for",
       metricEase: "Getting started",
       metricEcosystem: "User ecosystem",
       metricExtensibility: "Extension room",
@@ -266,76 +282,92 @@ const translations = {
       category2Button: "Jump to tools",
       card1Tag: "Tencent",
       card1Body:
-        "A more localized, one-click OpenClaw route for WeChat and QQ scenarios. Right now it still needs a beta activation code, so the appeal is convenience more than open self-hosting.",
-      card1Meta1: "Positioning: Localized packaging layer",
-      card1Meta2: "Different from OpenClaw: More WeChat and QQ oriented",
+        "A packaged route for WeChat and QQ usage that is easier to try, but still gated behind a beta activation code.",
+      card1Access: "Activation code",
+      card1Meta1: "Localized packaging layer",
+      card1Meta2: "WeChat and QQ oriented teams",
       card1RateEase: "🌟🌟🌟🌟🌟",
       card1RateEcosystem: "🌟🌟🌟🌟",
       card1RateExtensibility: "🌟🌟🌟",
       card2Tag: "Official",
       card2Body:
-        "The full official version, with the broadest docs, clearest onboarding path, and richest ecosystem surface.",
-      card2Meta1: "Status: Confirmed official project",
-      card2Meta2: "Best for: Understanding the ecosystem from the source",
+        "The official full-stack runtime with the clearest docs, broadest integrations, and the best baseline for understanding the ecosystem.",
+      card2Access: "Open source",
+      card2Meta1: "Confirmed official project",
+      card2Meta2: "Understanding the ecosystem from the source",
       card2RateEase: "🌟🌟🌟🌟🌟",
       card2RateEcosystem: "🌟🌟🌟🌟🌟",
       card2RateExtensibility: "🌟🌟🌟🌟🌟",
       card3Title: "PicoClaw",
       card3Tag: "Lightweight",
       card3Body:
-        "A lighter, lower-resource take on OpenClaw that makes more sense on tiny hardware than the full official stack.",
-      card3Meta1: "Status: Confirmed public repo",
-      card3Meta2: "Best for: Edge devices and low-cost hardware",
+        "A Go-based lightweight branch aimed at tiny hardware, low memory, and always-on deployments that need a smaller footprint.",
+      card3Access: "Open source",
+      card3Meta1: "Low-resource Go runtime",
+      card3Meta2: "Edge devices and low-cost hardware",
       card3RateEase: "🌟🌟🌟🌟",
       card3RateEcosystem: "🌟🌟🌟🌟",
       card3RateExtensibility: "🌟🌟🌟",
       card4Tag: "Container-first",
       card4Body:
-        "A more deployment-minded branch that leans into containers, isolation, and cleaner self-hosted boundaries.",
-      card4Meta1: "Status: Confirmed public repo",
-      card4Meta2: "Best for: Secure, containerized deployments",
+        "A container-first branch focused on safer isolation, clearer self-hosting boundaries, and more controlled deployments.",
+      card4Access: "Open source",
+      card4Meta1: "Container-first deployment path",
+      card4Meta2: "Secure, containerized deployments",
       card4RateEase: "🌟🌟🌟",
       card4RateEcosystem: "🌟🌟🌟",
       card4RateExtensibility: "🌟🌟🌟🌟",
       card5Tag: "Rust",
       card5Body:
-        "A more engineering-first OpenClaw path that trades easy onboarding for performance, control, and deeper shaping room.",
-      card5Meta1: "Status: Confirmed public repo",
-      card5Meta2: "Best for: Performance-minded users and migrations",
+        "A Rust runtime built for migration, performance, and lower-level control rather than the easiest first-time onboarding.",
+      card5Access: "Open source",
+      card5Meta1: "Performance-oriented Rust runtime",
+      card5Meta2: "Performance-minded users and migrations",
       card5RateEase: "🌟🌟",
       card5RateEcosystem: "🌟🌟🌟",
       card5RateExtensibility: "🌟🌟🌟🌟🌟",
       card6Tag: "Ecosystem",
       card6Body:
-        "The official place to find, install, and publish skills around the OpenClaw ecosystem.",
-      card6Meta1: "Status: Confirmed official project",
-      card6Meta2: "Best for: Discovering and distributing skills",
+        "The official marketplace and registry for discovering, installing, and publishing OpenClaw skills.",
+      card6Access: "Open source",
+      card6Meta1: "Official skill marketplace",
+      card6Meta2: "Discovering and distributing skills",
       card6RateEase: "🌟🌟🌟🌟",
       card6RateEcosystem: "🌟🌟🌟🌟",
       card6RateExtensibility: "🌟🌟🌟🌟",
       card7Tag: "Workflow",
       card7Body:
-        "The official workflow layer for people who want to chain agents, steps, and more structured OpenClaw flows.",
-      card7Meta1: "Status: Confirmed official ecosystem",
-      card7Meta2: "Best for: Structured multi-agent workflows",
+        "The official workflow format for chaining agents, tools, and steps into more structured OpenClaw flows.",
+      card7Access: "Free",
+      card7Meta1: "Official orchestration layer",
+      card7Meta2: "Structured multi-agent workflows",
       card7RateEase: "🌟🌟",
       card7RateEcosystem: "🌟🌟🌟🌟",
       card7RateExtensibility: "🌟🌟🌟🌟🌟",
       card8Tag: "Python",
       card8Body:
-        "A tiny Python take on OpenClaw that keeps the core loop readable, hackable, and much easier to study than the full stack.",
+        "A compact Python branch that keeps the agent loop easy to read, learn from, and fork without dragging in the full stack.",
+      card8Access: "Open source",
+      card8Meta1: "Compact Python branch",
+      card8Meta2: "Learning the architecture and shipping quick forks",
       card8RateEase: "🌟🌟🌟🌟",
       card8RateEcosystem: "🌟🌟🌟🌟",
       card8RateExtensibility: "🌟🌟🌟🌟🌟",
       card9Tag: "Local-first",
       card9Body:
-        "An easier, more modular personal agent workstation with strong local-model support and chat app integrations out of the box.",
+        "A more practical agent workstation with easier setup, local-model support, and built-in chat app integrations.",
+      card9Access: "Open source",
+      card9Meta1: "Practical local-model workstation",
+      card9Meta2: "People who want a usable personal agent quickly",
       card9RateEase: "🌟🌟🌟🌟",
       card9RateEcosystem: "🌟🌟🌟🌟",
       card9RateExtensibility: "🌟🌟🌟🌟",
       card10Tag: "Secure",
       card10Body:
-        "A Rust security-focused branch that leans into privacy, secret handling, and safer execution instead of consumer polish.",
+        "A Rust branch centered on privacy, validation, and safer execution for teams that care about trust boundaries.",
+      card10Access: "Open source",
+      card10Meta1: "Security-hardened Rust branch",
+      card10Meta2: "Teams that value privacy and auditability",
       card10RateEase: "🌟🌟",
       card10RateEcosystem: "🌟🌟🌟",
       card10RateExtensibility: "🌟🌟🌟🌟",
@@ -528,10 +560,14 @@ const translations = {
       navSubmit: "提交项目",
       navContact: "联系",
       navPrivacy: "隐私",
+      linkSite: "官网",
+      linkDocs: "文档",
+      linkGitHub: "GitHub",
     },
     project: {
       common: {
         quickFacts: "快速信息",
+        description: "描述",
         reviewed: "最近审核",
         stack: "主要技术栈",
         license: "许可证",
@@ -759,6 +795,18 @@ const translations = {
       browse: "浏览目录",
       submit: "提交项目",
       profileLink: "详情",
+      browseEyebrow: "按方向浏览",
+      browseTitle: "让人更快做判断的目录式首页",
+      browseLead:
+        "参考了 Future Tools 那种更容易扫读的目录结构，现在卡片先说清它是什么、适合谁、下一步该点哪里，而不是先堆抽象评分。",
+      browseChip1: "官方主项目",
+      browseChip2: "轻量路线",
+      browseChip3: "适合学习",
+      browseChip4: "本地模型友好",
+      browseChip5: "更稳的自托管",
+      browseChip6: "生态工具",
+      cardMetaAngle: "定位",
+      cardMetaBestFor: "适合谁",
       metricEase: "上手程度",
       metricEcosystem: "用户生态",
       metricExtensibility: "扩展空间",
@@ -786,66 +834,82 @@ const translations = {
       category2Button: "跳到生态工具",
       card1Tag: "腾讯系",
       card1Body: "更像一条面向微信和 QQ 场景的一键式 OpenClaw 路线，目前还需要内测激活码，重点不是自己搭，而是更快用起来。",
-      card1Meta1: "定位：本地化包装层",
-      card1Meta2: "和原版不同：更偏微信和 QQ 场景",
+      card1Access: "需激活码",
+      card1Meta1: "本地化包装层",
+      card1Meta2: "更偏微信和 QQ 场景的团队",
       card1RateEase: "🌟🌟🌟🌟🌟",
       card1RateEcosystem: "🌟🌟🌟🌟",
       card1RateExtensibility: "🌟🌟🌟",
       card2Tag: "官方",
-      card2Body: "官方完整版入口，文档最全、生态最完整，也是理解整个 OpenClaw 生态的最好起点。",
-      card2Meta1: "状态：已确认官方项目",
-      card2Meta2: "适合：先从源头了解整个生态",
+      card2Body: "官方完整路线，文档最全、集成最广，也是理解整个 OpenClaw 生态最稳的基线。",
+      card2Access: "开源",
+      card2Meta1: "已确认官方项目",
+      card2Meta2: "先从源头了解整个生态",
       card2RateEase: "🌟🌟🌟🌟🌟",
       card2RateEcosystem: "🌟🌟🌟🌟🌟",
       card2RateExtensibility: "🌟🌟🌟🌟🌟",
       card3Title: "PicoClaw",
       card3Tag: "轻量",
-      card3Body: "更轻、更省资源的一条路，适合小设备，不是奔着最完整功能面去的。",
-      card3Meta1: "状态：已确认公开仓库",
-      card3Meta2: "适合：边缘设备和低成本硬件",
+      card3Body: "Go 写的轻量路线，适合小设备、低内存和长期在线的低资源部署场景。",
+      card3Access: "开源",
+      card3Meta1: "低资源 Go 路线",
+      card3Meta2: "边缘设备和低成本硬件",
       card3RateEase: "🌟🌟🌟🌟",
       card3RateEcosystem: "🌟🌟🌟🌟",
       card3RateExtensibility: "🌟🌟🌟",
       card4Tag: "容器优先",
-      card4Body: "更偏部署安全和隔离边界，适合想把 OpenClaw 放进更可控环境里的人。",
-      card4Meta1: "状态：已确认公开仓库",
-      card4Meta2: "适合：安全和容器化部署",
+      card4Body: "容器优先的一条路，更强调隔离、自托管边界和可控部署，而不是堆更多产品层。",
+      card4Access: "开源",
+      card4Meta1: "容器优先部署路线",
+      card4Meta2: "安全和容器化部署",
       card4RateEase: "🌟🌟🌟",
       card4RateEcosystem: "🌟🌟🌟",
       card4RateExtensibility: "🌟🌟🌟🌟",
       card5Tag: "Rust",
-      card5Body: "更偏底层和性能取向，适合想掌控更多细节，而不是只求快速开用的人。",
-      card5Meta1: "状态：已确认公开仓库",
-      card5Meta2: "适合：更看重性能和迁移的人",
+      card5Body: "Rust runtime，重点在迁移、性能和更底层的控制力，不是最轻松的第一次上手路线。",
+      card5Access: "开源",
+      card5Meta1: "偏性能取向的 Rust runtime",
+      card5Meta2: "更看重性能和迁移的人",
       card5RateEase: "🌟🌟",
       card5RateEcosystem: "🌟🌟🌟",
       card5RateExtensibility: "🌟🌟🌟🌟🌟",
       card6Tag: "生态",
-      card6Body: "官方技能市场和注册表，帮你更快找到、安装和发布 OpenClaw skills。",
-      card6Meta1: "状态：已确认官方项目",
-      card6Meta2: "适合：发现和分发技能",
+      card6Body: "官方技能市场和注册表，用来发现、安装和发布 OpenClaw skills。",
+      card6Access: "开源",
+      card6Meta1: "官方技能市场",
+      card6Meta2: "发现和分发技能",
       card6RateEase: "🌟🌟🌟🌟",
       card6RateEcosystem: "🌟🌟🌟🌟",
       card6RateExtensibility: "🌟🌟🌟🌟",
       card7Tag: "工作流",
-      card7Body: "不是另一个 Claw，而是把多个 agent、步骤和能力串起来的官方工作流层。",
-      card7Meta1: "状态：已确认官方生态",
-      card7Meta2: "适合：结构化多 agent 工作流",
+      card7Body: "不是另一个 runtime，而是把多个 agent、工具和步骤串起来的官方工作流格式。",
+      card7Access: "免费",
+      card7Meta1: "官方编排层",
+      card7Meta2: "结构化多 agent 工作流",
       card7RateEase: "🌟🌟",
       card7RateEcosystem: "🌟🌟🌟🌟",
       card7RateExtensibility: "🌟🌟🌟🌟🌟",
       card8Tag: "Python",
-      card8Body: "一个更小的 Python 版 OpenClaw 路线，核心循环更容易读懂，也更适合学习和快速魔改。",
+      card8Body: "更小的 Python 分支，核心 agent 循环更容易读懂，也更适合学习和快速 fork。",
+      card8Access: "开源",
+      card8Meta1: "更小的 Python 分支",
+      card8Meta2: "想先看懂架构、再快速 fork 的人",
       card8RateEase: "🌟🌟🌟🌟",
       card8RateEcosystem: "🌟🌟🌟🌟",
       card8RateExtensibility: "🌟🌟🌟🌟🌟",
       card9Tag: "本地优先",
-      card9Body: "更易安装、支持本地模型、也更像个人 agent 工作台的一条现实路线。",
+      card9Body: "更实用的个人 agent 工作台路线，上手更轻，支持本地模型，也带常见聊天集成。",
+      card9Access: "开源",
+      card9Meta1: "本地模型友好的实用工作台",
+      card9Meta2: "想尽快拥有可用个人 agent 的人",
       card9RateEase: "🌟🌟🌟🌟",
       card9RateEcosystem: "🌟🌟🌟🌟",
       card9RateExtensibility: "🌟🌟🌟🌟",
       card10Tag: "安全",
-      card10Body: "一条更强调隐私、安全和可审计性的 Rust 路线，不是面向大众的轻松入口。",
+      card10Body: "更强调隐私、校验和安全执行的 Rust 分支，适合更在意边界和可信度的团队。",
+      card10Access: "开源",
+      card10Meta1: "安全强化的 Rust 分支",
+      card10Meta2: "更在意隐私和可审计性的团队",
       card10RateEase: "🌟🌟",
       card10RateEcosystem: "🌟🌟🌟",
       card10RateExtensibility: "🌟🌟🌟🌟",
@@ -1047,6 +1111,32 @@ function getValue(language, key) {
   return key.split(".").reduce((value, part) => value && value[part], translations[language]);
 }
 
+let embeddedPageDataCache;
+
+function getEmbeddedPageData() {
+  if (embeddedPageDataCache !== undefined) return embeddedPageDataCache;
+  const node = document.getElementById("page-data");
+  if (!node) {
+    embeddedPageDataCache = null;
+    return embeddedPageDataCache;
+  }
+
+  try {
+    embeddedPageDataCache = JSON.parse(node.textContent || "null");
+  } catch {
+    embeddedPageDataCache = null;
+  }
+
+  return embeddedPageDataCache;
+}
+
+function getEmbeddedValue(pageData, language, key, bucket = "texts") {
+  const root = pageData && pageData[bucket];
+  const value = key.split(".").reduce((current, part) => current && current[part], root);
+  if (value && typeof value === "object" && language in value) return value[language];
+  return undefined;
+}
+
 function detectLanguage() {
   const saved = window.localStorage.getItem("preferred-language");
   if (saved === "zh" || saved === "en") return saved;
@@ -1056,7 +1146,20 @@ function detectLanguage() {
 
 function applyLanguage(language) {
   const page = document.body.dataset.page || "home";
+  const pageData = getEmbeddedPageData();
   document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
+
+  for (const element of document.querySelectorAll("[data-page-text]")) {
+    const key = element.dataset.pageText;
+    const value = getEmbeddedValue(pageData, language, key);
+    if (typeof value === "string") element.textContent = value;
+  }
+
+  for (const element of document.querySelectorAll("[data-page-html]")) {
+    const key = element.dataset.pageHtml;
+    const value = getEmbeddedValue(pageData, language, key);
+    if (typeof value === "string") element.innerHTML = value;
+  }
 
   for (const element of document.querySelectorAll("[data-i18n]")) {
     const key = element.dataset.i18n;
@@ -1075,16 +1178,28 @@ function applyLanguage(language) {
   const metaOgDescription = document.getElementById("meta-og-description");
   const metaTwitterTitle = document.getElementById("meta-twitter-title");
   const metaTwitterDescription = document.getElementById("meta-twitter-description");
-  const pageKeys = pageTextKeys[page];
-  if (pageKeys) {
-    const title = getValue(language, pageKeys.title);
-    const description = getValue(language, pageKeys.description);
-    document.title = title;
-    if (metaDescription) metaDescription.setAttribute("content", description);
-    if (metaOgTitle) metaOgTitle.setAttribute("content", title);
-    if (metaOgDescription) metaOgDescription.setAttribute("content", description);
-    if (metaTwitterTitle) metaTwitterTitle.setAttribute("content", title);
-    if (metaTwitterDescription) metaTwitterDescription.setAttribute("content", description);
+  const embeddedTitle = getEmbeddedValue(pageData, language, "title", "meta");
+  const embeddedDescription = getEmbeddedValue(pageData, language, "description", "meta");
+
+  if (typeof embeddedTitle === "string" && typeof embeddedDescription === "string") {
+    document.title = embeddedTitle;
+    if (metaDescription) metaDescription.setAttribute("content", embeddedDescription);
+    if (metaOgTitle) metaOgTitle.setAttribute("content", embeddedTitle);
+    if (metaOgDescription) metaOgDescription.setAttribute("content", embeddedDescription);
+    if (metaTwitterTitle) metaTwitterTitle.setAttribute("content", embeddedTitle);
+    if (metaTwitterDescription) metaTwitterDescription.setAttribute("content", embeddedDescription);
+  } else {
+    const pageKeys = pageTextKeys[page];
+    if (pageKeys) {
+      const title = getValue(language, pageKeys.title);
+      const description = getValue(language, pageKeys.description);
+      document.title = title;
+      if (metaDescription) metaDescription.setAttribute("content", description);
+      if (metaOgTitle) metaOgTitle.setAttribute("content", title);
+      if (metaOgDescription) metaOgDescription.setAttribute("content", description);
+      if (metaTwitterTitle) metaTwitterTitle.setAttribute("content", title);
+      if (metaTwitterDescription) metaTwitterDescription.setAttribute("content", description);
+    }
   }
 
   for (const button of document.querySelectorAll("[data-lang-button]")) {
@@ -1094,9 +1209,103 @@ function applyLanguage(language) {
   }
 }
 
+async function fetchLikeCounts() {
+  const response = await fetch("/api/likes", {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch likes: ${response.status}`);
+  }
+
+  const payload = await response.json();
+  const counts = new Map();
+
+  for (const item of payload.items || []) {
+    if (!item?.slug) continue;
+    counts.set(item.slug, Number(item.count || 0));
+  }
+
+  return counts;
+}
+
+async function postLike(key) {
+  const response = await fetch(`/api/likes/${encodeURIComponent(key)}`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to post like: ${response.status}`);
+  }
+
+  const payload = await response.json();
+  return Number(payload?.item?.count || 0);
+}
+
+async function initLikeButtons() {
+  const buttons = [...document.querySelectorAll("[data-like-button]")];
+  if (!buttons.length) return;
+
+  let remoteCounts = null;
+  try {
+    remoteCounts = await fetchLikeCounts();
+  } catch {}
+
+  for (const button of buttons) {
+    const key = button.dataset.likeKey;
+    const base = Number(button.dataset.likeBase || 0);
+    const countNode = button.querySelector("[data-like-count]");
+    if (!key || !countNode) continue;
+
+    const storageKey = `project-like:${key}`;
+    let currentCount = remoteCounts?.get(key) ?? base;
+    let isBusy = false;
+
+    const render = () => {
+      const liked = window.localStorage.getItem(storageKey) === "1";
+      button.setAttribute("aria-pressed", String(liked));
+      button.disabled = isBusy || liked;
+      countNode.textContent = String(currentCount);
+    };
+
+    render();
+
+    button.addEventListener("click", async () => {
+      const liked = window.localStorage.getItem(storageKey) === "1";
+      if (liked || isBusy) return;
+
+      if (!remoteCounts) {
+        currentCount = base + 1;
+        window.localStorage.setItem(storageKey, "1");
+        render();
+        return;
+      }
+
+      isBusy = true;
+      render();
+
+      try {
+        currentCount = await postLike(key);
+        window.localStorage.setItem(storageKey, "1");
+      } catch {
+        // Keep the button available so users can retry if the API call fails.
+      } finally {
+        isBusy = false;
+        render();
+      }
+    });
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const initialLanguage = detectLanguage();
   applyLanguage(initialLanguage);
+  initLikeButtons();
   document.body.classList.add("page-ready");
 
   const nav = document.querySelector(".nav");

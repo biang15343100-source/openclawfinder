@@ -1,0 +1,65 @@
+{
+  "type": "variant",
+  "slug": "nanobot",
+  "order": 2,
+  "name": {
+    "en": "Nanobot",
+    "zh": "Nanobot"
+  },
+  "kicker": {
+    "en": "Python minimal branch",
+    "zh": "Python 极简路线"
+  },
+  "icon": "/logo/nanobot.png",
+  "summary": {
+    "en": "A compact Python branch that keeps the agent loop easy to read, learn from, and fork without dragging in the full stack.",
+    "zh": "更小的 Python 分支，核心 agent 循环更容易读懂，也更适合学习和快速 fork。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "site": "https://nanobot.club/",
+    "github": "https://github.com/HKUDS/nanobot",
+    "githubRepo": "HKUDS/nanobot"
+  },
+  "description": {
+    "en": [
+      "Nanobot is the branch for people who look at OpenClaw and think the full stack is powerful, but too large to hold in their head. Public materials position it as a much smaller Python implementation that keeps the core agent loop while shedding a lot of surrounding weight.",
+      "That makes it especially valuable for learning and experimentation. The point is not full feature parity with the official stack. The point is readability, faster modification, and a cleaner path into the architecture for people who want to study or fork it."
+    ],
+    "zh": [
+      "Nanobot 更适合那种看着 OpenClaw 会想“能力很强，但我想先搞懂它怎么运转”的人。公开资料把它定位成一个更小的 Python 实现，保留核心 agent 循环，同时砍掉完整大栈的重量。",
+      "所以它最吸引人的地方，不是功能最全，而是更容易读懂、更容易下手改，也更适合拿来学习架构。和原版相比，它更像一块实验台，而不是一个完整的大型入口。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Public positioning emphasizes a dramatically smaller codebase than the full OpenClaw stack.",
+      "Python makes it easier for developers who want to read and change the runtime directly.",
+      "Best understood as a learning and experimentation branch, not a full consumer-facing replacement."
+    ],
+    "zh": [
+      "公开定位强调代码体量远小于完整 OpenClaw 栈。",
+      "Python 路线让它对想直接读代码和改代码的人更友好。",
+      "更适合学习和实验，不是面向普通用户的完整替代品。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "Official site",
+        "zh": "官网"
+      },
+      "url": "https://nanobot.club/"
+    },
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/HKUDS/nanobot"
+    }
+  ]
+}
