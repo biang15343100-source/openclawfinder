@@ -10,7 +10,7 @@
     "en": "Security-first Rust branch",
     "zh": "安全优先的 Rust 路线"
   },
-  "icon": "https://www.google.com/s2/favicons?sz=128&domain_url=https://www.ironclaw.com",
+  "icon": "/logo/ironclaw.ico",
   "summary": {
     "en": "A Rust branch centered on privacy, validation, and safer execution for teams that care about trust boundaries.",
     "zh": "更强调隐私、校验和安全执行的 Rust 分支，适合更在意边界和可信度的团队。"

@@ -10,7 +10,7 @@
     "en": "Official workflow format",
     "zh": "官方工作流格式"
   },
-  "icon": "https://www.google.com/s2/favicons?sz=128&domain_url=https://docs.openclaw.ai/prose",
+  "icon": "/logo/openprose.png",
   "summary": {
     "en": "The official workflow format for chaining agents, tools, and steps into more structured OpenClaw flows.",
     "zh": "不是另一个 runtime，而是把多个 agent、工具和步骤串起来的官方工作流格式。"

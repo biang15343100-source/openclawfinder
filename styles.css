@@ -489,6 +489,7 @@ h2 {
   height: 100%;
   object-fit: cover;
   border-radius: 16px;
+  opacity: 0;
 }
 
 .card-logo-fallback {

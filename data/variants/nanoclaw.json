@@ -10,7 +10,7 @@
     "en": "Container-first runtime",
     "zh": "容器优先运行时"
   },
-  "icon": "https://www.google.com/s2/favicons?sz=128&domain_url=https://nanoclaw.dev",
+  "icon": "/logo/nanoclaw.ico",
   "summary": {
     "en": "A container-first branch focused on safer isolation, clearer self-hosting boundaries, and more controlled deployments.",
     "zh": "容器优先的一条路，更强调隔离、自托管边界和可控部署，而不是堆更多产品层。"

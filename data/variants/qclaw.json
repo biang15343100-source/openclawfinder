@@ -10,7 +10,7 @@
     "en": "Tencent-oriented",
     "zh": "腾讯系"
   },
-  "icon": "https://www.google.com/s2/favicons?sz=128&domain_url=https://qclaw.qq.com",
+  "icon": "/logo/qclaw.png",
   "summary": {
     "en": "A packaged route for WeChat and QQ usage that is easier to try, but still gated behind a beta activation code.",
     "zh": "更像一条面向微信和 QQ 场景的一键式 OpenClaw 路线，目前还需要内测激活码，重点不是自己搭，而是更快用起来。"

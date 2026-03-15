@@ -10,7 +10,7 @@
     "en": "Official runtime",
     "zh": "官方运行时"
   },
-  "icon": "https://www.google.com/s2/favicons?sz=128&domain_url=https://openclaw.ai",
+  "icon": "/logo/openclaw.png",
   "summary": {
     "en": "The official full-stack runtime with the clearest docs, broadest integrations, and the best baseline for understanding the ecosystem.",
     "zh": "官方完整路线，文档最全、集成最广，也是理解整个 OpenClaw 生态最稳的基线。"
