@@ -13,3 +13,4 @@ data
 migrations
 worker
 worker-configuration.d.ts
+docs

@@ -1,0 +1,59 @@
+{
+  "type": "tool",
+  "slug": "example-tool",
+  "order": 999,
+  "name": {
+    "en": "Example Tool",
+    "zh": "示例工具"
+  },
+  "kicker": {
+    "en": "One-line positioning",
+    "zh": "一句定位"
+  },
+  "icon": "/logo/example-tool.png",
+  "summary": {
+    "en": "A short, information-dense summary for the homepage card.",
+    "zh": "一段用于首页卡片的简短高信息密度介绍。"
+  },
+  "access": {
+    "en": "Free",
+    "zh": "免费"
+  },
+  "links": {
+    "site": "https://example.com/",
+    "docs": "https://docs.example.com/",
+    "github": "https://github.com/example/repo",
+    "githubRepo": "example/repo"
+  },
+  "description": {
+    "en": [
+      "Paragraph one for the detail page.",
+      "Paragraph two for the detail page."
+    ],
+    "zh": [
+      "详情页的第一段描述。",
+      "详情页的第二段描述。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Highlight one.",
+      "Highlight two.",
+      "Highlight three."
+    ],
+    "zh": [
+      "亮点一。",
+      "亮点二。",
+      "亮点三。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "Official docs",
+        "zh": "官方文档"
+      },
+      "url": "https://docs.example.com/"
+    }
+  ]
+}

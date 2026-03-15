@@ -17,29 +17,23 @@ Instead of forcing people to jump across scattered repos, launch pages, docs, an
 
 The site is intentionally opinionated. The goal is not to list every claw-shaped page on the internet. The goal is to keep a smaller, cleaner, more useful map of the ecosystem.
 
-## Current structure
+## Project structure
 
-- `/`: homepage and main directory
-- `/start`: comparison-style entry page for choosing where to begin
-- `/projects/*`: project profile pages
-- `/submit`: submission guide for new listings
-- `/about`: editorial intent and listing policy
-- `/contact`: corrections, updates, partnerships
-- `/privacy`: privacy policy
+The repo is organized around content data, generated pages, and deployment glue:
 
-## How it works
+- `data/variants/*.json`: OpenClaw variants
+- `data/tools/*.json`: ecosystem tools and plugins
+- `scripts/build-site.mjs`: generates `index.html` and `projects/*.html` from the JSON data
+- `projects/*.html`: generated detail pages
+- `logo/`: local card logos
+- `worker/index.js`: Cloudflare Worker API for likes
+- `migrations/`: D1 schema migrations
+- `styles.css` and `script.js`: shared frontend styling and client behavior
+- `about.html`, `contact.html`, `privacy.html`, `start.html`, `submit.html`: hand-authored supporting pages
 
-This is a static site deployed on Cloudflare Workers static assets.
+The homepage and project detail pages are generated output. If you want to add or edit a tool, start with the JSON files, then rebuild.
 
-At build time:
-
-- `npm run build` runs `scripts/sync-stars.mjs`
-- the script refreshes GitHub star counts for listed repositories
-- homepage variant cards are re-sorted based on current star count
-
-That means the site stays static at runtime, while directory metadata can still refresh on deploy.
-
-## Local development
+## Build and local development
 
 Install dependencies:
 
@@ -47,23 +41,31 @@ Install dependencies:
 npm install
 ```
 
-Run the build-time sync:
+Generate the homepage and project pages:
 
 ```bash
 npm run build
 ```
 
-If you use a simple static server locally, open the `.html` routes directly:
+Run the site locally with the Cloudflare Worker and D1 bindings:
 
-- `http://localhost:8000/index.html`
-- `http://localhost:8000/start.html`
-- `http://localhost:8000/submit.html`
+```bash
+npm run cf:dev
+```
 
-Clean URLs like `/start` and `/submit` are handled in production by Cloudflare.
+This is the recommended local workflow now. A simple static server will not run the like API.
+
+## Adding a new tool or variant
+
+1. Create a JSON file in `data/tools/` or `data/variants/`
+2. Add a local logo in `logo/` if available
+3. Run `npm run build`
+4. Preview with `npm run cf:dev`
+5. Deploy with `npm run cf:deploy` or push to the GitHub-connected deploy flow
 
 ## Deploy
 
-This project is configured for Cloudflare Workers static assets.
+This project is deployed on Cloudflare Workers with static assets plus a D1-backed like API.
 
 Recommended build settings:
 
@@ -79,33 +81,10 @@ The repo includes:
 - `sitemap.xml`
 - `BingSiteAuth.xml`
 
-## Contributing and submissions
-
-If you maintain an OpenClaw-related project and want it listed, use the submission page:
-
-- [openclawfinder.com/submit](https://openclawfinder.com/submit)
-
-Good submissions include:
-
-- project name
-- primary URL
-- GitHub or docs links
-- one-line summary
-- what makes it different
-- why it belongs in the OpenClaw ecosystem
-
-## Repository layout
-
-- `index.html`: homepage directory
-- `start.html`: comparison-style start page
-- `projects/`: project profile pages
-- `about.html`, `submit.html`, `contact.html`, `privacy.html`: supporting pages
-- `styles.css`: shared styling
-- `script.js`: i18n and client-side UI behavior
-- `scripts/sync-stars.mjs`: build-time GitHub star sync
-
 ## Notes
 
 - The site is bilingual and switches between English and Chinese in the client.
 - Search and share metadata are added per page.
 - Sitemap and robots are maintained for indexing.
+- Likes are stored in Cloudflare D1 and do not reset on redeploy.
+- `index.html` and `projects/*.html` should be treated as generated output.

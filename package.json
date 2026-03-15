@@ -5,6 +5,7 @@
   "description": "Static site for openclawfinder.com",
   "scripts": {
     "build": "node scripts/build-site.mjs",
+    "validate:data": "node scripts/build-site.mjs",
     "sync:stars": "node scripts/build-site.mjs",
     "cf:dev": "wrangler dev",
     "cf:deploy": "wrangler deploy",

@@ -65,7 +65,9 @@ async function fetchRepoStars(repo) {
 }
 
 async function readEntries(dir) {
-  const files = (await fs.readdir(dir)).filter((file) => file.endsWith(".json")).sort();
+  const files = (await fs.readdir(dir))
+    .filter((file) => file.endsWith(".json") && !file.startsWith("_"))
+    .sort();
   const entries = [];
 
   for (const file of files) {
@@ -76,6 +78,79 @@ async function readEntries(dir) {
   }
 
   return entries.sort((left, right) => (left.order ?? 999) - (right.order ?? 999));
+}
+
+function assertLocalizedObject(entry, field, value) {
+  if (!value || typeof value !== "object" || typeof value.en !== "string" || typeof value.zh !== "string") {
+    throw new Error(`${entry.type}/${entry.slug}: "${field}" must be an object with string "en" and "zh" values`);
+  }
+}
+
+function assertStringArray(entry, field, value) {
+  if (!Array.isArray(value) || value.length === 0 || value.some((item) => typeof item !== "string")) {
+    throw new Error(`${entry.type}/${entry.slug}: "${field}" must be a non-empty string array`);
+  }
+}
+
+function validateEntry(entry) {
+  if (!entry || typeof entry !== "object") throw new Error("Entry must be an object");
+  if (entry.type !== "variant" && entry.type !== "tool") {
+    throw new Error(`Invalid entry type for slug "${entry.slug ?? "unknown"}"`);
+  }
+  if (typeof entry.slug !== "string" || !/^[a-z0-9-]+$/.test(entry.slug)) {
+    throw new Error(`${entry.type}: "slug" must be lowercase letters, numbers, or dashes`);
+  }
+  if (typeof entry.order !== "number") {
+    throw new Error(`${entry.type}/${entry.slug}: "order" must be a number`);
+  }
+
+  for (const field of ["name", "kicker", "summary", "access"]) {
+    assertLocalizedObject(entry, field, entry[field]);
+  }
+
+  if (entry.icon !== null && typeof entry.icon !== "string") {
+    throw new Error(`${entry.type}/${entry.slug}: "icon" must be a string or null`);
+  }
+
+  if (!entry.links || typeof entry.links !== "object") {
+    throw new Error(`${entry.type}/${entry.slug}: "links" must be an object`);
+  }
+
+  for (const field of ["site", "docs", "github", "githubRepo"]) {
+    if (field in entry.links && entry.links[field] != null && typeof entry.links[field] !== "string") {
+      throw new Error(`${entry.type}/${entry.slug}: "links.${field}" must be a string when provided`);
+    }
+  }
+
+  if (!entry.description || typeof entry.description !== "object") {
+    throw new Error(`${entry.type}/${entry.slug}: "description" must be an object`);
+  }
+  if (!entry.highlights || typeof entry.highlights !== "object") {
+    throw new Error(`${entry.type}/${entry.slug}: "highlights" must be an object`);
+  }
+
+  assertStringArray(entry, "description.en", entry.description.en);
+  assertStringArray(entry, "description.zh", entry.description.zh);
+  assertStringArray(entry, "highlights.en", entry.highlights.en);
+  assertStringArray(entry, "highlights.zh", entry.highlights.zh);
+
+  if (entry.description.en.length !== entry.description.zh.length) {
+    throw new Error(`${entry.type}/${entry.slug}: description.en and description.zh must have the same length`);
+  }
+  if (entry.highlights.en.length !== entry.highlights.zh.length) {
+    throw new Error(`${entry.type}/${entry.slug}: highlights.en and highlights.zh must have the same length`);
+  }
+
+  if (!Array.isArray(entry.sources) || entry.sources.length === 0) {
+    throw new Error(`${entry.type}/${entry.slug}: "sources" must be a non-empty array`);
+  }
+
+  for (const [index, source] of entry.sources.entries()) {
+    assertLocalizedObject(entry, `sources.${index}.label`, source?.label);
+    if (typeof source?.url !== "string") {
+      throw new Error(`${entry.type}/${entry.slug}: "sources.${index}.url" must be a string`);
+    }
+  }
 }
 
 async function enrichEntries(entries) {
@@ -407,6 +482,7 @@ ${tools.map((entry) => renderCard(entry)).join("\n")}
 async function main() {
   const variants = await enrichEntries(await readEntries(VARIANTS_DIR));
   const tools = await enrichEntries(await readEntries(TOOLS_DIR));
+  [...variants, ...tools].forEach(validateEntry);
 
   await fs.writeFile(INDEX_PATH, renderIndex(variants, tools));
   await fs.mkdir(PROJECTS_DIR, { recursive: true });
