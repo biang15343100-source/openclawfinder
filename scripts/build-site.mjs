@@ -271,6 +271,7 @@ function renderProjectPage(entry) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${escapeHtml(pageData.meta.title.en)}</title>
+    <link rel="icon" href="/openclawfinder_favicon.ico" sizes="any" />
     <meta id="meta-description" name="description" content="${escapeHtml(pageData.meta.description.en)}" />
     <link rel="canonical" href="${SITE_URL}/projects/${entry.slug}" />
     <meta name="robots" content="index,follow" />
@@ -347,6 +348,7 @@ function renderIndex(variants, tools) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OpenClaw Finder | Discover OpenClaw Projects</title>
+    <link rel="icon" href="/openclawfinder_favicon.ico" sizes="any" />
     <meta id="meta-description" name="description" content="OpenClaw Finder is a curated directory for discovering OpenClaw projects, tools, and experiments such as qclaw and picoclaw." />
     <link rel="canonical" href="${SITE_URL}/" />
     <meta name="robots" content="index,follow" />
