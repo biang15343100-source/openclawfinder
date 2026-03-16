@@ -1,7 +1,7 @@
 {
   "type": "tool",
   "slug": "memu",
-  "order": 5,
+  "order": 6,
   "name": {
     "en": "memU",
     "zh": "memU"

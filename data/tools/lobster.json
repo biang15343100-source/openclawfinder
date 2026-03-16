@@ -1,7 +1,7 @@
 {
   "type": "tool",
   "slug": "lobster",
-  "order": 4,
+  "order": 5,
   "name": {
     "en": "Lobster",
     "zh": "Lobster"

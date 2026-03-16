@@ -1,0 +1,65 @@
+{
+  "type": "tool",
+  "slug": "clawx",
+  "order": 3,
+  "name": {
+    "en": "ClawX",
+    "zh": "ClawX"
+  },
+  "kicker": {
+    "en": "Desktop research assistant",
+    "zh": "桌面研究助手"
+  },
+  "icon": "/logo/clawx.png",
+  "summary": {
+    "en": "An open-source desktop research assistant built on the OpenClaw ecosystem, with scheduled monitoring, web browsing, and multi-channel delivery.",
+    "zh": "一个构建在 OpenClaw 生态之上的开源桌面研究助手，支持定时监控、网页浏览和多渠道结果推送。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "site": "https://claw-x.com/",
+    "github": "https://github.com/ValueCell-ai/ClawX",
+    "githubRepo": "ValueCell-ai/ClawX"
+  },
+  "description": {
+    "en": [
+      "ClawX positions itself as a desktop research assistant rather than a bare runtime. The public site emphasizes autonomous browsing, scheduled monitoring, and research summaries that can be pushed into messaging channels, which makes it feel closer to a packaged operator console than a developer-only tool.",
+      "That makes it useful for users who want OpenClaw-style capabilities without living in the terminal. Compared with lower-level workflow or runtime components, ClawX is more about turning the ecosystem into an always-on research product with a visual interface and a clearer end-user experience."
+    ],
+    "zh": [
+      "ClawX 更像一个桌面研究助手，而不是一个裸运行时。官网公开强调自动浏览网页、定时监控数据源，以及把研究摘要推送到消息渠道，所以它更接近一个可直接使用的产品化工作台，而不是只面向开发者的底层工具。",
+      "这让它特别适合那些想用 OpenClaw 能力、但不想长期待在终端里的用户。和更底层的 workflow 或 runtime 组件相比，ClawX 更像是在把整个生态包装成一个常驻在线、带可视化界面的研究产品。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Official site positions it as an open-source desktop assistant built on the OpenClaw ecosystem.",
+      "Highlights scheduled monitoring, autonomous browsing, and multi-channel notifications.",
+      "A strong fit for the tools section because it packages ecosystem capability into a usable product surface."
+    ],
+    "zh": [
+      "官网明确把它定位成构建在 OpenClaw 生态上的开源桌面助手。",
+      "重点强调定时监控、自动浏览和多渠道通知。",
+      "非常适合放在工具区，因为它把生态能力包装成了一个更容易直接使用的产品界面。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "Official site",
+        "zh": "官网"
+      },
+      "url": "https://claw-x.com/"
+    },
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/ValueCell-ai/ClawX"
+    }
+  ]
+}

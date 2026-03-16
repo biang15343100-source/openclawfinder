@@ -1,7 +1,7 @@
 {
   "type": "tool",
   "slug": "moltbook",
-  "order": 3,
+  "order": 4,
   "name": {
     "en": "Moltbook",
     "zh": "Moltbook"

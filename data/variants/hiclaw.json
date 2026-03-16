@@ -1,0 +1,57 @@
+{
+  "type": "variant",
+  "slug": "hiclaw",
+  "order": 8,
+  "name": {
+    "en": "HiClaw",
+    "zh": "HiClaw"
+  },
+  "kicker": {
+    "en": "Collaborative multi-agent OS",
+    "zh": "协作式多智能体系统"
+  },
+  "icon": "/logo/hiclaw.png",
+  "summary": {
+    "en": "A collaborative multi-agent branch focused on transparent, human-in-the-loop coordination through shared Matrix rooms.",
+    "zh": "一条强调透明协作和人在回路中的多智能体分支，通过共享 Matrix 房间来组织任务协同。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "github": "https://github.com/alibaba/hiclaw",
+    "githubRepo": "alibaba/hiclaw"
+  },
+  "description": {
+    "en": [
+      "HiClaw presents itself as a collaborative multi-agent operating model rather than a solo assistant shell. Its repository description emphasizes transparent task coordination, human oversight, and Matrix-room-based collaboration, which gives it a noticeably more team-oriented posture than single-user desktop branches.",
+      "That makes it worth listing as a distinct variant instead of a generic tool. The value is not just another integration or plugin layer, but a different way of structuring OpenClaw-style work around shared rooms, coordination, and human-in-the-loop control."
+    ],
+    "zh": [
+      "HiClaw 更像一个协作式多智能体操作模型，而不是单人助手壳层。它的仓库描述强调透明的任务协调、人工监督，以及基于 Matrix 房间的协作方式，这让它和偏单用户桌面路线的分支相比，明显更偏团队协同。",
+      "因此它更适合作为一个独立变体收录，而不是普通工具。它的核心价值不是再加一层插件或集成，而是围绕共享房间、协调流程和人在回路中的控制方式，重新组织 OpenClaw 风格的工作流。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Repository positioning centers on collaborative multi-agent coordination.",
+      "Human-in-the-loop and transparency are part of the main value proposition.",
+      "Matrix-room coordination gives it a distinctive team workflow angle."
+    ],
+    "zh": [
+      "仓库定位明确围绕协作式多智能体协调展开。",
+      "人在回路中和透明性是它的核心卖点之一。",
+      "基于 Matrix 房间的协作方式让它具备明显的团队工作流特征。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/alibaba/hiclaw"
+    }
+  ]
+}

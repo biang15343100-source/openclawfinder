@@ -1,7 +1,7 @@
 {
   "type": "tool",
   "slug": "moltworker",
-  "order": 6,
+  "order": 7,
   "name": {
     "en": "Moltworker",
     "zh": "Moltworker"

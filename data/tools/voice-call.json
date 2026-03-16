@@ -1,7 +1,7 @@
 {
   "type": "tool",
   "slug": "voice-call",
-  "order": 7,
+  "order": 8,
   "name": {
     "en": "Voice Call",
     "zh": "Voice Call"
