@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lossless Claw Enhanced | OpenClaw Finder</title>
+    <link rel="icon" href="/openclawfinder_favicon.ico" sizes="any" />
+    <meta id="meta-description" name="description" content="A community fork of Lossless Claw that fixes CJK token estimation and common session bugs, so Chinese, Japanese, and Korean users get accurate compaction." />
+    <link rel="canonical" href="https://openclawfinder.com/projects/lossless-claw-enhanced" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" id="meta-og-title" content="Lossless Claw Enhanced | OpenClaw Finder" />
+    <meta property="og:description" id="meta-og-description" content="A community fork of Lossless Claw that fixes CJK token estimation and common session bugs, so Chinese, Japanese, and Korean users get accurate compaction." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" id="meta-og-url" content="https://openclawfinder.com/projects/lossless-claw-enhanced" />
+    <meta property="og:image" content="https://openclawfinder.com/hero-art.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" id="meta-twitter-title" content="Lossless Claw Enhanced | OpenClaw Finder" />
+    <meta name="twitter:description" id="meta-twitter-description" content="A community fork of Lossless Claw that fixes CJK token estimation and common session bugs, so Chinese, Japanese, and Korean users get accurate compaction." />
+    <meta name="twitter:image" content="https://openclawfinder.com/hero-art.png" />
+    <script id="page-data" type="application/json">{"meta":{"title":{"en":"Lossless Claw Enhanced | OpenClaw Finder","zh":"Lossless Claw Enhanced | OpenClaw Finder"},"description":{"en":"A community fork of Lossless Claw that fixes CJK token estimation and common session bugs, so Chinese, Japanese, and Korean users get accurate compaction.","zh":"Lossless Claw 的社区改进版，修正了中日韩文本的 token 估算偏差，以及若干会话 bug，让 CJK 用户也能得到准确的压缩。"}},"texts":{"kicker":{"en":"CJK-aware fork of Lossless Claw","zh":"面向中日韩的 Lossless Claw 改进版"},"name":{"en":"Lossless Claw Enhanced","zh":"Lossless Claw Enhanced"},"summary":{"en":"A community fork of Lossless Claw that fixes CJK token estimation and common session bugs, so Chinese, Japanese, and Korean users get accurate compaction.","zh":"Lossless Claw 的社区改进版，修正了中日韩文本的 token 估算偏差，以及若干会话 bug，让 CJK 用户也能得到准确的压缩。"},"description":{"paragraphs":[{"en":"The upstream Lossless Claw plugin uses English-biased token estimation, which underestimates Chinese, Japanese, and Korean character costs by roughly 2-4x. In practice that makes compaction fire at the wrong moment and causes context windows to overflow without warning.","zh":"上游的 Lossless Claw 使用偏向英文的 token 估算，中日韩文本会被低估 2-4 倍，结果就是压缩触发时机错位、上下文窗口在没有警告的情况下溢出。"},{"en":"Lossless Claw Enhanced is a fork that corrects the CJK mapping (closer to 1.5 tokens per character) and cherry-picks a set of upstream fixes around authentication errors, session rotation, and empty message accumulation. It is the more practical choice whenever the conversation is CJK-heavy and you still want the DAG-based lossless context model.","zh":"Lossless Claw Enhanced 这个 fork 修正了 CJK 字符的 token 估算（更接近 1.5 token/字），并挑选了一批上游的修复，覆盖鉴权错误、会话轮换、空消息累积等问题。只要会话里中日韩占比高，又想继续用 DAG 无损上下文的思路，它是更实际的选择。"}],"highlights":[{"en":"CJK token estimation corrected from ~0.25 to ~1.5 tokens per character.","zh":"中日韩字符的 token 估算从约 0.25 修正为约 1.5。"},{"en":"Cherry-picked fixes for authentication errors, session rotation, and empty message accumulation.","zh":"挑选合并了上游的鉴权错误、会话轮换、空消息累积等修复。"},{"en":"Drop-in replacement that keeps the DAG-based lossless context model from the upstream plugin.","zh":"可直接替换上游插件，仍保持 DAG 的无损上下文模型。"}]},"sources":[{"label":{"en":"GitHub repository","zh":"GitHub 仓库"}}]}}</script>
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/script.js"></script>
+  </head>
+  <body data-page="project-lossless-claw-enhanced">
+    <header class="site-header"><div class="wrap nav-shell"><div class="nav"><a class="brand" href="/" data-i18n="common.brand">OpenClaw Finder</a><nav class="main-nav"><a href="/about" data-i18n="common.navAbout">About</a><a href="/submit" data-i18n="common.navSubmit">Submit</a><a href="/contact" data-i18n="common.navContact">Contact</a><a href="/privacy" data-i18n="common.navPrivacy">Privacy</a></nav><div class="lang-switch" aria-label="Language switcher"><button class="lang-button" type="button" data-lang-button="en">EN</button><button class="lang-button" type="button" data-lang-button="zh">中文</button></div></div></div></header>
+    <main class="project-main wrap">
+      <section class="project-hero project-hero-simple">
+        <div class="project-header project-header-wide">
+          <p class="project-kicker" data-page-text="kicker">CJK-aware fork of Lossless Claw</p>
+          <h1 class="project-title" data-page-text="name">Lossless Claw Enhanced</h1>
+          <p class="project-summary" data-page-text="summary">A community fork of Lossless Claw that fixes CJK token estimation and common session bugs, so Chinese, Japanese, and Korean users get accurate compaction.</p>
+        </div>
+      </section>
+      <section class="project-content project-content-simple">
+        <article class="project-panel project-description-panel">
+          <h2 data-i18n="project.common.description">Description</h2>
+          <div class="project-description-body">
+            <p data-page-text="description.paragraphs.0">The upstream Lossless Claw plugin uses English-biased token estimation, which underestimates Chinese, Japanese, and Korean character costs by roughly 2-4x. In practice that makes compaction fire at the wrong moment and causes context windows to overflow without warning.</p>
+            <p data-page-text="description.paragraphs.1">Lossless Claw Enhanced is a fork that corrects the CJK mapping (closer to 1.5 tokens per character) and cherry-picks a set of upstream fixes around authentication errors, session rotation, and empty message accumulation. It is the more practical choice whenever the conversation is CJK-heavy and you still want the DAG-based lossless context model.</p>
+            <ul class="project-list compact-project-list">
+              <li data-page-text="description.highlights.0">CJK token estimation corrected from ~0.25 to ~1.5 tokens per character.</li>
+              <li data-page-text="description.highlights.1">Cherry-picked fixes for authentication errors, session rotation, and empty message accumulation.</li>
+              <li data-page-text="description.highlights.2">Drop-in replacement that keeps the DAG-based lossless context model from the upstream plugin.</li>
+            </ul>
+          </div>
+        </article>
+        <aside class="project-panel project-sources-panel">
+          <h2 data-i18n="project.common.sources">Sources</h2>
+          <div class="source-list"><a href="https://github.com/win4r/lossless-claw-enhanced" target="_blank" rel="noreferrer" data-page-text="sources.0.label">GitHub repository</a></div>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="wrap footer-grid"><div><a class="brand footer-brand" href="/" data-i18n="common.brand">OpenClaw Finder</a></div><div class="footer-links"><a href="/about" data-i18n="common.navAbout">About</a><a href="/submit" data-i18n="common.navSubmit">Submit</a><a href="/contact" data-i18n="common.navContact">Contact</a><a href="/privacy" data-i18n="common.navPrivacy">Privacy</a></div></div></footer>
+  </body>
+</html>

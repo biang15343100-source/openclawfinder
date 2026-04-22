@@ -1,0 +1,64 @@
+{
+  "type": "variant",
+  "slug": "openclaw-cn",
+  "order": 13,
+  "name": {
+    "en": "OpenClaw-CN",
+    "zh": "OpenClaw 中文版"
+  },
+  "kicker": {
+    "en": "Community Chinese localization",
+    "zh": "社区中文本地化发行"
+  },
+  "icon": "/logo/openclaw-cn.png",
+  "summary": {
+    "en": "A community-maintained Chinese distribution of OpenClaw with Feishu, DingTalk, WeCom integrations, DeepSeek/Qwen defaults, and domestic mirrors.",
+    "zh": "社区维护的 OpenClaw 中文发行版，默认适配飞书、钉钉、企业微信，内置 DeepSeek/Qwen 模型选项，并使用国内镜像。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "github": "https://github.com/jiulingyun/openclaw-cn",
+    "githubRepo": "jiulingyun/openclaw-cn"
+  },
+  "description": {
+    "en": [
+      "OpenClaw-CN exists because a lot of the friction of running OpenClaw in China is not about the runtime itself. It is about defaults: which messaging channels come wired up, which model providers are reachable, whether docs and dashboard strings are in Chinese, and whether npm mirrors are fast enough.",
+      "This variant rewires all of those defaults in one place instead of asking each user to patch them locally. It tracks upstream OpenClaw and adds localized CLI and dashboard strings, Feishu/DingTalk/WeCom integrations, and first-class support for domestic models and registry mirrors."
+    ],
+    "zh": [
+      "OpenClaw-CN 存在的原因是：在中国用 OpenClaw 的阻力通常不是 runtime 本身，而是默认配置——默认接哪些消息渠道、能不能顺畅连到可用的模型、文档和控制台是不是中文、npm 镜像是否够快。",
+      "这个变体把这些默认值一次性改好，而不是让每个用户自己本地打补丁。它跟随上游 OpenClaw，额外补齐了 CLI 与控制台的中文翻译、飞书/钉钉/企业微信集成，以及对国内模型和 registry 镜像的一等支持。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Deep CLI and dashboard localization, tracking upstream OpenClaw releases.",
+      "Built-in integrations for DingTalk, WeCom, Feishu, QQ, and WeChat out of the box.",
+      "First-class DeepSeek and Qwen presets, with npmmirror and Aliyun registry support."
+    ],
+    "zh": [
+      "完整的 CLI 与控制台中文化，跟随官方 OpenClaw 上游版本发布。",
+      "开箱即用的钉钉、企业微信、飞书、QQ、微信集成。",
+      "一等支持 DeepSeek 和 Qwen 预设，使用 npmmirror 与阿里云 registry。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/jiulingyun/openclaw-cn"
+    },
+    {
+      "label": {
+        "en": "npm package",
+        "zh": "npm 包"
+      },
+      "url": "https://www.npmjs.com/package/openclaw-cn"
+    }
+  ]
+}

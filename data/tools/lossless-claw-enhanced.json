@@ -1,0 +1,57 @@
+{
+  "type": "tool",
+  "slug": "lossless-claw-enhanced",
+  "order": 10,
+  "name": {
+    "en": "Lossless Claw Enhanced",
+    "zh": "Lossless Claw Enhanced"
+  },
+  "kicker": {
+    "en": "CJK-aware fork of Lossless Claw",
+    "zh": "面向中日韩的 Lossless Claw 改进版"
+  },
+  "icon": "/logo/lossless-claw-enhanced.png",
+  "summary": {
+    "en": "A community fork of Lossless Claw that fixes CJK token estimation and common session bugs, so Chinese, Japanese, and Korean users get accurate compaction.",
+    "zh": "Lossless Claw 的社区改进版，修正了中日韩文本的 token 估算偏差，以及若干会话 bug，让 CJK 用户也能得到准确的压缩。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "github": "https://github.com/win4r/lossless-claw-enhanced",
+    "githubRepo": "win4r/lossless-claw-enhanced"
+  },
+  "description": {
+    "en": [
+      "The upstream Lossless Claw plugin uses English-biased token estimation, which underestimates Chinese, Japanese, and Korean character costs by roughly 2-4x. In practice that makes compaction fire at the wrong moment and causes context windows to overflow without warning.",
+      "Lossless Claw Enhanced is a fork that corrects the CJK mapping (closer to 1.5 tokens per character) and cherry-picks a set of upstream fixes around authentication errors, session rotation, and empty message accumulation. It is the more practical choice whenever the conversation is CJK-heavy and you still want the DAG-based lossless context model."
+    ],
+    "zh": [
+      "上游的 Lossless Claw 使用偏向英文的 token 估算，中日韩文本会被低估 2-4 倍，结果就是压缩触发时机错位、上下文窗口在没有警告的情况下溢出。",
+      "Lossless Claw Enhanced 这个 fork 修正了 CJK 字符的 token 估算（更接近 1.5 token/字），并挑选了一批上游的修复，覆盖鉴权错误、会话轮换、空消息累积等问题。只要会话里中日韩占比高，又想继续用 DAG 无损上下文的思路，它是更实际的选择。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "CJK token estimation corrected from ~0.25 to ~1.5 tokens per character.",
+      "Cherry-picked fixes for authentication errors, session rotation, and empty message accumulation.",
+      "Drop-in replacement that keeps the DAG-based lossless context model from the upstream plugin."
+    ],
+    "zh": [
+      "中日韩字符的 token 估算从约 0.25 修正为约 1.5。",
+      "挑选合并了上游的鉴权错误、会话轮换、空消息累积等修复。",
+      "可直接替换上游插件，仍保持 DAG 的无损上下文模型。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/win4r/lossless-claw-enhanced"
+    }
+  ]
+}

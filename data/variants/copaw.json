@@ -21,8 +21,8 @@
   },
   "links": {
     "site": "https://copaw.bot/",
-    "github": "https://github.com/agentscope-ai/CoPaw",
-    "githubRepo": "agentscope-ai/CoPaw"
+    "github": "https://github.com/agentscope-ai/QwenPaw",
+    "githubRepo": "agentscope-ai/QwenPaw"
   },
   "description": {
     "en": [
@@ -59,7 +59,7 @@
         "en": "GitHub repository",
         "zh": "GitHub 仓库"
       },
-      "url": "https://github.com/agentscope-ai/CoPaw"
+      "url": "https://github.com/agentscope-ai/QwenPaw"
     }
   ]
 }

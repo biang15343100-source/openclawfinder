@@ -1,0 +1,65 @@
+{
+  "type": "tool",
+  "slug": "lossless-claw",
+  "order": 9,
+  "name": {
+    "en": "Lossless Claw",
+    "zh": "Lossless Claw"
+  },
+  "kicker": {
+    "en": "DAG-based context engine",
+    "zh": "基于 DAG 的上下文引擎"
+  },
+  "icon": "/logo/lossless-claw.png",
+  "summary": {
+    "en": "A pluggable context engine that replaces sliding-window truncation with a DAG of summarized messages, so older context can be searched and recovered on demand.",
+    "zh": "一个可插拔的上下文引擎，用 DAG 摘要取代滑动窗口截断，旧对话可以按需检索和还原。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "site": "https://losslesscontext.ai/",
+    "github": "https://github.com/Martian-Engineering/lossless-claw",
+    "githubRepo": "Martian-Engineering/lossless-claw"
+  },
+  "description": {
+    "en": [
+      "Lossless Claw is one of the more technically interesting tools in the ecosystem because it reframes how context gets managed. Instead of quietly dropping old messages once the window is full, it persists everything to SQLite and organizes the conversation as a directed acyclic graph, where older branches are summarized into hierarchical nodes.",
+      "That gives agents a way to drill back into old context instead of losing it. The plugin exposes tools like lcm_grep, lcm_describe, and lcm_expand so the model can search and expand historical nodes deliberately. It plugs into OpenClaw through the Context Engine API introduced in 2026.3.7, and in OOLONG benchmarks it scores 74.8 versus 70.3 for the baseline, which matters a lot for multi-day projects and debugging sessions."
+    ],
+    "zh": [
+      "Lossless Claw 是生态里技术上更有意思的工具之一，因为它改变了上下文管理的思路。它不是在窗口满了以后悄悄丢掉旧消息，而是把所有消息持久化到 SQLite，把对话组织成一个 DAG，旧分支会被摘要成层级节点。",
+      "这样 agent 就能有意识地回溯历史，而不是让信息直接丢失。插件提供 lcm_grep、lcm_describe、lcm_expand 等工具，让模型自己决定要不要展开历史节点。它通过 2026.3.7 引入的 Context Engine API 接入 OpenClaw，在 OOLONG 基准上拿到 74.8 分（对比默认的 70.3），对多天的项目和长时间 debug 场景很有帮助。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "DAG-based lossless context with SQLite persistence instead of sliding-window truncation.",
+      "Provides lcm_grep, lcm_describe, lcm_expand tools so agents can search and rehydrate old context.",
+      "Scores 74.8 on OOLONG vs 70.3 for baseline OpenClaw, especially valuable for multi-day sessions."
+    ],
+    "zh": [
+      "基于 DAG 的无损上下文，用 SQLite 持久化替代滑动窗口截断。",
+      "提供 lcm_grep、lcm_describe、lcm_expand 工具，让 agent 能主动检索和还原历史上下文。",
+      "OOLONG 基准 74.8 分，对比默认 70.3 分；在多天项目和长时间会话里价值明显。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "Official site",
+        "zh": "官网"
+      },
+      "url": "https://losslesscontext.ai/"
+    },
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/Martian-Engineering/lossless-claw"
+    }
+  ]
+}

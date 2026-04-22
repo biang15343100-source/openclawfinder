@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NullClaw | OpenClaw Finder</title>
+    <link rel="icon" href="/openclawfinder_favicon.ico" sizes="any" />
+    <meta id="meta-description" name="description" content="A single static Zig binary that delivers the full OpenClaw experience in under 1 MB of RAM, with &lt;8 ms startup and no runtime dependencies." />
+    <link rel="canonical" href="https://openclawfinder.com/projects/nullclaw" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" id="meta-og-title" content="NullClaw | OpenClaw Finder" />
+    <meta property="og:description" id="meta-og-description" content="A single static Zig binary that delivers the full OpenClaw experience in under 1 MB of RAM, with &lt;8 ms startup and no runtime dependencies." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" id="meta-og-url" content="https://openclawfinder.com/projects/nullclaw" />
+    <meta property="og:image" content="https://openclawfinder.com/hero-art.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" id="meta-twitter-title" content="NullClaw | OpenClaw Finder" />
+    <meta name="twitter:description" id="meta-twitter-description" content="A single static Zig binary that delivers the full OpenClaw experience in under 1 MB of RAM, with &lt;8 ms startup and no runtime dependencies." />
+    <meta name="twitter:image" content="https://openclawfinder.com/hero-art.png" />
+    <script id="page-data" type="application/json">{"meta":{"title":{"en":"NullClaw | OpenClaw Finder","zh":"NullClaw | OpenClaw Finder"},"description":{"en":"A single static Zig binary that delivers the full OpenClaw experience in under 1 MB of RAM, with <8 ms startup and no runtime dependencies.","zh":"用 Zig 重写的单静态二进制，把 OpenClaw 能力塞进 1 MB 内存、<8ms 启动的范围，没有运行时依赖。"}},"texts":{"kicker":{"en":"Zig rewrite for edge hardware","zh":"面向边缘硬件的 Zig 重写"},"name":{"en":"NullClaw","zh":"NullClaw"},"summary":{"en":"A single static Zig binary that delivers the full OpenClaw experience in under 1 MB of RAM, with <8 ms startup and no runtime dependencies.","zh":"用 Zig 重写的单静态二进制，把 OpenClaw 能力塞进 1 MB 内存、<8ms 启动的范围，没有运行时依赖。"},"description":{"paragraphs":[{"en":"NullClaw sits at the extreme end of the lightweight branches. It is not a cost-reduction of the official runtime so much as a complete rewrite in Zig, built around the idea that the whole agent infrastructure should fit in a single static binary that runs on $5 embedded boards.","zh":"NullClaw 是轻量化路线里的极端解：它不是在官方运行时上做减法，而是用 Zig 完全重写，核心命题是把整个 agent 基础设施压进一个静态二进制，放到几美元的嵌入式板子上也能跑。"},{"en":"Its main value is demonstrating how small an OpenClaw-compatible stack can actually get. A modular vtable architecture keeps support for dozens of providers and channels, while the runtime itself stays around a 678 KB binary with ~1 MB peak memory. For anyone looking at agents on routers, microcontrollers, or always-on devices, NullClaw is the reference point.","zh":"它的意义在于把 OpenClaw 兼容栈的体积边界往下压到极致。通过 vtable 的模块化架构，它仍然保留了几十种 provider 与 channel 的支持，但运行时本身只有约 678 KB、峰值内存 ~1 MB。想做路由器、MCU 或常驻设备上的 agent，NullClaw 是一个可参考的基线。"}],"highlights":[{"en":"Single static Zig binary (~678 KB) with libc-only dependency, usable on ARM, x86, and RISC-V.","zh":"单一静态 Zig 二进制（约 678 KB），仅依赖 libc，ARM、x86、RISC-V 都能跑。"},{"en":"Peak memory around 1 MB and startup under 8 ms on low-frequency edge hardware.","zh":"峰值内存约 1 MB，在低频边缘硬件上启动时间不到 8 ms。"},{"en":"Supports 50+ providers and 19+ channels through a vtable-based plugin architecture.","zh":"通过 vtable 插件架构支持 50+ provider 与 19+ 消息渠道。"}]},"sources":[{"label":{"en":"Official site","zh":"官网"}},{"label":{"en":"GitHub repository","zh":"GitHub 仓库"}}]}}</script>
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/script.js"></script>
+  </head>
+  <body data-page="project-nullclaw">
+    <header class="site-header"><div class="wrap nav-shell"><div class="nav"><a class="brand" href="/" data-i18n="common.brand">OpenClaw Finder</a><nav class="main-nav"><a href="/about" data-i18n="common.navAbout">About</a><a href="/submit" data-i18n="common.navSubmit">Submit</a><a href="/contact" data-i18n="common.navContact">Contact</a><a href="/privacy" data-i18n="common.navPrivacy">Privacy</a></nav><div class="lang-switch" aria-label="Language switcher"><button class="lang-button" type="button" data-lang-button="en">EN</button><button class="lang-button" type="button" data-lang-button="zh">中文</button></div></div></div></header>
+    <main class="project-main wrap">
+      <section class="project-hero project-hero-simple">
+        <div class="project-header project-header-wide">
+          <p class="project-kicker" data-page-text="kicker">Zig rewrite for edge hardware</p>
+          <h1 class="project-title" data-page-text="name">NullClaw</h1>
+          <p class="project-summary" data-page-text="summary">A single static Zig binary that delivers the full OpenClaw experience in under 1 MB of RAM, with &lt;8 ms startup and no runtime dependencies.</p>
+        </div>
+      </section>
+      <section class="project-content project-content-simple">
+        <article class="project-panel project-description-panel">
+          <h2 data-i18n="project.common.description">Description</h2>
+          <div class="project-description-body">
+            <p data-page-text="description.paragraphs.0">NullClaw sits at the extreme end of the lightweight branches. It is not a cost-reduction of the official runtime so much as a complete rewrite in Zig, built around the idea that the whole agent infrastructure should fit in a single static binary that runs on $5 embedded boards.</p>
+            <p data-page-text="description.paragraphs.1">Its main value is demonstrating how small an OpenClaw-compatible stack can actually get. A modular vtable architecture keeps support for dozens of providers and channels, while the runtime itself stays around a 678 KB binary with ~1 MB peak memory. For anyone looking at agents on routers, microcontrollers, or always-on devices, NullClaw is the reference point.</p>
+            <ul class="project-list compact-project-list">
+              <li data-page-text="description.highlights.0">Single static Zig binary (~678 KB) with libc-only dependency, usable on ARM, x86, and RISC-V.</li>
+              <li data-page-text="description.highlights.1">Peak memory around 1 MB and startup under 8 ms on low-frequency edge hardware.</li>
+              <li data-page-text="description.highlights.2">Supports 50+ providers and 19+ channels through a vtable-based plugin architecture.</li>
+            </ul>
+          </div>
+        </article>
+        <aside class="project-panel project-sources-panel">
+          <h2 data-i18n="project.common.sources">Sources</h2>
+          <div class="source-list"><a href="https://nullclaw.io/" target="_blank" rel="noreferrer" data-page-text="sources.0.label">Official site</a><a href="https://github.com/nullclaw/nullclaw" target="_blank" rel="noreferrer" data-page-text="sources.1.label">GitHub repository</a></div>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="wrap footer-grid"><div><a class="brand footer-brand" href="/" data-i18n="common.brand">OpenClaw Finder</a></div><div class="footer-links"><a href="/about" data-i18n="common.navAbout">About</a><a href="/submit" data-i18n="common.navSubmit">Submit</a><a href="/contact" data-i18n="common.navContact">Contact</a><a href="/privacy" data-i18n="common.navPrivacy">Privacy</a></div></div></footer>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+{
+  "type": "tool",
+  "slug": "astrix-openclaw-scanner",
+  "order": 11,
+  "name": {
+    "en": "Astrix OpenClaw Scanner",
+    "zh": "Astrix OpenClaw 扫描器"
+  },
+  "kicker": {
+    "en": "Agent detection for security teams",
+    "zh": "面向安全团队的 agent 发现工具"
+  },
+  "icon": "/logo/astrix-openclaw-scanner.png",
+  "summary": {
+    "en": "A free scanner from Astrix Security that uses read-only EDR telemetry to find unmanaged OpenClaw deployments inside enterprise environments.",
+    "zh": "Astrix Security 发布的免费扫描器，用只读 EDR 遥测在企业环境里发现未被治理的 OpenClaw 实例。"
+  },
+  "access": {
+    "en": "Free",
+    "zh": "免费"
+  },
+  "links": {
+    "site": "https://pypi.org/project/astrix-openclaw-scanner/"
+  },
+  "description": {
+    "en": [
+      "The OpenClaw Scanner sits in a different part of the ecosystem from runtimes and context engines. Its job is defensive: let security teams find where OpenClaw instances are actually running inside a company, including ones that were installed by individual developers or paired with sensitive SaaS accounts without IT visibility.",
+      "It uses read-only telemetry from existing EDR tools like CrowdStrike and Microsoft Defender rather than installing anything on endpoints, and it generates reports with device and user context. Given CVE-2026-25253 and the broader conversation about unmanaged autonomous agents in the enterprise, it is one of the most relevant ecosystem tools for anyone who cares about governance rather than building."
+    ],
+    "zh": [
+      "OpenClaw Scanner 在生态里属于另一个角色：不是跑 agent，而是帮安全团队找出企业内部究竟哪里跑着 OpenClaw，包括那些被个人开发者装起来、又连上了敏感 SaaS 账号、IT 完全不知道的实例。",
+      "它不往端上装任何东西，而是读取 CrowdStrike、Microsoft Defender 这类 EDR 的只读遥测，再生成带设备和用户上下文的报告。考虑到 CVE-2026-25253 以及企业里对自主 agent 治理的讨论，这是在\"建造\"以外最值得关注的生态工具之一。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Non-intrusive detection using existing EDR telemetry; no agent installation on endpoints.",
+      "Contextual reports with device and user attribution for rapid response.",
+      "Distributed via PyPI (astrix-openclaw-scanner); data stays inside the organization."
+    ],
+    "zh": [
+      "只读 EDR 遥测驱动的无侵入检测，端侧不需要额外安装。",
+      "报告自带设备和用户上下文，方便快速响应。",
+      "通过 PyPI 分发（astrix-openclaw-scanner），数据不出企业边界。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "PyPI package",
+        "zh": "PyPI 包"
+      },
+      "url": "https://pypi.org/project/astrix-openclaw-scanner/"
+    }
+  ]
+}

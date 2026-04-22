@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lossless Claw | OpenClaw Finder</title>
+    <link rel="icon" href="/openclawfinder_favicon.ico" sizes="any" />
+    <meta id="meta-description" name="description" content="A pluggable context engine that replaces sliding-window truncation with a DAG of summarized messages, so older context can be searched and recovered on demand." />
+    <link rel="canonical" href="https://openclawfinder.com/projects/lossless-claw" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" id="meta-og-title" content="Lossless Claw | OpenClaw Finder" />
+    <meta property="og:description" id="meta-og-description" content="A pluggable context engine that replaces sliding-window truncation with a DAG of summarized messages, so older context can be searched and recovered on demand." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" id="meta-og-url" content="https://openclawfinder.com/projects/lossless-claw" />
+    <meta property="og:image" content="https://openclawfinder.com/hero-art.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" id="meta-twitter-title" content="Lossless Claw | OpenClaw Finder" />
+    <meta name="twitter:description" id="meta-twitter-description" content="A pluggable context engine that replaces sliding-window truncation with a DAG of summarized messages, so older context can be searched and recovered on demand." />
+    <meta name="twitter:image" content="https://openclawfinder.com/hero-art.png" />
+    <script id="page-data" type="application/json">{"meta":{"title":{"en":"Lossless Claw | OpenClaw Finder","zh":"Lossless Claw | OpenClaw Finder"},"description":{"en":"A pluggable context engine that replaces sliding-window truncation with a DAG of summarized messages, so older context can be searched and recovered on demand.","zh":"一个可插拔的上下文引擎，用 DAG 摘要取代滑动窗口截断，旧对话可以按需检索和还原。"}},"texts":{"kicker":{"en":"DAG-based context engine","zh":"基于 DAG 的上下文引擎"},"name":{"en":"Lossless Claw","zh":"Lossless Claw"},"summary":{"en":"A pluggable context engine that replaces sliding-window truncation with a DAG of summarized messages, so older context can be searched and recovered on demand.","zh":"一个可插拔的上下文引擎，用 DAG 摘要取代滑动窗口截断，旧对话可以按需检索和还原。"},"description":{"paragraphs":[{"en":"Lossless Claw is one of the more technically interesting tools in the ecosystem because it reframes how context gets managed. Instead of quietly dropping old messages once the window is full, it persists everything to SQLite and organizes the conversation as a directed acyclic graph, where older branches are summarized into hierarchical nodes.","zh":"Lossless Claw 是生态里技术上更有意思的工具之一，因为它改变了上下文管理的思路。它不是在窗口满了以后悄悄丢掉旧消息，而是把所有消息持久化到 SQLite，把对话组织成一个 DAG，旧分支会被摘要成层级节点。"},{"en":"That gives agents a way to drill back into old context instead of losing it. The plugin exposes tools like lcm_grep, lcm_describe, and lcm_expand so the model can search and expand historical nodes deliberately. It plugs into OpenClaw through the Context Engine API introduced in 2026.3.7, and in OOLONG benchmarks it scores 74.8 versus 70.3 for the baseline, which matters a lot for multi-day projects and debugging sessions.","zh":"这样 agent 就能有意识地回溯历史，而不是让信息直接丢失。插件提供 lcm_grep、lcm_describe、lcm_expand 等工具，让模型自己决定要不要展开历史节点。它通过 2026.3.7 引入的 Context Engine API 接入 OpenClaw，在 OOLONG 基准上拿到 74.8 分（对比默认的 70.3），对多天的项目和长时间 debug 场景很有帮助。"}],"highlights":[{"en":"DAG-based lossless context with SQLite persistence instead of sliding-window truncation.","zh":"基于 DAG 的无损上下文，用 SQLite 持久化替代滑动窗口截断。"},{"en":"Provides lcm_grep, lcm_describe, lcm_expand tools so agents can search and rehydrate old context.","zh":"提供 lcm_grep、lcm_describe、lcm_expand 工具，让 agent 能主动检索和还原历史上下文。"},{"en":"Scores 74.8 on OOLONG vs 70.3 for baseline OpenClaw, especially valuable for multi-day sessions.","zh":"OOLONG 基准 74.8 分，对比默认 70.3 分；在多天项目和长时间会话里价值明显。"}]},"sources":[{"label":{"en":"Official site","zh":"官网"}},{"label":{"en":"GitHub repository","zh":"GitHub 仓库"}}]}}</script>
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/script.js"></script>
+  </head>
+  <body data-page="project-lossless-claw">
+    <header class="site-header"><div class="wrap nav-shell"><div class="nav"><a class="brand" href="/" data-i18n="common.brand">OpenClaw Finder</a><nav class="main-nav"><a href="/about" data-i18n="common.navAbout">About</a><a href="/submit" data-i18n="common.navSubmit">Submit</a><a href="/contact" data-i18n="common.navContact">Contact</a><a href="/privacy" data-i18n="common.navPrivacy">Privacy</a></nav><div class="lang-switch" aria-label="Language switcher"><button class="lang-button" type="button" data-lang-button="en">EN</button><button class="lang-button" type="button" data-lang-button="zh">中文</button></div></div></div></header>
+    <main class="project-main wrap">
+      <section class="project-hero project-hero-simple">
+        <div class="project-header project-header-wide">
+          <p class="project-kicker" data-page-text="kicker">DAG-based context engine</p>
+          <h1 class="project-title" data-page-text="name">Lossless Claw</h1>
+          <p class="project-summary" data-page-text="summary">A pluggable context engine that replaces sliding-window truncation with a DAG of summarized messages, so older context can be searched and recovered on demand.</p>
+        </div>
+      </section>
+      <section class="project-content project-content-simple">
+        <article class="project-panel project-description-panel">
+          <h2 data-i18n="project.common.description">Description</h2>
+          <div class="project-description-body">
+            <p data-page-text="description.paragraphs.0">Lossless Claw is one of the more technically interesting tools in the ecosystem because it reframes how context gets managed. Instead of quietly dropping old messages once the window is full, it persists everything to SQLite and organizes the conversation as a directed acyclic graph, where older branches are summarized into hierarchical nodes.</p>
+            <p data-page-text="description.paragraphs.1">That gives agents a way to drill back into old context instead of losing it. The plugin exposes tools like lcm_grep, lcm_describe, and lcm_expand so the model can search and expand historical nodes deliberately. It plugs into OpenClaw through the Context Engine API introduced in 2026.3.7, and in OOLONG benchmarks it scores 74.8 versus 70.3 for the baseline, which matters a lot for multi-day projects and debugging sessions.</p>
+            <ul class="project-list compact-project-list">
+              <li data-page-text="description.highlights.0">DAG-based lossless context with SQLite persistence instead of sliding-window truncation.</li>
+              <li data-page-text="description.highlights.1">Provides lcm_grep, lcm_describe, lcm_expand tools so agents can search and rehydrate old context.</li>
+              <li data-page-text="description.highlights.2">Scores 74.8 on OOLONG vs 70.3 for baseline OpenClaw, especially valuable for multi-day sessions.</li>
+            </ul>
+          </div>
+        </article>
+        <aside class="project-panel project-sources-panel">
+          <h2 data-i18n="project.common.sources">Sources</h2>
+          <div class="source-list"><a href="https://losslesscontext.ai/" target="_blank" rel="noreferrer" data-page-text="sources.0.label">Official site</a><a href="https://github.com/Martian-Engineering/lossless-claw" target="_blank" rel="noreferrer" data-page-text="sources.1.label">GitHub repository</a></div>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="wrap footer-grid"><div><a class="brand footer-brand" href="/" data-i18n="common.brand">OpenClaw Finder</a></div><div class="footer-links"><a href="/about" data-i18n="common.navAbout">About</a><a href="/submit" data-i18n="common.navSubmit">Submit</a><a href="/contact" data-i18n="common.navContact">Contact</a><a href="/privacy" data-i18n="common.navPrivacy">Privacy</a></div></div></footer>
+  </body>
+</html>

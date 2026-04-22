@@ -1,0 +1,57 @@
+{
+  "type": "variant",
+  "slug": "apkclaw",
+  "order": 11,
+  "name": {
+    "en": "ApkClaw",
+    "zh": "ApkClaw"
+  },
+  "kicker": {
+    "en": "Android-native agent runtime",
+    "zh": "Android 原生代理运行时"
+  },
+  "icon": "/logo/apkclaw.png",
+  "summary": {
+    "en": "An Android APK that turns a phone into an LLM-controlled device, wiring accessibility services and messaging channels into an autonomous agent loop.",
+    "zh": "一个 Android APK，把手机变成可以被 LLM 远程控制的设备，通过无障碍服务和消息渠道形成自主 agent 循环。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "github": "https://github.com/apkclaw-team/ApkClaw",
+    "githubRepo": "apkclaw-team/ApkClaw"
+  },
+  "description": {
+    "en": [
+      "ApkClaw tries to answer a specific question: what if the agent does not live on a server at all, but inside your phone? The project ships as an Android APK that uses accessibility services to drive UI automation, exposes a tool registry for phone-specific actions, and takes natural-language instructions from common chat channels.",
+      "That makes it distinct from the server-style forks. Instead of running OpenClaw somewhere in the cloud and connecting to chat integrations, ApkClaw treats the device itself as the runtime. It is useful when you want an agent to act like a second pair of hands on a real phone, including SMS, app control, and common daily workflows."
+    ],
+    "zh": [
+      "ApkClaw 想解决的是另一个方向的问题：如果 agent 不放在服务器上，而是直接活在你的手机里会怎么样？项目以 Android APK 的形式发布，用无障碍服务驱动界面操作，提供一套针对手机的工具注册表，并从常见聊天渠道接收自然语言指令。",
+      "这让它和那些服务器风格的分叉路线明显不同。它不是把 OpenClaw 跑在云上再连聊天通道，而是把设备本身当作 runtime，更接近于让 agent 变成手机上的第二双手，覆盖短信、App 操控和日常自动化流程。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Android-first design with accessibility service-driven UI automation and phone-specific tools.",
+      "Multi-channel messaging front-end via DingTalk, Feishu, QQ, Discord, and Telegram.",
+      "Apache 2.0 licensed, with LangChain4j integration for OpenAI/Anthropic-compatible providers."
+    ],
+    "zh": [
+      "Android 原生设计，基于无障碍服务驱动 UI 自动化，提供针对手机的专属工具。",
+      "通过钉钉、飞书、QQ、Discord、Telegram 等消息渠道作为前端入口。",
+      "Apache 2.0 协议，基于 LangChain4j 集成 OpenAI/Anthropic 兼容的模型。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/apkclaw-team/ApkClaw"
+    }
+  ]
+}

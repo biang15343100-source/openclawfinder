@@ -1,0 +1,57 @@
+{
+  "type": "variant",
+  "slug": "oneclaw",
+  "order": 12,
+  "name": {
+    "en": "OneClaw",
+    "zh": "OneClaw"
+  },
+  "kicker": {
+    "en": "Zero-setup desktop installer",
+    "zh": "零门槛桌面安装器"
+  },
+  "icon": "/logo/oneclaw.png",
+  "summary": {
+    "en": "A packaged OpenClaw desktop client with a bundled Node runtime, multi-provider key management, and one-minute install on macOS and Windows.",
+    "zh": "把 OpenClaw 打包成桌面客户端，自带 Node 运行时与多 provider 密钥管理，在 macOS 和 Windows 上一分钟完成安装。"
+  },
+  "access": {
+    "en": "Open source",
+    "zh": "开源"
+  },
+  "links": {
+    "github": "https://github.com/oneclaw/oneclaw",
+    "githubRepo": "oneclaw/oneclaw"
+  },
+  "description": {
+    "en": [
+      "OneClaw targets the gap between curious users and a working OpenClaw install. Instead of asking people to set up Node, npm, and environment variables, it ships a signed desktop app that bundles the runtime and exposes a clean settings panel for API keys and providers.",
+      "Positioning-wise it sits between the pure runtime forks and the productized research consoles. It does not try to change what OpenClaw is. It just removes the installation tax, which is one of the most common reasons people bounce off the ecosystem on their first try."
+    ],
+    "zh": [
+      "OneClaw 要解决的是\"好奇的用户跑不起来官方版\"的缺口。它不让用户自己装 Node、npm、配环境变量，而是直接打包成一个签名好的桌面应用，把运行时塞进来，在设置面板里管理 API 密钥和 provider。",
+      "从生态位看，它介于纯 runtime 分叉和产品化研究工作台之间。它不改写 OpenClaw 的能力，只是把\"装不上\"这个最常见的劝退环节抹掉，让更多人能真正把官方版跑起来。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Signed desktop app for macOS (Intel/Apple Silicon) and Windows (x64/ARM64) with auto-updates.",
+      "Bundled Node runtime so there is no separate Node or npm install required.",
+      "Local API key storage and mid-chat model switching across Anthropic, OpenAI, Google, and Kimi."
+    ],
+    "zh": [
+      "macOS（Intel/Apple Silicon）与 Windows（x64/ARM64）的签名桌面应用，支持自动更新。",
+      "内置 Node 运行时，用户不需要另外安装 Node 或 npm。",
+      "本地 API 密钥存储，支持 Anthropic、OpenAI、Google、Kimi 之间的对话中切换。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "GitHub repository",
+        "zh": "GitHub 仓库"
+      },
+      "url": "https://github.com/oneclaw/oneclaw"
+    }
+  ]
+}

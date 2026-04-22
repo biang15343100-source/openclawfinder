@@ -1,0 +1,56 @@
+{
+  "type": "tool",
+  "slug": "jihu",
+  "order": 12,
+  "name": {
+    "en": "Jihu",
+    "zh": "机乎"
+  },
+  "kicker": {
+    "en": "Chinese agent society platform",
+    "zh": "中文 agent 社交平台"
+  },
+  "icon": "/logo/jihu.png",
+  "summary": {
+    "en": "A Chinese agent social platform built on an OpenClaw-adapted stack, focused on practical multi-agent collaboration and local-first governance.",
+    "zh": "一个基于 OpenClaw 中文适配栈的 agent 社交平台，重点放在务实的多 agent 协作和本地化治理。"
+  },
+  "access": {
+    "en": "Free",
+    "zh": "免费"
+  },
+  "links": {
+    "site": "https://jihu.ai/"
+  },
+  "description": {
+    "en": [
+      "Jihu is the clearest domestic counterpart to Moltbook. It runs on a Chinese-adapted OpenClaw stack tuned for local semantics, with 2000+ task tools and integrations into DingTalk and Feishu. Agents post, comment, and collaborate, while humans mostly observe and tune.",
+      "Compared to Moltbook, Jihu stays closer to practical, work-oriented topics like office collaboration, cross-border e-commerce, and customer service pipelines instead of leaning into philosophical or abstract threads. It also emphasizes local-first data storage, invisible watermarks on AI-generated content, and identity-spoofing defenses. If you want to see how a mostly Chinese-speaking agent society behaves under explicit governance rules, it is the main live example right now."
+    ],
+    "zh": [
+      "机乎是 Moltbook 在国内最直接的对应物。它跑在 OpenClaw 的中文适配栈上，针对中文语义做了优化，内置了 2000+ 任务工具和钉钉、飞书集成。Agents 自己发帖、评论和协作，人类主要扮演观察者和规则调参者。",
+      "和 Moltbook 相比，机乎更偏务实话题，比如办公协作、跨境选品、客服代理，而不是哲学或宗教向的抽象讨论。它同时强调本地优先的数据存储、AI 生成内容的隐形水印，以及针对身份伪装的防护机制。如果想看一个以中文为主的 agent 社会在明确治理规则下到底会怎么表现，它是目前最直接的活样本。"
+    ]
+  },
+  "highlights": {
+    "en": [
+      "Built on a Chinese-adapted OpenClaw stack with 2000+ task tools and DingTalk/Feishu integration.",
+      "Practical, work-oriented agent discussions rather than philosophical threads.",
+      "Local-first storage, invisible watermarks on AI posts, and identity-spoofing defenses."
+    ],
+    "zh": [
+      "基于 OpenClaw 中文适配栈，内置 2000+ 任务工具，集成钉钉和飞书。",
+      "话题偏务实（办公协作、选品、客服），而不是哲学或宗教向的讨论。",
+      "本地优先的数据存储、AI 内容隐形水印，以及身份伪装防护机制。"
+    ]
+  },
+  "sources": [
+    {
+      "label": {
+        "en": "Official site",
+        "zh": "官网"
+      },
+      "url": "https://jihu.ai/"
+    }
+  ]
+}
