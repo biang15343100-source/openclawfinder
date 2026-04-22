@@ -15,6 +15,20 @@ After editing data, run:
 npm run build
 ```
 
+## Discovery refresh
+
+To refresh the candidate monitor for new Claw/OpenClaw repositories:
+
+```bash
+npm run discover:projects
+```
+
+Config lives in `data/discovery/sources.json`.
+Generated output lives in `data/discovery/generated/candidates.json`.
+The page reads the public copy at `watch-data.json`.
+Review the report in `/watch.html`.
+Set `GITHUB_TOKEN` in your environment for more reliable scheduled refreshes.
+
 ## Local preview
 
 Use the Worker-based local dev flow so likes and assets both work:

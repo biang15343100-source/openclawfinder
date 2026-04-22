@@ -33,6 +33,28 @@ The repo is organized around content data, generated pages, and deployment glue:
 
 The homepage and project detail pages are generated output. If you want to add or edit a tool, start with the JSON files, then rebuild.
 
+## Discovery monitor
+
+The repo now includes a lightweight discovery pipeline for spotting new Claw/OpenClaw projects before they are added to the directory.
+
+Run it with:
+
+```bash
+npm run discover:projects
+```
+
+This writes a reviewable report to `data/discovery/generated/candidates.json`.
+It also writes a public copy to `watch-data.json` so the monitoring page can load it in local and deployed environments.
+If you plan to run it on a schedule, set `GITHUB_TOKEN` to avoid GitHub's low anonymous rate limits.
+
+Open `/watch.html` locally or in production to review:
+
+- newly discovered repositories
+- rule-based recommendation scores
+- likely duplicates of entries already in the site
+
+You can tune queries and freshness windows in `data/discovery/sources.json`.
+
 ## Build and local development
 
 Install dependencies:
